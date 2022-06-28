@@ -1,0 +1,636 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALIB	benchmarking/cuckoofilter/Makefile	/^ALIB = libcuckoofilter.a$/;"	m
+AR	benchmarking/cuckoofilter/Makefile	/^AR = ar$/;"	m
+AccessCounter	compressed_cuckoo_filter.h	/^  struct AccessCounter{$/;"	s	namespace:CompressedCuckoo
+Add	benchmarking/cuckoofilter/benchmarks/bulk-insert-and-query.cc	/^  static void Add(uint64_t key, Table * table) {$/;"	f	struct:FilterAPI
+Add	benchmarking/cuckoofilter/benchmarks/bulk-insert-and-query.cc	/^  static void Add(uint64_t key, Table* table) {$/;"	f	struct:FilterAPI
+Add	benchmarking/cuckoofilter/src/cuckoofilter.h	/^Status CuckooFilter<ItemType, bits_per_item, TableType, HashFamily>::Add($/;"	f	class:cuckoofilter::CuckooFilter
+AddImpl	benchmarking/cuckoofilter/src/cuckoofilter.h	/^Status CuckooFilter<ItemType, bits_per_item, TableType, HashFamily>::AddImpl($/;"	f	class:cuckoofilter::CuckooFilter
+AltIndex	benchmarking/cuckoofilter/src/cuckoofilter.h	/^  inline size_t AltIndex(const size_t index, const uint32_t tag) const {$/;"	f	class:cuckoofilter::CuckooFilter
+AlternateBucketSelectionMethodEnum	compressed_cuckoo_config.h	/^  enum struct AlternateBucketSelectionMethodEnum{$/;"	s	namespace:CompressedCuckoo
+BENCHMARK_CF_H	benchmarking/benchmark_cf.h	38;"	d
+BENCHMARK_COMMON_H	benchmarking/benchmark_common.h	38;"	d
+BINS	benchmarking/cuckoofilter/benchmarks/Makefile	/^BINS = conext-table3.exe conext-figure5.exe bulk-insert-and-query.exe$/;"	m
+Benchmark	benchmarking/benchmark_common.h	/^namespace Benchmark{$/;"	n
+Benchmark	benchmarking/benchmark_util.h	/^namespace Benchmark{$/;"	n
+BitMixMurmur	hash_util.h	/^struct BitMixMurmur {$/;"	s
+BitsPerItem	benchmarking/cuckoofilter/src/cuckoofilter.h	/^  double BitsPerItem() const { return 8.0 * table_->SizeInBytes() \/ Size(); }$/;"	f	class:cuckoofilter::CuckooFilter
+Block	block.h	/^struct Block{ \/\/ Assuming block size is a multiple of atom_t's size in bytes$/;"	s	namespace:Morton
+BlockedBF	bf.h	/^namespace BlockedBF{$/;"	n
+BloomFilter	bf.h	/^  struct BloomFilter{$/;"	s	namespace:BlockedBF
+BobHash	benchmarking/cuckoofilter/src/hashutil.cc	/^uint32_t HashUtil::BobHash(const std::string &s, uint32_t seed) {$/;"	f	class:cuckoofilter::HashUtil
+BobHash	benchmarking/cuckoofilter/src/hashutil.cc	/^uint32_t HashUtil::BobHash(const void *buf, size_t length, uint32_t seed) {$/;"	f	class:cuckoofilter::HashUtil
+BobHash	benchmarking/cuckoofilter/src/hashutil.cc	/^void HashUtil::BobHash(const std::string &s, uint32_t *idx1, uint32_t *idx2) {$/;"	f	class:cuckoofilter::HashUtil
+BobHash	benchmarking/cuckoofilter/src/hashutil.cc	/^void HashUtil::BobHash(const void *buf, size_t length, uint32_t *idx1,$/;"	f	class:cuckoofilter::HashUtil
+Bucket	benchmarking/cuckoofilter/src/singletable.h	/^  struct Bucket {$/;"	s	class:cuckoofilter::SingleTable
+Bucket	bf.h	/^  struct Bucket{$/;"	s	namespace:BlockedBF
+CC	benchmarking/cuckoofilter/Makefile	/^CC = g++$/;"	m
+CCF_KEY_SIZE	vector_types.h	48;"	d
+CLEAN	benchmarking/Makefile	/^CLEAN=rm -f *.o *.a *.so *.lo *.s $(TARGETS)$/;"	m
+CLUSTERED_BUCKET_HASH	compressed_cuckoo_config.h	/^    CLUSTERED_BUCKET_HASH,$/;"	m	struct:CompressedCuckoo::OverflowTrackingArrayHashingMethodEnum
+CUCKOO_FILTER_BITS_H_	benchmarking/cuckoofilter/src/bitsutil.h	2;"	d
+CUCKOO_FILTER_CUCKOO_FILTER_H_	benchmarking/cuckoofilter/src/cuckoofilter.h	2;"	d
+CUCKOO_FILTER_DEBUG_H_	benchmarking/cuckoofilter/src/debug.h	2;"	d
+CUCKOO_FILTER_HASHUTIL_H_	benchmarking/cuckoofilter/src/hashutil.h	2;"	d
+CUCKOO_FILTER_PACKED_TABLE_H_	benchmarking/cuckoofilter/src/packedtable.h	2;"	d
+CUCKOO_FILTER_PERM_ENCODING_H_	benchmarking/cuckoofilter/src/permencoding.h	2;"	d
+CUCKOO_FILTER_PRINTUTIL_H_	benchmarking/cuckoofilter/src/printutil.h	2;"	d
+CUCKOO_FILTER_SINGLE_TABLE_H_	benchmarking/cuckoofilter/src/singletable.h	2;"	d
+CUCKOO_REFERENCE_DIR	benchmarking/Makefile	/^CUCKOO_REFERENCE_DIR=.\/cuckoofilter$/;"	m
+CXX	benchmarking/Makefile	/^  CXX=g++ # Code uses GCC builtins.  I recommend using either g++ or clang++.  $/;"	m
+CompressedCuckoo	compressed_cuckoo_config.h	/^namespace CompressedCuckoo{$/;"	n
+CompressedCuckoo	compressed_cuckoo_filter.h	/^namespace CompressedCuckoo{$/;"	n
+CompressedCuckoo	fixed_point.h	/^namespace CompressedCuckoo{$/;"	n
+CompressedCuckoo	morton_sample_configs.h	/^namespace CompressedCuckoo{$/;"	n
+CompressedCuckoo	morton_util.h	/^namespace CompressedCuckoo{$/;"	n
+CompressedCuckooFilter	compressed_cuckoo_filter.h	/^  explicit CompressedCuckooFilter(uint64_t total_slots) :$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+CompressedCuckooFilter	compressed_cuckoo_filter.h	/^  struct CompressedCuckooFilter{$/;"	s	namespace:CompressedCuckoo
+ConstructFromAddCount	benchmarking/cuckoofilter/benchmarks/bulk-insert-and-query.cc	/^  static Table ConstructFromAddCount(size_t add_count) { return Table(add_count); }$/;"	f	struct:FilterAPI
+ConstructFromAddCount	benchmarking/cuckoofilter/benchmarks/bulk-insert-and-query.cc	/^  static Table ConstructFromAddCount(size_t add_count) {$/;"	f	struct:FilterAPI
+Contain	benchmarking/cuckoofilter/benchmarks/bulk-insert-and-query.cc	/^  static bool Contain(uint64_t key, const Table * table) {$/;"	f	struct:FilterAPI
+Contain	benchmarking/cuckoofilter/src/cuckoofilter.h	/^Status CuckooFilter<ItemType, bits_per_item, TableType, HashFamily>::Contain($/;"	f	class:cuckoofilter::CuckooFilter
+CounterReadMethodEnum	compressed_cuckoo_config.h	/^  enum struct CounterReadMethodEnum{$/;"	s	namespace:CompressedCuckoo
+CuckooBenchmark	benchmarking/cuckoofilter/benchmarks/conext-figure5.cc	/^array<double, 5> CuckooBenchmark($/;"	f
+CuckooBenchmark	benchmarking/cuckoofilter/benchmarks/conext-table3.cc	/^Metrics CuckooBenchmark(size_t add_count, const vector<uint64_t>& input) {$/;"	f
+CuckooFilter	benchmarking/cuckoofilter/src/cuckoofilter.h	/^  CuckooFilter(const size_t buckets_in_table,$/;"	f	class:cuckoofilter::CuckooFilter
+CuckooFilter	benchmarking/cuckoofilter/src/cuckoofilter.h	/^  explicit CuckooFilter(const size_t max_num_keys) : num_items_(0), victim_(), hasher_() {$/;"	f	class:cuckoofilter::CuckooFilter
+CuckooFilter	benchmarking/cuckoofilter/src/cuckoofilter.h	/^class CuckooFilter {$/;"	c	namespace:cuckoofilter
+DEBUG_ALL	benchmarking/cuckoofilter/src/debug.h	48;"	d
+DEBUG_CUCKOO	benchmarking/cuckoofilter/src/debug.h	44;"	d
+DEBUG_ENCODE	benchmarking/cuckoofilter/src/debug.h	46;"	d
+DEBUG_ERRS	benchmarking/cuckoofilter/src/debug.h	43;"	d
+DEBUG_NONE	benchmarking/cuckoofilter/src/debug.h	42;"	d
+DEBUG_PERROR	benchmarking/cuckoofilter/src/debug.h	25;"	d
+DEBUG_TABLE	benchmarking/cuckoofilter/src/debug.h	45;"	d
+DPRINTF	benchmarking/cuckoofilter/src/debug.h	21;"	d
+Delete	benchmarking/cuckoofilter/src/cuckoofilter.h	/^Status CuckooFilter<ItemType, bits_per_item, TableType, HashFamily>::Delete($/;"	f	class:cuckoofilter::CuckooFilter
+DeleteTagFromBucket	benchmarking/cuckoofilter/src/packedtable.h	/^  bool DeleteTagFromBucket(const size_t i, const uint32_t tag) {$/;"	f	class:cuckoofilter::PackedTable
+DeleteTagFromBucket	benchmarking/cuckoofilter/src/singletable.h	/^  inline bool DeleteTagFromBucket(const size_t i, const uint32_t tag) {$/;"	f	class:cuckoofilter::SingleTable
+EVP_MD_CTX_free	benchmarking/cuckoofilter/src/hashutil.cc	/^void EVP_MD_CTX_free(EVP_MD_CTX *ctx)$/;"	f	namespace:cuckoofilter
+EVP_MD_CTX_new	benchmarking/cuckoofilter/src/hashutil.cc	/^EVP_MD_CTX *EVP_MD_CTX_new(void)$/;"	f	namespace:cuckoofilter
+FAILED_TO_INSERT	compressed_cuckoo_config.h	/^    FAILED_TO_INSERT = 0,$/;"	m	struct:CompressedCuckoo::InsertStatus
+FIRST_FIT	compressed_cuckoo_config.h	/^    FIRST_FIT,$/;"	m	struct:CompressedCuckoo::InsertionMethodEnum
+FIRST_FIT_OPT	compressed_cuckoo_config.h	/^    FIRST_FIT_OPT, \/\/ Transitions between two implementations of first-fit$/;"	m	struct:CompressedCuckoo::InsertionMethodEnum
+FIXED_COUNT_AGGRESSIVE	compressed_cuckoo_config.h	/^    FIXED_COUNT_AGGRESSIVE,$/;"	m	struct:CompressedCuckoo::FingerprintComparisonMethodEnum
+FLAGS	benchmarking/Makefile	/^FLAGS:=-Wall -Winline -g -std=c++11 $(OPT) $(SANITIZE)$/;"	m
+FPR_SAMPLE_SIZE	benchmarking/cuckoofilter/benchmarks/conext-table3.cc	/^const size_t FPR_SAMPLE_SIZE = 1000 * 1000;$/;"	v
+FUNCTION_BASED_OFFSET	compressed_cuckoo_config.h	/^    FUNCTION_BASED_OFFSET,$/;"	m	struct:CompressedCuckoo::AlternateBucketSelectionMethodEnum
+FilterAPI	benchmarking/cuckoofilter/benchmarks/bulk-insert-and-query.cc	/^struct FilterAPI {};$/;"	s	file:
+FilterAPI	benchmarking/cuckoofilter/benchmarks/bulk-insert-and-query.cc	/^struct FilterAPI<CuckooFilter<ItemType, bits_per_item, TableType>> {$/;"	s	file:
+FilterAPI	benchmarking/cuckoofilter/benchmarks/bulk-insert-and-query.cc	/^struct FilterAPI<SimdBlockFilter<>> {$/;"	s	file:
+FilterBenchmark	benchmarking/cuckoofilter/benchmarks/bulk-insert-and-query.cc	/^Statistics FilterBenchmark($/;"	f
+FindTagInBucket	benchmarking/cuckoofilter/src/packedtable.h	/^  bool FindTagInBucket(const size_t i, const uint32_t tag) const {$/;"	f	class:cuckoofilter::PackedTable
+FindTagInBucket	benchmarking/cuckoofilter/src/singletable.h	/^  inline bool FindTagInBucket(const size_t i, const uint32_t tag) const {$/;"	f	class:cuckoofilter::SingleTable
+FindTagInBuckets	benchmarking/cuckoofilter/src/packedtable.h	/^  bool FindTagInBuckets(const size_t i1, const size_t i2,$/;"	f	class:cuckoofilter::PackedTable
+FindTagInBuckets	benchmarking/cuckoofilter/src/singletable.h	/^  inline bool FindTagInBuckets(const size_t i1, const size_t i2,$/;"	f	class:cuckoofilter::SingleTable
+FingerprintComparisonMethodEnum	compressed_cuckoo_config.h	/^  enum struct FingerprintComparisonMethodEnum{$/;"	s	namespace:CompressedCuckoo
+FingerprintReadMethodEnum	compressed_cuckoo_config.h	/^  enum struct FingerprintReadMethodEnum{$/;"	s	namespace:CompressedCuckoo
+FixedPoint	fixed_point.h	/^    constexpr FixedPoint(uint64_t numerator, uint64_t denominator) : $/;"	f	struct:CompressedCuckoo::FixedPoint
+FixedPoint	fixed_point.h	/^    explicit constexpr FixedPoint(SerializedFixedPoint serialized_fixed_point) :$/;"	f	struct:CompressedCuckoo::FixedPoint
+FixedPoint	fixed_point.h	/^    explicit constexpr FixedPoint(double fp_representation) :$/;"	f	struct:CompressedCuckoo::FixedPoint
+FixedPoint	fixed_point.h	/^  struct FixedPoint{$/;"	s	namespace:CompressedCuckoo
+GenerateIndexTagHash	benchmarking/cuckoofilter/src/cuckoofilter.h	/^  inline void GenerateIndexTagHash(const ItemType& item, size_t* index,$/;"	f	class:cuckoofilter::CuckooFilter
+GenerateRandom64	benchmarking/cuckoofilter/benchmarks/random.h	/^::std::vector<::std::uint64_t> GenerateRandom64(::std::size_t count) {$/;"	f
+HASH_LITTLE_ENDIAN	benchmarking/cuckoofilter/src/hashutil.cc	26;"	d	file:
+HEADERS	benchmarking/Makefile	/^HEADERS=$(wildcard *.h)$/;"	m
+HEADERS	benchmarking/cuckoofilter/Makefile	/^HEADERS = $(wildcard src\/*.h)$/;"	m
+HEADERS	benchmarking/cuckoofilter/benchmarks/Makefile	/^HEADERS = $(wildcard ..\/src\/*.h) *.h$/;"	m
+HYBRID_PIECEWISE	compressed_cuckoo_config.h	/^    HYBRID_PIECEWISE, \/\/ Starts off as first-fit and then transitions to two choice$/;"	m	struct:CompressedCuckoo::InsertionMethodEnum
+HYBRID_SIMPLE	compressed_cuckoo_config.h	/^    HYBRID_SIMPLE,$/;"	m	struct:CompressedCuckoo::InsertionMethodEnum
+HashUtil	benchmarking/cuckoofilter/src/hashutil.h	/^class HashUtil {$/;"	c	namespace:cuckoofilter
+INCLUDE	benchmarking/Makefile	/^INCLUDE=-I$(CUCKOO_REFERENCE_DIR)\/src -I..\/$/;"	m
+INLINE	block.h	50;"	d
+INLINE	compressed_cuckoo_filter.h	61;"	d
+IndexHash	benchmarking/cuckoofilter/src/cuckoofilter.h	/^  inline size_t IndexHash(uint32_t hv) const {$/;"	f	class:cuckoofilter::CuckooFilter
+Info	benchmarking/cuckoofilter/src/cuckoofilter.h	/^std::string CuckooFilter<ItemType, bits_per_item, TableType, HashFamily>::Info() const {$/;"	f	class:cuckoofilter::CuckooFilter
+Info	benchmarking/cuckoofilter/src/packedtable.h	/^  std::string Info() const {$/;"	f	class:cuckoofilter::PackedTable
+Info	benchmarking/cuckoofilter/src/singletable.h	/^  std::string Info() const {$/;"	f	class:cuckoofilter::SingleTable
+InsertStatus	compressed_cuckoo_config.h	/^  enum struct InsertStatus{$/;"	s	namespace:CompressedCuckoo
+InsertTagToBucket	benchmarking/cuckoofilter/src/packedtable.h	/^  bool InsertTagToBucket(const size_t i, const uint32_t tag, const bool kickout,$/;"	f	class:cuckoofilter::PackedTable
+InsertTagToBucket	benchmarking/cuckoofilter/src/singletable.h	/^  inline bool InsertTagToBucket(const size_t i, const uint32_t tag,$/;"	f	class:cuckoofilter::SingleTable
+InsertionMethodEnum	compressed_cuckoo_config.h	/^  enum struct InsertionMethodEnum{$/;"	s	namespace:CompressedCuckoo
+LDFLAGS	benchmarking/Makefile	/^LDFLAGS="$(CUCKOO_REFERENCE_DIR)"\/src\/hashutil.o -lcrypto -lm$/;"	m
+LEMIRE_FINGERPRINT_MULTIPLY	compressed_cuckoo_config.h	/^    LEMIRE_FINGERPRINT_MULTIPLY,$/;"	m	struct:CompressedCuckoo::OverflowTrackingArrayHashingMethodEnum
+LIBOBJECTS	benchmarking/cuckoofilter/Makefile	/^LIBOBJECTS = \\$/;"	m
+LOG_BUCKET_BYTE_SIZE	benchmarking/cuckoofilter/src/simd-block.h	/^  static constexpr int LOG_BUCKET_BYTE_SIZE = 5;$/;"	m	class:SimdBlockFilter
+LoadFactor	benchmarking/cuckoofilter/src/cuckoofilter.h	/^  double LoadFactor() const { return 1.0 * Size() \/ table_->SizeInTags(); }$/;"	f	class:cuckoofilter::CuckooFilter
+MD5Hash	benchmarking/cuckoofilter/src/hashutil.cc	/^std::string HashUtil::MD5Hash(const char *inbuf, size_t in_length) {$/;"	f	class:cuckoofilter::HashUtil
+Metrics	benchmarking/cuckoofilter/benchmarks/conext-table3.cc	/^struct Metrics {$/;"	s	file:
+MixIn	benchmarking/cuckoofilter/benchmarks/random.h	/^::std::vector<T> MixIn(const T* x_begin, const T* x_end, const T* y_begin, const T* y_end,$/;"	f
+Morton	block.h	/^namespace Morton{$/;"	n
+Morton15_12	morton_sample_configs.h	/^  > Morton15_12;$/;"	t	namespace:CompressedCuckoo
+Morton15_16	morton_sample_configs.h	/^  > Morton15_16;$/;"	t	namespace:CompressedCuckoo
+Morton15_18	morton_sample_configs.h	/^  > Morton15_18;$/;"	t	namespace:CompressedCuckoo
+Morton15_6	morton_sample_configs.h	/^  > Morton15_6;$/;"	t	namespace:CompressedCuckoo
+Morton15_8	morton_sample_configs.h	/^  > Morton15_8;$/;"	t	namespace:CompressedCuckoo
+Morton1_8	morton_sample_configs.h	/^  > Morton1_8;$/;"	t	namespace:CompressedCuckoo
+Morton3_12	morton_sample_configs.h	/^  > Morton3_12;$/;"	t	namespace:CompressedCuckoo
+Morton3_16	morton_sample_configs.h	/^  > Morton3_16;$/;"	t	namespace:CompressedCuckoo
+Morton3_18	morton_sample_configs.h	/^  > Morton3_18;$/;"	t	namespace:CompressedCuckoo
+Morton3_6	morton_sample_configs.h	/^  > Morton3_6;$/;"	t	namespace:CompressedCuckoo
+Morton3_8	morton_sample_configs.h	/^  > Morton3_8;$/;"	t	namespace:CompressedCuckoo
+Morton7_12	morton_sample_configs.h	/^  > Morton7_12;$/;"	t	namespace:CompressedCuckoo
+Morton7_16	morton_sample_configs.h	/^  > Morton7_16;$/;"	t	namespace:CompressedCuckoo
+Morton7_18	morton_sample_configs.h	/^  > Morton7_18;$/;"	t	namespace:CompressedCuckoo
+Morton7_6	morton_sample_configs.h	/^  > Morton7_6;$/;"	t	namespace:CompressedCuckoo
+Morton7_8	morton_sample_configs.h	/^  > Morton7_8;$/;"	t	namespace:CompressedCuckoo
+MurmurHash	benchmarking/cuckoofilter/src/hashutil.cc	/^uint32_t HashUtil::MurmurHash(const std::string &s, uint32_t seed) {$/;"	f	class:cuckoofilter::HashUtil
+MurmurHash	benchmarking/cuckoofilter/src/hashutil.cc	/^uint32_t HashUtil::MurmurHash(const void *buf, size_t len, uint32_t seed) {$/;"	f	class:cuckoofilter::HashUtil
+NAIVE_FULL_EXCLUSIVE_SCAN	compressed_cuckoo_config.h	/^    NAIVE_FULL_EXCLUSIVE_SCAN,$/;"	m	struct:CompressedCuckoo::ReductionMethodEnum
+N_ENTS	benchmarking/cuckoofilter/src/permencoding.h	/^  static const size_t N_ENTS = 3876;$/;"	m	class:cuckoofilter::PermEncoding
+NotEnoughSpace	benchmarking/cuckoofilter/src/cuckoofilter.h	/^  NotEnoughSpace = 2,$/;"	e	enum:cuckoofilter::Status
+NotFound	benchmarking/cuckoofilter/src/cuckoofilter.h	/^  NotFound = 1,$/;"	e	enum:cuckoofilter::Status
+NotSupported	benchmarking/cuckoofilter/src/cuckoofilter.h	/^  NotSupported = 3,$/;"	e	enum:cuckoofilter::Status
+NowNanos	benchmarking/cuckoofilter/benchmarks/timing.h	/^::std::uint64_t NowNanos() {$/;"	f
+NullHash	benchmarking/cuckoofilter/src/hashutil.cc	/^uint32_t HashUtil::NullHash(const void *buf, size_t length,$/;"	f	class:cuckoofilter::HashUtil
+NumBuckets	benchmarking/cuckoofilter/src/packedtable.h	/^  size_t NumBuckets() const {$/;"	f	class:cuckoofilter::PackedTable
+NumBuckets	benchmarking/cuckoofilter/src/singletable.h	/^  size_t NumBuckets() const {$/;"	f	class:cuckoofilter::SingleTable
+NumTagsInBucket	benchmarking/cuckoofilter/src/singletable.h	/^  inline size_t NumTagsInBucket(const size_t i) const {$/;"	f	class:cuckoofilter::SingleTable
+OPENSSL_zalloc	benchmarking/cuckoofilter/src/hashutil.cc	/^static void *OPENSSL_zalloc(size_t num)$/;"	f	namespace:cuckoofilter
+OPT	benchmarking/Makefile	/^OPT=-Ofast -march=native -mpopcnt $/;"	m
+OPT	benchmarking/cuckoofilter/Makefile	/^OPT = -Ofast -march=native -DNDEBUG$/;"	m
+OPT	benchmarking/cuckoofilter/benchmarks/Makefile	/^OPT = -O3 -DNDEBUG$/;"	m
+Ok	benchmarking/cuckoofilter/src/cuckoofilter.h	/^  Ok = 0,$/;"	e	enum:cuckoofilter::Status
+OverflowTrackingArrayHashingMethodEnum	compressed_cuckoo_config.h	/^  enum struct OverflowTrackingArrayHashingMethodEnum{$/;"	s	namespace:CompressedCuckoo
+PARALLEL_REDUCE	compressed_cuckoo_config.h	/^    PARALLEL_REDUCE,$/;"	m	struct:CompressedCuckoo::ReductionMethodEnum
+PLACED_IN_PRIMARY_BUCKET	compressed_cuckoo_config.h	/^    PLACED_IN_PRIMARY_BUCKET = 1,$/;"	m	struct:CompressedCuckoo::InsertStatus
+PLACED_IN_SECONDARY_BUCKET	compressed_cuckoo_config.h	/^    PLACED_IN_SECONDARY_BUCKET = 2$/;"	m	struct:CompressedCuckoo::InsertStatus
+POP_CNT	compressed_cuckoo_config.h	/^    POP_CNT, \/\/ Must only use when counters fit into a single atom$/;"	m	struct:CompressedCuckoo::ReductionMethodEnum
+PREFIX	benchmarking/cuckoofilter/Makefile	/^PREFIX=\/usr\/local$/;"	m
+PackedTable	benchmarking/cuckoofilter/src/packedtable.h	/^  explicit PackedTable(size_t num) : num_buckets_(num) {$/;"	f	class:cuckoofilter::PackedTable
+PackedTable	benchmarking/cuckoofilter/src/packedtable.h	/^class PackedTable {$/;"	c	namespace:cuckoofilter
+PermEncoding	benchmarking/cuckoofilter/src/permencoding.h	/^  PermEncoding() {$/;"	f	class:cuckoofilter::PermEncoding
+PermEncoding	benchmarking/cuckoofilter/src/permencoding.h	/^class PermEncoding {$/;"	c	namespace:cuckoofilter
+PrintBucket	benchmarking/cuckoofilter/src/packedtable.h	/^  void PrintBucket(const size_t i) const {$/;"	f	class:cuckoofilter::PackedTable
+PrintTags	benchmarking/cuckoofilter/src/packedtable.h	/^  void PrintTags(uint32_t tags[4]) const {$/;"	f	class:cuckoofilter::PackedTable
+PrintUtil	benchmarking/cuckoofilter/src/printutil.h	/^class PrintUtil {$/;"	c	namespace:cuckoofilter
+RAW_BUCKET_HASH	compressed_cuckoo_config.h	/^    RAW_BUCKET_HASH,$/;"	m	struct:CompressedCuckoo::OverflowTrackingArrayHashingMethodEnum
+READ_CROSS	compressed_cuckoo_config.h	/^    READ_CROSS,$/;"	m	struct:CompressedCuckoo::CounterReadMethodEnum
+READ_CROSS	compressed_cuckoo_config.h	/^    READ_CROSS,$/;"	m	struct:CompressedCuckoo::FingerprintReadMethodEnum
+READ_RAW	compressed_cuckoo_config.h	/^    READ_RAW,  \/\/ If counters are always in atom 0 of block 0, just read that.$/;"	m	struct:CompressedCuckoo::CounterReadMethodEnum
+READ_SIMPLE	compressed_cuckoo_config.h	/^    READ_SIMPLE,$/;"	m	struct:CompressedCuckoo::CounterReadMethodEnum
+READ_SIMPLE	compressed_cuckoo_config.h	/^    READ_SIMPLE,$/;"	m	struct:CompressedCuckoo::FingerprintReadMethodEnum
+RN_Gen	benchmarking/benchmark_util.h	/^    constexpr RN_Gen(T range_start, T range_stop) : m_rn_gen(), $/;"	f	struct:Benchmark::RN_Gen
+RN_Gen	benchmarking/benchmark_util.h	/^  struct RN_Gen{$/;"	s	namespace:Benchmark
+ReadBucket	benchmarking/cuckoofilter/src/packedtable.h	/^  inline void ReadBucket(const size_t i, uint32_t tags[4]) const {$/;"	f	class:cuckoofilter::PackedTable
+ReadTag	benchmarking/cuckoofilter/src/singletable.h	/^  inline uint32_t ReadTag(const size_t i, const size_t j) const {$/;"	f	class:cuckoofilter::SingleTable
+ReductionMethodEnum	compressed_cuckoo_config.h	/^  enum struct ReductionMethodEnum{$/;"	s	namespace:CompressedCuckoo
+SAMPLE_SIZE	benchmarking/cuckoofilter/benchmarks/bulk-insert-and-query.cc	/^const size_t SAMPLE_SIZE = 1000 * 1000;$/;"	v
+SAMPLE_SIZE	benchmarking/cuckoofilter/benchmarks/conext-figure5.cc	/^const size_t SAMPLE_SIZE = 1000 * 1000;$/;"	v
+SHA1Hash	benchmarking/cuckoofilter/src/hashutil.cc	/^std::string HashUtil::SHA1Hash(const char *inbuf, size_t in_length) {$/;"	f	class:cuckoofilter::HashUtil
+SRC	benchmarking/cuckoofilter/benchmarks/Makefile	/^SRC = ..\/src\/hashutil.cc$/;"	m
+SRCS	benchmarking/Makefile	/^SRCS=$(wildcard *.cc)$/;"	m
+SerializedFixedPoint	fixed_point.h	/^  typedef __uint128_t SerializedFixedPoint;$/;"	t	namespace:CompressedCuckoo
+SimdBlockFilter	benchmarking/cuckoofilter/src/simd-block.h	/^  SimdBlockFilter(SimdBlockFilter&& that)$/;"	f	class:SimdBlockFilter
+SimdBlockFilter	benchmarking/cuckoofilter/src/simd-block.h	/^SimdBlockFilter<HashFamily>::SimdBlockFilter(const int log_heap_space)$/;"	f	class:SimdBlockFilter
+SimdBlockFilter	benchmarking/cuckoofilter/src/simd-block.h	/^class SimdBlockFilter {$/;"	c
+SimpleTabulation	benchmarking/cuckoofilter/src/hashutil.h	/^  SimpleTabulation() {$/;"	f	class:cuckoofilter::SimpleTabulation
+SimpleTabulation	benchmarking/cuckoofilter/src/hashutil.h	/^class SimpleTabulation {$/;"	c	namespace:cuckoofilter
+SingleTable	benchmarking/cuckoofilter/src/singletable.h	/^  explicit SingleTable(const size_t num) : num_buckets_(num) {$/;"	f	class:cuckoofilter::SingleTable
+SingleTable	benchmarking/cuckoofilter/src/singletable.h	/^class SingleTable {$/;"	c	namespace:cuckoofilter
+Size	benchmarking/cuckoofilter/src/cuckoofilter.h	/^  size_t Size() const { return num_items_; }$/;"	f	class:cuckoofilter::CuckooFilter
+SizeInBytes	benchmarking/cuckoofilter/src/cuckoofilter.h	/^  size_t SizeInBytes() const { return table_->SizeInBytes(); }$/;"	f	class:cuckoofilter::CuckooFilter
+SizeInBytes	benchmarking/cuckoofilter/src/packedtable.h	/^  size_t SizeInBytes() const { $/;"	f	class:cuckoofilter::PackedTable
+SizeInBytes	benchmarking/cuckoofilter/src/simd-block.h	/^  uint64_t SizeInBytes() const { return sizeof(Bucket) * (1ull << log_num_buckets_); }$/;"	f	class:SimdBlockFilter
+SizeInBytes	benchmarking/cuckoofilter/src/singletable.h	/^  size_t SizeInBytes() const { $/;"	f	class:cuckoofilter::SingleTable
+SizeInTags	benchmarking/cuckoofilter/src/packedtable.h	/^  size_t SizeInTags() const { $/;"	f	class:cuckoofilter::PackedTable
+SizeInTags	benchmarking/cuckoofilter/src/singletable.h	/^  size_t SizeInTags() const { $/;"	f	class:cuckoofilter::SingleTable
+SortPair	benchmarking/cuckoofilter/src/packedtable.h	/^  inline void SortPair(uint32_t &a, uint32_t &b) {$/;"	f	class:cuckoofilter::PackedTable
+SortTags	benchmarking/cuckoofilter/src/packedtable.h	/^  inline void SortTags(uint32_t *tags) {$/;"	f	class:cuckoofilter::PackedTable
+Statistics	benchmarking/cuckoofilter/benchmarks/bulk-insert-and-query.cc	/^struct Statistics {$/;"	s	file:
+StatisticsTableHeader	benchmarking/cuckoofilter/benchmarks/bulk-insert-and-query.cc	/^string StatisticsTableHeader(int type_width, int find_percent_count) {$/;"	f
+Status	benchmarking/cuckoofilter/src/cuckoofilter.h	/^enum Status {$/;"	g	namespace:cuckoofilter
+StoreParams	vector_types.h	/^struct StoreParams{ \/\/ TODO: Optimize this a bit$/;"	s
+StoreParamsSOA	vector_types.h	/^struct StoreParamsSOA{$/;"	s
+SuperFastHash	benchmarking/cuckoofilter/src/hashutil.cc	/^uint32_t HashUtil::SuperFastHash(const std::string &s) {$/;"	f	class:cuckoofilter::HashUtil
+SuperFastHash	benchmarking/cuckoofilter/src/hashutil.cc	/^uint32_t HashUtil::SuperFastHash(const void *buf, size_t len) {$/;"	f	class:cuckoofilter::HashUtil
+TABLE_BASED_OFFSET	compressed_cuckoo_config.h	/^    TABLE_BASED_OFFSET,$/;"	m	struct:CompressedCuckoo::AlternateBucketSelectionMethodEnum
+TARGETS	benchmarking/Makefile	/^TARGETS=benchmark \\$/;"	m
+TEST	benchmarking/cuckoofilter/Makefile	/^TEST = test$/;"	m
+TWO_CHOICE	compressed_cuckoo_config.h	/^    TWO_CHOICE,$/;"	m	struct:CompressedCuckoo::InsertionMethodEnum
+TagHash	benchmarking/cuckoofilter/src/cuckoofilter.h	/^  inline uint32_t TagHash(uint32_t hv) const {$/;"	f	class:cuckoofilter::CuckooFilter
+Test	test_util.h	/^namespace Test{$/;"	n
+TwoIndependentMultiplyShift	benchmarking/cuckoofilter/src/hashutil.h	/^  TwoIndependentMultiplyShift() {$/;"	f	class:cuckoofilter::TwoIndependentMultiplyShift
+TwoIndependentMultiplyShift	benchmarking/cuckoofilter/src/hashutil.h	/^class TwoIndependentMultiplyShift {$/;"	c	namespace:cuckoofilter
+UNROLL	compressed_cuckoo_filter.h	64;"	d
+VARIABLE_COUNT	compressed_cuckoo_config.h	/^    VARIABLE_COUNT,$/;"	m	struct:CompressedCuckoo::FingerprintComparisonMethodEnum
+VictimCache	benchmarking/cuckoofilter/src/cuckoofilter.h	/^  } VictimCache;$/;"	t	class:cuckoofilter::CuckooFilter	typeref:struct:cuckoofilter::CuckooFilter::__anon1
+WriteBucket	benchmarking/cuckoofilter/src/packedtable.h	/^  inline void WriteBucket(const size_t i, uint32_t tags[4], bool sort = true) {$/;"	f	class:cuckoofilter::PackedTable
+WriteTag	benchmarking/cuckoofilter/src/singletable.h	/^  inline void WriteTag(const size_t i, const size_t j, const uint32_t t) {$/;"	f	class:cuckoofilter::SingleTable
+_BENCHMARK_MF_CONFIG_H	benchmarking/benchmark_mf_config.h	40;"	d
+_BENCHMARK_MF_H	benchmarking/benchmark_mf.h	38;"	d
+_BENCHMARK_UTIL_H	benchmarking/benchmark_util.h	38;"	d
+_BF_H	bf.h	38;"	d
+_BLOCK_H	block.h	38;"	d
+_COMPRESSED_CUCKOO_CONFIG_H	compressed_cuckoo_config.h	38;"	d
+_COMPRESSED_CUCKOO_FILTER_H	compressed_cuckoo_filter.h	38;"	d
+_DEBUG	compressed_cuckoo_filter.h	/^    constexpr static bool _DEBUG = false; \/\/ For debug prints$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_FIXED_POINT_H	fixed_point.h	38;"	d
+_HASH_UTIL_H	hash_util.h	41;"	d
+_MORTON_FILTER_H	morton_filter.h	38;"	d
+_MORTON_SAMPLE_CONFIGS_H	morton_sample_configs.h	42;"	d
+_MORTON_UTIL_H	morton_util.h	38;"	d
+_N	vector_types.h	/^  constexpr uint64_t _N = 4;$/;"	v
+_N	vector_types.h	/^  constexpr uint64_t _N = 8;$/;"	v
+_TEST_UTIL_H	test_util.h	38;"	d
+_UTIL_H	util.h	38;"	d
+_VECTOR_TYPES_H	vector_types.h	38;"	d
+_alternate_bucket_selection_method	compressed_cuckoo_filter.h	/^      _alternate_bucket_selection_method = t_alternate_bucket_selection_method;$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_bits_per_uncompressed_bucket	compressed_cuckoo_filter.h	/^    constexpr static uint_fast64_t _bits_per_uncompressed_bucket = $/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_block_fullness_array	compressed_cuckoo_filter.h	/^    std::vector<bool> _block_fullness_array;$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_block_fullness_array_enabled	compressed_cuckoo_filter.h	/^    constexpr static bool _block_fullness_array_enabled = $/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_block_size_bits	compressed_cuckoo_filter.h	/^    constexpr static uint_fast16_t _block_size_bits = t_block_size_bits;$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_buckets_per_block	compressed_cuckoo_filter.h	/^    constexpr static uint_fast64_t _buckets_per_block = (_block_size_bits - $/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_collision_resolution_enabled	compressed_cuckoo_filter.h	/^    constexpr static bool _collision_resolution_enabled = $/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_denominator	fixed_point.h	/^    uint64_t _denominator;$/;"	m	struct:CompressedCuckoo::FixedPoint
+_fingerprint_comparison_method	compressed_cuckoo_filter.h	/^      _fingerprint_comparison_method = t_fingerprint_comparison_method;$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_fingerprint_len_bits	compressed_cuckoo_filter.h	/^    constexpr static uint_fast16_t _fingerprint_len_bits = t_fingerprint_len_bits;$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_fingerprint_offset	compressed_cuckoo_filter.h	/^    constexpr static uint_fast64_t _fingerprint_offset = _fullness_counters_offset + _buckets_per_block * _fullness_counter_width + _ota_len_bits;$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_fullness_counter_width	compressed_cuckoo_filter.h	/^    constexpr static uint_fast64_t _fullness_counter_width = $/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_fullness_counters_offset	compressed_cuckoo_filter.h	/^    constexpr static uint_fast64_t _fullness_counters_offset = 0;$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_handle_conflicts	compressed_cuckoo_filter.h	/^    constexpr static bool _handle_conflicts = t_handle_conflicts;$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_hasher	compressed_cuckoo_filter.h	/^    BitMixMurmur _hasher; \/\/ Yields more consistent performance$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_insertion_method	compressed_cuckoo_filter.h	/^    constexpr static InsertionMethodEnum _insertion_method = $/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_max_fingerprints_per_block	compressed_cuckoo_filter.h	/^    constexpr static uint_fast64_t _max_fingerprints_per_block = (_block_size_bits - _ota_len_bits - _buckets_per_block * _fullness_counter_width) \/ _fingerprint_len_bits;$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_max_pop_count_width_in_bits	compressed_cuckoo_filter.h	/^    constexpr static uint_fast8_t _max_pop_count_width_in_bits = 128;$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_morton_filter_functionality_enabled	compressed_cuckoo_filter.h	/^    constexpr static bool _morton_filter_functionality_enabled = $/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_morton_ota_hashing_method	compressed_cuckoo_filter.h	/^      _morton_ota_hashing_method = t_morton_ota_hashing_method;$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_numerator	fixed_point.h	/^    uint64_t _numerator;$/;"	m	struct:CompressedCuckoo::FixedPoint
+_ota_lbi_insertion_threshold	compressed_cuckoo_filter.h	/^    constexpr static int_fast16_t _ota_lbi_insertion_threshold = -1; $/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_ota_len_bits	compressed_cuckoo_filter.h	/^    constexpr static uint_fast16_t _ota_len_bits = t_ota_len_bits;$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_overflow_tracking_array_offset	compressed_cuckoo_filter.h	/^    constexpr static uint_fast64_t _overflow_tracking_array_offset = _fullness_counters_offset + _buckets_per_block * _fullness_counter_width;$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_popcount_masks	compressed_cuckoo_filter.h	/^    atom_t _popcount_masks[max_fullness_counter_width] = {};$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_popcount_masks128	compressed_cuckoo_filter.h	/^    __uint128_t _popcount_masks128[max_fullness_counter_width] = {}; $/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_print_access_counts	compressed_cuckoo_filter.h	/^    constexpr static bool _print_access_counts = false; $/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_read_counters_method	compressed_cuckoo_filter.h	/^    constexpr static CounterReadMethodEnum _read_counters_method = $/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_read_fingerprints_method	compressed_cuckoo_filter.h	/^    constexpr static FingerprintReadMethodEnum _read_fingerprints_method = $/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_reduction_method	compressed_cuckoo_filter.h	/^    constexpr static ReductionMethodEnum _reduction_method = $/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_remap_enabled	compressed_cuckoo_filter.h	/^    constexpr static bool _remap_enabled = t_remap_enabled;$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_resize_count	compressed_cuckoo_filter.h	/^    uint_fast16_t _resize_count;   $/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_resizing_enabled	compressed_cuckoo_filter.h	/^    constexpr static bool _resizing_enabled = t_resizing_enabled;$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_slots_per_bucket	compressed_cuckoo_filter.h	/^    constexpr static uint_fast16_t _slots_per_bucket = t_slots_per_bucket;$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_special_null_fingerprint	compressed_cuckoo_filter.h	/^    constexpr static bool _special_null_fingerprint = false;$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_storage	compressed_cuckoo_filter.h	/^    block_t* _storage;$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_summed_counters	compressed_cuckoo_filter.h	/^    counter_t* _summed_counters; \/\/[_buckets_per_block + 1];$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_total_blocks	compressed_cuckoo_filter.h	/^    uint_fast64_t _total_blocks;$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_total_buckets	compressed_cuckoo_filter.h	/^    uint_fast64_t _total_buckets;$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_total_slots	compressed_cuckoo_filter.h	/^    uint_fast64_t _total_slots;$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+_use_bloom_ota	compressed_cuckoo_filter.h	/^    constexpr static bool _use_bloom_ota = false; \/\/ The bit vector was faster.$/;"	m	struct:CompressedCuckoo::CompressedCuckooFilter
+add	block.h	/^    inline void add(uint64_t index, atom_t item){$/;"	f	struct:Morton::Block
+add	block.h	/^    inline void add(uint64_t raw_offset_bits, uint64_t field_width_bits,$/;"	f	struct:Morton::Block
+add_	benchmarking/cuckoofilter/src/hashutil.h	/^  unsigned __int128 multiply_, add_;$/;"	m	class:cuckoofilter::TwoIndependentMultiplyShift
+add_count	benchmarking/cuckoofilter/benchmarks/conext-table3.cc	/^  double add_count;  \/\/ # of items (million)$/;"	m	struct:Metrics	file:
+add_cross	block.h	/^    INLINE void add_cross(uint64_t index, atom_t item){$/;"	f	struct:Morton::Block
+add_cross	block.h	/^    INLINE void add_cross(uint64_t raw_offset_bits, $/;"	f	struct:Morton::Block
+add_cross_left_displace	block.h	/^    INLINE void add_cross_left_displace(uint64_t raw_offset_bits, $/;"	f	struct:Morton::Block
+add_cross_left_displace_v2	block.h	/^    INLINE void add_cross_left_displace_v2(uint64_t raw_offset_bits, $/;"	f	struct:Morton::Block
+add_left_displace	block.h	/^    INLINE void add_left_displace(uint64_t raw_offset_bytes,$/;"	f	struct:Morton::Block
+add_t	block.h	/^    inline void add_t(uint64_t raw_offset_bits, uint64_t field_width_bits, $/;"	f	struct:Morton::Block
+adds_per_nano	benchmarking/cuckoofilter/benchmarks/bulk-insert-and-query.cc	/^  double adds_per_nano;$/;"	m	struct:Statistics	file:
+allocate_cache_aligned_storage	compressed_cuckoo_filter.h	/^  inline block_t* allocate_cache_aligned_storage(uint64_t total_blocks){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+alternate_bucket_selection_method	benchmarking/benchmark_mf_config.h	/^  constexpr AlternateBucketSelectionMethodEnum alternate_bucket_selection_method=$/;"	m	namespace:bench_mf
+ar_atom	vector_types.h	/^typedef std::array<atom_t, batch_size> ar_atom;$/;"	t
+ar_counter	vector_types.h	/^typedef std::array<counter_t, batch_size> ar_counter;$/;"	t
+ar_hash	vector_types.h	/^typedef std::array<hash_t, batch_size> ar_hash;$/;"	t
+ar_key	vector_types.h	/^typedef std::array<keys_t, batch_size> ar_key;$/;"	t
+ar_store_params	vector_types.h	/^typedef std::array<StoreParams, batch_size> ar_store_params;$/;"	t
+ar_u16	vector_types.h	/^typedef std::array<uint16_t, batch_size> ar_u16;$/;"	t
+ar_u32	vector_types.h	/^typedef std::array<uint32_t, batch_size> ar_u32;$/;"	t
+ar_u8	vector_types.h	/^typedef std::array<uint8_t, batch_size> ar_u8;$/;"	t
+as_string	compressed_cuckoo_filter.h	/^  std::string as_string(){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+atom_size_bits	block.h	/^    const static uint64_t atom_size_bits = bytes_to_bits * sizeof(atom_t);$/;"	m	struct:Morton::Block
+atom_t	vector_types.h	/^  typedef uint32_t atom_t;$/;"	t
+atom_t	vector_types.h	/^  typedef uint64_t atom_t;$/;"	t
+atoms_per_block	block.h	/^    const static uint64_t atoms_per_block = block_size_bits \/ (atom_size_bits);$/;"	m	struct:Morton::Block
+batch_size	vector_types.h	/^constexpr uint_fast64_t batch_size = 128;$/;"	v
+bench_mf	benchmarking/benchmark_mf_config.h	/^namespace bench_mf{$/;"	n
+benchmark	benchmarking/benchmark.cc	/^void benchmark(){$/;"	f
+benchmark_deletions	benchmarking/benchmark_cf.h	/^double benchmark_deletions(uint64_t total_slots, double target_lf){$/;"	f
+benchmark_deletions	benchmarking/benchmark_mf.h	/^double benchmark_deletions(uint64_t total_slots, double target_lf){$/;"	f
+benchmark_deletions	benchmarking/benchmark_ss_cf.cc	/^double benchmark_deletions(uint64_t total_slots, double target_lf){$/;"	f
+benchmark_insertions	benchmarking/benchmark_cf.h	/^double benchmark_insertions(uint64_t total_slots, double target_lf){$/;"	f
+benchmark_insertions	benchmarking/benchmark_mf.h	/^double benchmark_insertions(uint64_t total_slots, double target_lf){$/;"	f
+benchmark_insertions	benchmarking/benchmark_ss_cf.cc	/^double benchmark_insertions(uint64_t total_slots, double target_lf){$/;"	f
+benchmark_lookups	benchmarking/benchmark_cf.h	/^double benchmark_lookups(uint64_t total_slots, double target_lf, $/;"	f
+benchmark_lookups	benchmarking/benchmark_mf.h	/^double benchmark_lookups(uint64_t total_slots, double target_lf, $/;"	f
+benchmark_lookups	benchmarking/benchmark_ss_cf.cc	/^double benchmark_lookups(uint64_t total_slots, double target_lf, $/;"	f
+bin_string	util.h	/^  inline std::string bin_string(INT_TYPE integer){$/;"	f	namespace:util
+bin_string	util.h	/^  inline std::string bin_string(INT_TYPE integer, uint32_t spacing){$/;"	f	namespace:util
+bits_	benchmarking/cuckoofilter/src/singletable.h	/^    char bits_[kBytesPerBucket];$/;"	m	struct:cuckoofilter::SingleTable::Bucket
+bits_per_item	benchmarking/cuckoofilter/benchmarks/bulk-insert-and-query.cc	/^  double bits_per_item;$/;"	m	struct:Statistics	file:
+block_and_bucket_overflow_count	compressed_cuckoo_filter.h	/^      uint8_t block_and_bucket_overflow_count = 0;$/;"	m	struct:CompressedCuckoo::AccessCounter
+block_fullness_array_enabled	benchmarking/benchmark_mf_config.h	/^  constexpr bool block_fullness_array_enabled = false;$/;"	m	namespace:bench_mf
+block_id	vector_types.h	/^  hash_t block_id;              \/\/ Could go$/;"	m	struct:StoreParams
+block_ids	vector_types.h	/^  ar_hash block_ids;$/;"	m	struct:StoreParamsSOA
+block_overflow_count	compressed_cuckoo_filter.h	/^      uint8_t block_overflow_count = 0;$/;"	m	struct:CompressedCuckoo::AccessCounter
+block_size_bits	benchmarking/benchmark_mf_config.h	/^  constexpr uint16_t block_size_bits = 512;$/;"	m	namespace:bench_mf
+block_storage_as_bit_string	block.h	/^    std::string block_storage_as_bit_string(uint32_t spacing){$/;"	f	struct:Morton::Block
+bucket_overflow_count	compressed_cuckoo_filter.h	/^      uint8_t bucket_overflow_count = 0;$/;"	m	struct:CompressedCuckoo::AccessCounter
+bucket_start_index	vector_types.h	/^  counter_t bucket_start_index; \/\/ Stay$/;"	m	struct:StoreParams
+bucket_start_indexes	vector_types.h	/^  ar_counter bucket_start_indexes;$/;"	m	struct:StoreParamsSOA
+buckets_	benchmarking/cuckoofilter/src/packedtable.h	/^  char *buckets_;$/;"	m	class:cuckoofilter::PackedTable
+buckets_	benchmarking/cuckoofilter/src/singletable.h	/^  Bucket *buckets_;$/;"	m	class:cuckoofilter::SingleTable
+buckets_per_block	calculate_compression_ratio.py	/^  buckets_per_block = 64$/;"	v
+bytes_to_bits	block.h	/^const uint64_t bytes_to_bits = 8lu;$/;"	m	namespace:Morton
+bytes_to_hex	benchmarking/cuckoofilter/src/printutil.cc	/^std::string PrintUtil::bytes_to_hex(const char *data, size_t len) {$/;"	f	class:cuckoofilter::PrintUtil
+bytes_to_hex	benchmarking/cuckoofilter/src/printutil.cc	/^std::string PrintUtil::bytes_to_hex(const std::string &s) {$/;"	f	class:cuckoofilter::PrintUtil
+bytes_to_hex	benchmarking/cuckoofilter/src/printutil.h	/^  static std::string bytes_to_hex(const char *data, size_t len) {$/;"	f	class:cuckoofilter::PrintUtil
+bytes_to_hex	benchmarking/cuckoofilter/src/printutil.h	/^  static std::string bytes_to_hex(const std::string &s) {$/;"	f	class:cuckoofilter::PrintUtil
+calculate_mf_false_positive_ratio	benchmarking/benchmark.cc	/^double calculate_mf_false_positive_ratio(MF_CLASS& mf, double ota_occupancy, $/;"	f
+calculate_slot_compression_ratio_and_other_params	calculate_compression_ratio.py	/^def calculate_slot_compression_ratio_and_other_params(buckets_per_block, $/;"	f
+check_bloom_filter_ota	compressed_cuckoo_filter.h	/^  inline bool check_bloom_filter_ota(hash_t bucket_id, atom_t fingerprint,$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+clear	block.h	/^    inline void clear(uint64_t index){$/;"	f	struct:Morton::Block
+clear_cross	block.h	/^    inline void clear_cross(uint64_t index){$/;"	f	struct:Morton::Block
+clear_swath	block.h	/^    inline void clear_swath(uint64_t raw_offset_bits, uint64_t len_in_bits){$/;"	f	struct:Morton::Block
+collision_resolution_enabled	benchmarking/benchmark_mf_config.h	/^  constexpr bool collision_resolution_enabled = true;$/;"	m	namespace:bench_mf
+conflict_exists	compressed_cuckoo_filter.h	/^  INLINE bool conflict_exists(BlockedBF::BloomFilter<num_buckets>& bf, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+contains_and_update	bf.h	/^    inline bool contains_and_update(const hash_t item){$/;"	f	struct:BlockedBF::BloomFilter
+counter_index	vector_types.h	/^  uint16_t counter_index;       \/\/ Could go$/;"	m	struct:StoreParams
+counter_indexes	vector_types.h	/^  ar_u16 counter_indexes;$/;"	m	struct:StoreParamsSOA
+counter_t	vector_types.h	/^typedef uint8_t counter_t; \/\/ Used only in one implementation of scans$/;"	t
+counter_value	vector_types.h	/^  counter_t counter_value;         \/\/ Could go$/;"	m	struct:StoreParams
+counter_values	vector_types.h	/^  ar_counter counter_values;$/;"	m	struct:StoreParamsSOA
+cuckoofilter	benchmarking/cuckoofilter/src/bitsutil.h	/^namespace cuckoofilter {$/;"	n
+cuckoofilter	benchmarking/cuckoofilter/src/cuckoofilter.h	/^namespace cuckoofilter {$/;"	n
+cuckoofilter	benchmarking/cuckoofilter/src/debug.h	/^namespace cuckoofilter {$/;"	n
+cuckoofilter	benchmarking/cuckoofilter/src/hashutil.cc	/^namespace cuckoofilter {$/;"	n	file:
+cuckoofilter	benchmarking/cuckoofilter/src/hashutil.h	/^namespace cuckoofilter {$/;"	n
+cuckoofilter	benchmarking/cuckoofilter/src/packedtable.h	/^namespace cuckoofilter {$/;"	n
+cuckoofilter	benchmarking/cuckoofilter/src/permencoding.h	/^namespace cuckoofilter {$/;"	n
+cuckoofilter	benchmarking/cuckoofilter/src/printutil.cc	/^namespace cuckoofilter {$/;"	n	file:
+cuckoofilter	benchmarking/cuckoofilter/src/printutil.h	/^namespace cuckoofilter {$/;"	n
+cuckoofilter	benchmarking/cuckoofilter/src/singletable.h	/^namespace cuckoofilter {$/;"	n
+d	calculate_compression_ratio.py	/^  d = calculate_slot_compression_ratio_and_other_params(buckets_per_block, slots_per_bucket,$/;"	v
+debug_level	benchmarking/cuckoofilter/src/debug.h	12;"	d
+dec_table	benchmarking/cuckoofilter/src/permencoding.h	/^  uint16_t dec_table[N_ENTS];$/;"	m	class:cuckoofilter::PermEncoding
+decode	benchmarking/cuckoofilter/src/permencoding.h	/^  inline void decode(const uint16_t codeword, uint8_t lowbits[4]) const {$/;"	f	class:cuckoofilter::PermEncoding
+decrement_fullness_counter	compressed_cuckoo_filter.h	/^  INLINE void decrement_fullness_counter(block_t& b, uint32_t index, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+del_cross_right_displace	block.h	/^    INLINE void del_cross_right_displace(uint64_t raw_offset_bits,$/;"	f	struct:Morton::Block
+del_right_displace	block.h	/^    INLINE void del_right_displace(uint64_t raw_offset_bytes, uint64_t $/;"	f	struct:Morton::Block
+delete_fingerprint_right_displace	compressed_cuckoo_filter.h	/^  INLINE void delete_fingerprint_right_displace(block_t& block,$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+delete_item	compressed_cuckoo_filter.h	/^  inline bool delete_item(const keys_t key){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+delete_many	compressed_cuckoo_filter.h	/^  inline void delete_many(const std::vector<keys_t>& keys,$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+determine_alternate_bucket	compressed_cuckoo_filter.h	/^  INLINE hash_t determine_alternate_bucket(hash_t bucket_id,$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+determine_total_buckets	morton_util.h	/^  T determine_total_buckets(T slots_per_bucket, T total_slots, $/;"	f	namespace:CompressedCuckoo
+directory_	benchmarking/cuckoofilter/src/simd-block.h	/^  Bucket* directory_;$/;"	m	class:SimdBlockFilter
+directory_mask_	benchmarking/cuckoofilter/src/simd-block.h	/^  const uint32_t directory_mask_;$/;"	m	class:SimdBlockFilter
+divide_round_up_even	morton_util.h	/^  T divide_round_up_even(T input, T divisor){$/;"	f	namespace:CompressedCuckoo
+double_capacity	compressed_cuckoo_filter.h	/^  inline void double_capacity(){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+elements_in_block	vector_types.h	/^  counter_t elements_in_block;  \/\/ Stay$/;"	m	struct:StoreParams
+elements_in_blocks	vector_types.h	/^  ar_counter elements_in_blocks;$/;"	m	struct:StoreParamsSOA
+enc_table	benchmarking/cuckoofilter/src/permencoding.h	/^  uint16_t enc_table[1 << 16];$/;"	m	class:cuckoofilter::PermEncoding
+encode	benchmarking/cuckoofilter/src/permencoding.h	/^  inline uint16_t encode(const uint8_t lowbits[4]) const {$/;"	f	class:cuckoofilter::PermEncoding
+entries_per_atom	block.h	/^    const static uint64_t entries_per_atom = atom_size_bits \/ entry_size_bits;$/;"	m	struct:Morton::Block
+exclusive_reduce	compressed_cuckoo_filter.h	/^  INLINE uint16_t exclusive_reduce(const block_t& b,$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+exclusive_reduce_many	compressed_cuckoo_filter.h	/^  INLINE std::array<counter_t, SIZE> exclusive_reduce_many($/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+exclusive_reduce_with_parallel_sum	compressed_cuckoo_filter.h	/^  uint16_t exclusive_reduce_with_parallel_sum(const block_t& b,$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+exclusive_reduce_with_popcount	compressed_cuckoo_filter.h	/^  INLINE uint16_t exclusive_reduce_with_popcount(const block_t& b,$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+exclusive_reduce_with_popcount128	compressed_cuckoo_filter.h	/^  INLINE std::array<counter_t, SIZE> exclusive_reduce_with_popcount128($/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+exclusive_reduce_with_popcount128	compressed_cuckoo_filter.h	/^  INLINE uint16_t exclusive_reduce_with_popcount128(const block_t& b, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+exclusive_reduce_with_popcount64	compressed_cuckoo_filter.h	/^  INLINE std::array<counter_t, SIZE> exclusive_reduce_with_popcount64($/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+exclusive_reduce_with_popcount64	compressed_cuckoo_filter.h	/^  INLINE uint16_t exclusive_reduce_with_popcount64(const block_t& b, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+explicit_print	block.h	/^    const static bool explicit_print = true;$/;"	m	struct:Morton::Block
+f1	bf.h	/^    slot_type f1, f2, f3, f4;$/;"	m	struct:BlockedBF::Bucket
+f2	bf.h	/^    slot_type f1, f2, f3, f4;$/;"	m	struct:BlockedBF::Bucket
+f3	bf.h	/^    slot_type f1, f2, f3, f4;$/;"	m	struct:BlockedBF::Bucket
+f4	bf.h	/^    slot_type f1, f2, f3, f4;$/;"	m	struct:BlockedBF::Bucket
+false_positive_probabilty	benchmarking/cuckoofilter/benchmarks/bulk-insert-and-query.cc	/^  double false_positive_probabilty;$/;"	m	struct:Statistics	file:
+fan_et_al_partial_key_cuckoo_hash_alternate_bucket	compressed_cuckoo_filter.h	/^  INLINE hash_t fan_et_al_partial_key_cuckoo_hash_alternate_bucket(hash_t $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+fast_mod_alternative	util.h	/^  inline uint32_t fast_mod_alternative<uint32_t>(uint32_t raw_hash, $/;"	f	namespace:util
+fast_mod_alternative	util.h	/^  inline uint64_t fast_mod_alternative<uint64_t>(uint64_t raw_hash, $/;"	f	namespace:util
+fast_mod_alternativeN	util.h	/^  inline vN_u32 fast_mod_alternativeN<vN_u32, uint32_t>(vN_u32 raw_hashes, uint32_t modulus){$/;"	f	namespace:util
+final	benchmarking/cuckoofilter/src/hashutil.cc	15;"	d	file:
+finds_per_nano	benchmarking/cuckoofilter/benchmarks/bulk-insert-and-query.cc	/^  map<int, double> finds_per_nano; \/\/ The key is the percent of queries that were expected$/;"	m	struct:Statistics	file:
+fingerprint_comparison_method	benchmarking/benchmark_mf_config.h	/^  constexpr FingerprintComparisonMethodEnum fingerprint_comparison_method = $/;"	m	namespace:bench_mf
+fingerprint_function	compressed_cuckoo_filter.h	/^  INLINE atom_t fingerprint_function(const hash_t raw_hash) const{$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+fingerprint_len_bits	benchmarking/benchmark_mf_config.h	/^  constexpr uint16_t fingerprint_len_bits = 8;$/;"	m	namespace:bench_mf
+fingerprint_len_bits	calculate_compression_ratio.py	/^  fingerprint_len_bits = 8$/;"	v
+first_level_store	compressed_cuckoo_filter.h	/^  inline bool first_level_store(hash_t bucket_id, atom_t fingerprint, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+first_level_store_many	compressed_cuckoo_filter.h	/^  inline void first_level_store_many(const ar_hash& bucket_ids, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+fpr	benchmarking/cuckoofilter/benchmarks/conext-table3.cc	/^  double fpr;        \/\/ false positive rate (%)$/;"	m	struct:Metrics	file:
+full_exclusive_scan	compressed_cuckoo_filter.h	/^  inline counter_t* full_exclusive_scan(const uint64_t block_id){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+g_cache_aligned_allocate	compressed_cuckoo_config.h	/^  const bool g_cache_aligned_allocate = true;$/;"	m	namespace:CompressedCuckoo
+g_cache_line_size_bytes	compressed_cuckoo_config.h	/^  const size_t g_cache_line_size_bytes = 64;  \/\/ Change this as necessary$/;"	m	namespace:CompressedCuckoo
+gen_tables	benchmarking/cuckoofilter/src/permencoding.h	/^  void gen_tables(int base, int k, uint8_t dst[4], uint16_t &idx) {$/;"	f	class:cuckoofilter::PermEncoding
+generate_popcount_masks	compressed_cuckoo_filter.h	/^  inline void generate_popcount_masks(T* popcount_masks){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+generate_reduction_masks	compressed_cuckoo_filter.h	/^  inline void generate_reduction_masks(T* reduction_masks){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+get16bits	benchmarking/cuckoofilter/src/hashutil.cc	28;"	d	file:
+get_array_dimensions_as_string	compressed_cuckoo_filter.h	/^  std::string get_array_dimensions_as_string(){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+get_bucket_start_index	compressed_cuckoo_filter.h	/^  inline counter_t get_bucket_start_index(uint64_t block_id, uint16_t $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+get_max_slot_compression_ratio	compressed_cuckoo_filter.h	/^  double get_max_slot_compression_ratio(){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+get_ota_index	compressed_cuckoo_filter.h	/^  INLINE hash_t get_ota_index(hash_t bucket_id, atom_t fingerprint) const{$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+get_overflow_status	compressed_cuckoo_filter.h	/^  inline bool get_overflow_status(hash_t bucket_id, atom_t fingerprint) const{$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+handle_conflicts	benchmarking/benchmark_mf_config.h	/^  constexpr bool handle_conflicts = true;$/;"	m	namespace:bench_mf
+hash32N	hash_util.h	/^  inline T hash32N(T ks) const{ \/\/ Bit mix from MurmurHash32$/;"	f	struct:BitMixMurmur
+hash64N	hash_util.h	/^  inline T hash64N(T ks) const{ \/\/ Bit mix from MurmurHash64\/CLHash$/;"	f	struct:BitMixMurmur
+hashN	hash_util.h	/^  inline T hashN(T ks) const{$/;"	f	struct:BitMixMurmur
+hash_t	vector_types.h	/^  typedef uint32_t hash_t;$/;"	t
+hash_t	vector_types.h	/^  typedef uint64_t hash_t;$/;"	t
+hasher_	benchmarking/cuckoofilter/src/cuckoofilter.h	/^  HashFamily hasher_;$/;"	m	class:cuckoofilter::CuckooFilter
+hasher_	benchmarking/cuckoofilter/src/simd-block.h	/^  HashFamily hasher_;$/;"	m	class:SimdBlockFilter
+hasvalue12	benchmarking/cuckoofilter/src/bitsutil.h	15;"	d
+hasvalue16	benchmarking/cuckoofilter/src/bitsutil.h	19;"	d
+hasvalue4	benchmarking/cuckoofilter/src/bitsutil.h	9;"	d
+hasvalue8	benchmarking/cuckoofilter/src/bitsutil.h	12;"	d
+haszero12	benchmarking/cuckoofilter/src/bitsutil.h	14;"	d
+haszero16	benchmarking/cuckoofilter/src/bitsutil.h	17;"	d
+haszero4	benchmarking/cuckoofilter/src/bitsutil.h	8;"	d
+haszero8	benchmarking/cuckoofilter/src/bitsutil.h	11;"	d
+heap_allocate_table_and_summed_counters_buffer	compressed_cuckoo_filter.h	/^  void heap_allocate_table_and_summed_counters_buffer(){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+inc	block.h	/^    inline void inc(uint64_t raw_offset_bits, $/;"	f	struct:Morton::Block
+inc_cross	block.h	/^    inline void inc_cross(uint64_t raw_offset_bits, uint64_t field_width_bits, $/;"	f	struct:Morton::Block
+increment_fullness_counter	compressed_cuckoo_filter.h	/^  INLINE void increment_fullness_counter(block_t& b, uint32_t index){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+index	benchmarking/cuckoofilter/src/cuckoofilter.h	/^    size_t index;$/;"	m	struct:cuckoofilter::CuckooFilter::__anon1
+insert	compressed_cuckoo_filter.h	/^  inline bool insert(const keys_t key){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+insert_many	compressed_cuckoo_filter.h	/^  inline bool insert_many(const std::vector<keys_t>& keys, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+int_ceil	calculate_compression_ratio.py	/^def int_ceil(n):$/;"	f
+kBitsPerBucket	benchmarking/cuckoofilter/src/packedtable.h	/^  static const size_t kBitsPerBucket = (3 + kDirBitsPerTag) * 4;$/;"	m	class:cuckoofilter::PackedTable
+kBytesPerBucket	benchmarking/cuckoofilter/src/packedtable.h	/^  static const size_t kBytesPerBucket = (kBitsPerBucket + 7) >> 3;$/;"	m	class:cuckoofilter::PackedTable
+kBytesPerBucket	benchmarking/cuckoofilter/src/singletable.h	/^  static const size_t kBytesPerBucket =$/;"	m	class:cuckoofilter::SingleTable
+kDirBitsMask	benchmarking/cuckoofilter/src/packedtable.h	/^  static const uint32_t kDirBitsMask = ((1ULL << kDirBitsPerTag) - 1) << 4;$/;"	m	class:cuckoofilter::PackedTable
+kDirBitsPerTag	benchmarking/cuckoofilter/src/packedtable.h	/^  static const size_t kDirBitsPerTag = bits_per_tag - 4;$/;"	m	class:cuckoofilter::PackedTable
+kMaxCuckooCount	benchmarking/cuckoofilter/src/cuckoofilter.h	/^const size_t kMaxCuckooCount = 500;$/;"	m	namespace:cuckoofilter
+kTagMask	benchmarking/cuckoofilter/src/singletable.h	/^  static const uint32_t kTagMask = (1ULL << bits_per_tag) - 1;$/;"	m	class:cuckoofilter::SingleTable
+kTagsPerBucket	benchmarking/cuckoofilter/src/singletable.h	/^  static const size_t kTagsPerBucket = 4;$/;"	m	class:cuckoofilter::SingleTable
+keys_t	vector_types.h	/^  typedef uint32_t keys_t;$/;"	t
+keys_t	vector_types.h	/^  typedef uint64_t keys_t;$/;"	t
+len_	benchmarking/cuckoofilter/src/packedtable.h	/^  size_t len_;$/;"	m	class:cuckoofilter::PackedTable
+likely_contains	compressed_cuckoo_filter.h	/^  inline bool likely_contains(const keys_t key){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+likely_contains_many	compressed_cuckoo_filter.h	/^  inline void likely_contains_many(const std::vector<keys_t>& keys, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+log2	calculate_compression_ratio.py	/^def log2(n):$/;"	f
+log2ceil	calculate_compression_ratio.py	/^def log2ceil(n):$/;"	f
+log2ceil	util.h	/^  constexpr inline uint32_t log2ceil(uint32_t integer){$/;"	f	namespace:util
+log_num_buckets_	benchmarking/cuckoofilter/src/simd-block.h	/^  const int log_num_buckets_;$/;"	m	class:SimdBlockFilter
+m_distribution	benchmarking/benchmark_util.h	/^    std::uniform_int_distribution<T> m_distribution;$/;"	m	struct:Benchmark::RN_Gen
+m_rn_gen	benchmarking/benchmark_util.h	/^    std::default_random_engine m_rn_gen;$/;"	m	struct:Benchmark::RN_Gen
+main	benchmarking/benchmark.cc	/^int main(int argc, char** argv){$/;"	f
+main	benchmarking/benchmark_cf.cc	/^int main(int argc, char** argv){$/;"	f
+main	benchmarking/benchmark_mf.cc	/^int main(int argc, char** argv){$/;"	f
+main	benchmarking/benchmark_ss_cf.cc	/^int main(int argc, char** argv){$/;"	f
+main	benchmarking/cuckoofilter/benchmarks/bulk-insert-and-query.cc	/^int main(int argc, char * argv[]) {$/;"	f
+main	benchmarking/cuckoofilter/benchmarks/conext-figure5.cc	/^int main() {$/;"	f
+main	benchmarking/cuckoofilter/benchmarks/conext-table3.cc	/^int main() {$/;"	f
+main	benchmarking/cuckoofilter/example/test.cc	/^int main(int argc, char **argv) {$/;"	f
+main	benchmarking/measure_bucket_accesses.cc	/^int main(int argc, char** argv){$/;"	f
+map_to_bucket	compressed_cuckoo_filter.h	/^  INLINE hash_t map_to_bucket(const hash_t raw_hash, const hash_t modulus) const{$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+max_fullness_counter_width	compressed_cuckoo_config.h	/^  const uint8_t max_fullness_counter_width = 8;$/;"	m	namespace:CompressedCuckoo
+mix	benchmarking/cuckoofilter/src/hashutil.cc	5;"	d	file:
+morton_filter_functionality_enabled	benchmarking/benchmark_mf_config.h	/^  constexpr bool morton_filter_functionality_enabled = true;$/;"	m	namespace:bench_mf
+morton_ota_hashing_method	benchmarking/benchmark_mf_config.h	/^  constexpr OverflowTrackingArrayHashingMethodEnum morton_ota_hashing_method = $/;"	m	namespace:bench_mf
+multiply_	benchmarking/cuckoofilter/src/hashutil.h	/^  unsigned __int128 multiply_, add_;$/;"	m	class:cuckoofilter::TwoIndependentMultiplyShift
+next	benchmarking/benchmark_util.h	/^    inline T next(){ return m_distribution(m_rn_gen); }$/;"	f	struct:Benchmark::RN_Gen
+noexcept	benchmarking/cuckoofilter/src/simd-block.h	/^  bool Find(const uint64_t key) const noexcept;$/;"	m	class:SimdBlockFilter
+noexcept	benchmarking/cuckoofilter/src/simd-block.h	/^  static __m256i MakeMask(const uint32_t hash) noexcept;$/;"	m	class:SimdBlockFilter
+noexcept	benchmarking/cuckoofilter/src/simd-block.h	/^  void Add(const uint64_t key) noexcept;$/;"	m	class:SimdBlockFilter
+noexcept	benchmarking/cuckoofilter/src/simd-block.h	/^  ~SimdBlockFilter() noexcept;$/;"	m	class:SimdBlockFilter
+now	benchmarking/benchmark_util.h	/^  __inline time_point now(){$/;"	f	namespace:Benchmark
+num_buckets_	benchmarking/cuckoofilter/src/packedtable.h	/^  size_t num_buckets_;$/;"	m	class:cuckoofilter::PackedTable
+num_buckets_	benchmarking/cuckoofilter/src/singletable.h	/^  size_t num_buckets_;$/;"	m	class:cuckoofilter::SingleTable
+num_items_	benchmarking/cuckoofilter/src/cuckoofilter.h	/^  size_t num_items_;$/;"	m	class:cuckoofilter::CuckooFilter
+octuple_capacity	compressed_cuckoo_filter.h	/^  inline void octuple_capacity(){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+one	compressed_cuckoo_config.h	/^  constexpr atom_t one = static_cast<atom_t>(1);$/;"	m	namespace:CompressedCuckoo
+operator ()	benchmarking/cuckoofilter/src/hashutil.h	/^  uint64_t operator()(uint64_t key) const {$/;"	f	class:cuckoofilter::SimpleTabulation
+operator ()	benchmarking/cuckoofilter/src/hashutil.h	/^  uint64_t operator()(uint64_t key) const {$/;"	f	class:cuckoofilter::TwoIndependentMultiplyShift
+operator ()	hash_util.h	/^  inline hash_t operator()(keys_t key) const{$/;"	f	struct:BitMixMurmur
+operator <<	benchmarking/cuckoofilter/benchmarks/bulk-insert-and-query.cc	/^basic_ostream<CharT, Traits>& operator<<($/;"	f
+operator <<	block.h	/^    friend std::ostream& operator<<(std::ostream &os, $/;"	f	struct:Morton::Block
+operator <<	compressed_cuckoo_filter.h	/^  friend std::ostream& operator<<(std::ostream& os,$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+operator <<	util.h	/^std::ostream& operator<<(std::ostream& os, __uint128_t integer){$/;"	f
+operator []	block.h	/^    inline atom_t operator[](uint32_t atom_index) const{$/;"	f	struct:Morton::Block
+ota_len_bits	benchmarking/benchmark_mf_config.h	/^  constexpr uint16_t ota_len_bits = 16;$/;"	m	namespace:bench_mf
+pack	benchmarking/cuckoofilter/src/permencoding.h	/^  inline uint16_t pack(const uint8_t in[4]) const {$/;"	f	class:cuckoofilter::PermEncoding
+pass	test_util.h	/^  std::string pass(bool success_status){$/;"	f	namespace:Test
+perm_	benchmarking/cuckoofilter/src/packedtable.h	/^  PermEncoding perm_;$/;"	m	class:cuckoofilter::PackedTable
+physical_layout	compressed_cuckoo_filter.h	/^  std::string physical_layout(){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+populate_with_random_numbers	benchmarking/benchmark_util.h	/^  void populate_with_random_numbers(std::vector<T>& insert_items, $/;"	f	namespace:Benchmark
+populate_with_random_numbers	benchmarking/benchmark_util.h	/^  void populate_with_random_numbers(std::vector<T>& items){$/;"	f	namespace:Benchmark
+primary_count	compressed_cuckoo_filter.h	/^      uint8_t primary_count = 0;$/;"	m	struct:CompressedCuckoo::AccessCounter
+print_array	util.h	/^	inline void print_array(const std::string& name, const ARRAY_TYPE& array){$/;"	f	namespace:util
+print_bucket_and_block_load_histograms	compressed_cuckoo_filter.h	/^  void print_bucket_and_block_load_histograms(){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+quadruple_capacity	compressed_cuckoo_filter.h	/^  inline void quadruple_capacity(){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+random_kickout_cuckoo	compressed_cuckoo_filter.h	/^  inline bool random_kickout_cuckoo(hash_t bucket_id, atom_t fingerprint){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+raw_primary_hash	compressed_cuckoo_filter.h	/^  inline hash_t raw_primary_hash(keys_t key) const{$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+read	block.h	/^    inline atom_t read(uint64_t index) const{$/;"	f	struct:Morton::Block
+read	block.h	/^    inline atom_t read(uint64_t raw_offset_bits, uint64_t field_width_bits,$/;"	f	struct:Morton::Block
+read_atom0	block.h	/^    inline atom_t read_atom0(uint64_t raw_offset_bits, $/;"	f	struct:Morton::Block
+read_bit	block.h	/^    INLINE bool read_bit(uint64_t raw_index_in_bits) const{$/;"	f	struct:Morton::Block
+read_byte	block.h	/^    INLINE atom_t read_byte(uint64_t byte_index) const{$/;"	f	struct:Morton::Block
+read_counter	compressed_cuckoo_filter.h	/^  INLINE counter_t read_counter(uint64_t block_id, uint64_t counter_index) $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+read_counter_many	compressed_cuckoo_filter.h	/^  inline void read_counter_many(const ar_hash& block_ids, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+read_counters_method	benchmarking/benchmark_mf_config.h	/^  constexpr CounterReadMethodEnum read_counters_method =$/;"	m	namespace:bench_mf
+read_cross	block.h	/^    INLINE atom_t read_cross(uint64_t index) const{$/;"	f	struct:Morton::Block
+read_cross	block.h	/^    INLINE atom_t read_cross(uint64_t raw_offset_bits, $/;"	f	struct:Morton::Block
+read_cross_many	block.h	/^    inline atom_t read_cross_many(uint64_t raw_offset_bits,$/;"	f	struct:Morton::Block
+read_fingerprint	compressed_cuckoo_filter.h	/^  INLINE atom_t read_fingerprint(uint64_t block_id, uint64_t block_slot_id) $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+read_fingerprints_method	benchmarking/benchmark_mf_config.h	/^  constexpr FingerprintReadMethodEnum read_fingerprints_method = $/;"	m	namespace:bench_mf
+read_mask	block.h	/^    const static uint64_t read_mask = (static_cast<atom_t>(1) << entry_size_bits) - 1;$/;"	m	struct:Morton::Block
+read_zeroth_word	block.h	/^    inline T read_zeroth_word(uint64_t raw_offset_bits,$/;"	f	struct:Morton::Block
+reduce_up_to_index	compressed_cuckoo_filter.h	/^  counter_t reduce_up_to_index(const block_t& b, uint8_t counter_index) const{$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+reduction_method	benchmarking/benchmark_mf_config.h	/^  constexpr ReductionMethodEnum reduction_method = $/;"	m	namespace:bench_mf
+remap_enabled	benchmarking/benchmark_mf_config.h	/^  constexpr bool remap_enabled = true;$/;"	m	namespace:bench_mf
+report_block_occupancy	compressed_cuckoo_filter.h	/^  inline double report_block_occupancy() const{$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+report_compression_ratio	compressed_cuckoo_filter.h	/^  constexpr double report_compression_ratio() const{$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+report_fsa_load	compressed_cuckoo_filter.h	/^  inline counter_t report_fsa_load(hash_t block_id){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+report_ota_occupancy	compressed_cuckoo_filter.h	/^  double report_ota_occupancy() const{$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+resize	compressed_cuckoo_filter.h	/^  inline void resize(){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+resizing_enabled	benchmarking/benchmark_mf_config.h	/^  constexpr bool resizing_enabled = false;$/;"	m	namespace:bench_mf
+resizing_enabled	morton_sample_configs.h	/^constexpr bool resizing_enabled = false; $/;"	m	namespace:CompressedCuckoo
+resolve_collision	compressed_cuckoo_filter.h	/^  INLINE InsertStatus resolve_collision(hash_t bucket_id, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+return_slot_id_on_match	compressed_cuckoo_filter.h	/^  INLINE hash_t return_slot_id_on_match(hash_t block_id, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+rot	benchmarking/cuckoofilter/src/hashutil.cc	4;"	d	file:
+round_to_appropriate_size	benchmarking/benchmark.cc	/^constexpr uint64_t round_to_appropriate_size(uint64_t desired_size){$/;"	f
+serialize	fixed_point.h	/^    constexpr SerializedFixedPoint serialize() const{$/;"	f	struct:CompressedCuckoo::FixedPoint
+set_bit	block.h	/^    INLINE void set_bit(uint64_t raw_index_in_bits, atom_t value){$/;"	f	struct:Morton::Block
+set_bloom_filter_ota	compressed_cuckoo_filter.h	/^  inline void set_bloom_filter_ota(const hash_t bucket_id, atom_t fingerprint, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+set_fullness_counter	compressed_cuckoo_filter.h	/^  INLINE void set_fullness_counter(block_t& b, uint32_t index, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+set_overflow_status	compressed_cuckoo_filter.h	/^  inline void set_overflow_status(const hash_t bucket_id, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+set_region_name	benchmarking/benchmark_util.h	/^  void set_region_name(std::string& region_name, const std::string& base_name, $/;"	f	namespace:Benchmark
+slot_fraction	benchmarking/benchmark_common.h	/^  double slot_fraction = 0.003;   $/;"	m	namespace:Benchmark
+slots_per_bucket	benchmarking/benchmark_mf_config.h	/^  constexpr uint16_t slots_per_bucket = 3;$/;"	m	namespace:bench_mf
+slots_per_bucket	calculate_compression_ratio.py	/^  slots_per_bucket = 2$/;"	v
+space	benchmarking/cuckoofilter/benchmarks/conext-table3.cc	/^  double space;      \/\/ bits per item$/;"	m	struct:Metrics	file:
+speed	benchmarking/cuckoofilter/benchmarks/conext-table3.cc	/^  double speed;      \/\/ const. speed (million keys\/sec)$/;"	m	struct:Metrics	file:
+stash_prefix_tag_len	compressed_cuckoo_config.h	/^  const uint64_t stash_prefix_tag_len = 4;$/;"	m	namespace:CompressedCuckoo
+sticky_set_bit	block.h	/^    INLINE void sticky_set_bit(uint64_t raw_index_in_bits, uint64_t value){$/;"	f	struct:Morton::Block
+table_	benchmarking/cuckoofilter/src/cuckoofilter.h	/^  TableType<bits_per_item> *table_;$/;"	m	class:cuckoofilter::CuckooFilter
+table_delete_item	compressed_cuckoo_filter.h	/^  inline bool table_delete_item(hash_t bucket_id, atom_t fingerprint){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+table_delete_item_many	compressed_cuckoo_filter.h	/^  inline void table_delete_item_many(const ar_hash& bucket_ids, const ar_atom& $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+table_read_and_compare	compressed_cuckoo_filter.h	/^  inline bool table_read_and_compare(uint64_t bucket_id, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+table_read_and_compare_many	compressed_cuckoo_filter.h	/^  inline void table_read_and_compare_many(const ar_hash& bucket_ids, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+table_read_and_compare_many_pessimistic	compressed_cuckoo_filter.h	/^  inline void table_read_and_compare_many_pessimistic(const ar_hash& bucket_ids,$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+table_store	compressed_cuckoo_filter.h	/^  inline bool table_store(hash_t bucket_id, atom_t fingerprint){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+table_store_many	compressed_cuckoo_filter.h	/^  inline void table_store_many(const ar_hash& bucket_ids,$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+table_store_many_two_choice	compressed_cuckoo_filter.h	/^  inline void table_store_many_two_choice(const ar_hash& bucket_ids_1,$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+tables_	benchmarking/cuckoofilter/src/hashutil.h	/^  uint64_t tables_[sizeof(uint64_t)][1 << CHAR_BIT];$/;"	m	class:cuckoofilter::SimpleTabulation
+tag	benchmarking/cuckoofilter/src/cuckoofilter.h	/^    uint32_t tag;$/;"	m	struct:cuckoofilter::CuckooFilter::__anon1
+target_compression_ratio	benchmarking/benchmark_mf_config.h	/^  constexpr double target_compression_ratio = 0.23958;$/;"	m	namespace:bench_mf
+target_compression_ratio_15_12	morton_sample_configs.h	/^constexpr double target_compression_ratio_15_12 = 0.149999;$/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_15_16	morton_sample_configs.h	/^constexpr double target_compression_ratio_15_16 = 0.241666;$/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_15_18	morton_sample_configs.h	/^constexpr double target_compression_ratio_15_18 = 0.216666;$/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_15_6	morton_sample_configs.h	/^constexpr double target_compression_ratio_15_6 = 0.127083;$/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_15_8	morton_sample_configs.h	/^constexpr double target_compression_ratio_15_8 = 0.22499;$/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_1_8	morton_sample_configs.h	/^constexpr double target_compression_ratio_1_8 = 0.35937;$/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_3_12	morton_sample_configs.h	/^constexpr double target_compression_ratio_3_12 = 0.374999;$/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_3_16	morton_sample_configs.h	/^constexpr double target_compression_ratio_3_16 = 0.281249;$/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_3_18	morton_sample_configs.h	/^constexpr double target_compression_ratio_3_18 = 0.249999;$/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_3_6	morton_sample_configs.h	/^constexpr double target_compression_ratio_3_6 = 0.317708;$/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_3_8	morton_sample_configs.h	/^constexpr double target_compression_ratio_3_8 = 0.23958;$/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_7_12	morton_sample_configs.h	/^constexpr double target_compression_ratio_7_12 = 0.357142;$/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_7_16	morton_sample_configs.h	/^constexpr double target_compression_ratio_7_16 = 0.249999;$/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_7_18	morton_sample_configs.h	/^constexpr double target_compression_ratio_7_18 = 0.223214;$/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_7_6	morton_sample_configs.h	/^constexpr double target_compression_ratio_7_6 = 0.294646;$/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_7_8	morton_sample_configs.h	/^constexpr double target_compression_ratio_7_8 = 0.36734;$/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_sfp	benchmarking/benchmark_mf_config.h	/^  constexpr SerializedFixedPoint target_compression_ratio_sfp $/;"	m	namespace:bench_mf
+target_compression_ratio_sfp_15_12	morton_sample_configs.h	/^constexpr SerializedFixedPoint target_compression_ratio_sfp_15_12 = $/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_sfp_15_16	morton_sample_configs.h	/^constexpr SerializedFixedPoint target_compression_ratio_sfp_15_16 = $/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_sfp_15_18	morton_sample_configs.h	/^constexpr SerializedFixedPoint target_compression_ratio_sfp_15_18 = $/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_sfp_15_6	morton_sample_configs.h	/^constexpr SerializedFixedPoint target_compression_ratio_sfp_15_6 = $/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_sfp_15_8	morton_sample_configs.h	/^constexpr SerializedFixedPoint target_compression_ratio_sfp_15_8 = $/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_sfp_1_8	morton_sample_configs.h	/^constexpr SerializedFixedPoint target_compression_ratio_sfp_1_8 = $/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_sfp_3_12	morton_sample_configs.h	/^constexpr SerializedFixedPoint target_compression_ratio_sfp_3_12 = $/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_sfp_3_16	morton_sample_configs.h	/^constexpr SerializedFixedPoint target_compression_ratio_sfp_3_16 = $/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_sfp_3_18	morton_sample_configs.h	/^constexpr SerializedFixedPoint target_compression_ratio_sfp_3_18 =$/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_sfp_3_6	morton_sample_configs.h	/^constexpr SerializedFixedPoint target_compression_ratio_sfp_3_6 = $/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_sfp_3_8	morton_sample_configs.h	/^constexpr SerializedFixedPoint target_compression_ratio_sfp_3_8 = $/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_sfp_7_12	morton_sample_configs.h	/^constexpr SerializedFixedPoint target_compression_ratio_sfp_7_12 = $/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_sfp_7_16	morton_sample_configs.h	/^constexpr SerializedFixedPoint target_compression_ratio_sfp_7_16 = $/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_sfp_7_18	morton_sample_configs.h	/^constexpr SerializedFixedPoint target_compression_ratio_sfp_7_18 = $/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_sfp_7_6	morton_sample_configs.h	/^constexpr SerializedFixedPoint target_compression_ratio_sfp_7_6 = $/;"	m	namespace:CompressedCuckoo
+target_compression_ratio_sfp_7_8	morton_sample_configs.h	/^constexpr SerializedFixedPoint target_compression_ratio_sfp_7_8 = $/;"	m	namespace:CompressedCuckoo
+target_ota_len	calculate_compression_ratio.py	/^  target_ota_len = 16#buckets_per_block \/ 2 # Intentional integer division$/;"	v
+test_fingerprint_in_bucket	compressed_cuckoo_filter.h	/^  INLINE bool test_fingerprint_in_bucket(hash_t block_id, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+test_fingerprint_in_bucket_many	compressed_cuckoo_filter.h	/^  inline void test_fingerprint_in_bucket_many(const ar_hash& block_ids, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+test_fingerprint_in_bucket_many_morton	compressed_cuckoo_filter.h	/^  void test_fingerprint_in_bucket_many_morton(const ar_hash& bucket_ids, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+time_point	benchmarking/benchmark_util.h	/^  typedef std::chrono::high_resolution_clock::time_point time_point;$/;"	t	namespace:Benchmark
+to_double	fixed_point.h	/^    constexpr double to_double() const{$/;"	f	struct:CompressedCuckoo::FixedPoint
+to_float	fixed_point.h	/^    constexpr float to_float() const{$/;"	f	struct:CompressedCuckoo::FixedPoint
+to_multiple_of_batch	benchmarking/benchmark_util.h	/^  uint64_t to_multiple_of_batch(uint64_t number, uint64_t batch_size){$/;"	f	namespace:Benchmark
+try_relocation	compressed_cuckoo_filter.h	/^  inline bool try_relocation(hash_t bucket_id, atom_t fingerprint, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+try_relocation_on_block_overflow	compressed_cuckoo_filter.h	/^  INLINE bool try_relocation_on_block_overflow(hash_t bucket_id, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+two_choice_store_many	compressed_cuckoo_filter.h	/^  inline void two_choice_store_many(const ar_hash& bucket_ids_1, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+uint128_t	vector_types.h	/^typedef __uint128_t uint128_t;$/;"	t
+unpack	benchmarking/cuckoofilter/src/permencoding.h	/^  inline void unpack(uint16_t in, uint8_t out[4]) const {$/;"	f	class:cuckoofilter::PermEncoding
+upperpower2	benchmarking/cuckoofilter/src/bitsutil.h	/^inline uint64_t upperpower2(uint64_t x) {$/;"	f	namespace:cuckoofilter
+used	benchmarking/cuckoofilter/src/cuckoofilter.h	/^    bool used;$/;"	m	struct:cuckoofilter::CuckooFilter::__anon1
+util	util.h	/^namespace util{$/;"	n
+vN_atom	vector_types.h	/^typedef atom_t vN_atom __attribute__ ((vector_size (sizeof(atom_t) * _N)));$/;"	t
+vN_counter	vector_types.h	/^typedef atom_t vN_counter __attribute__ ((vector_size (sizeof(atom_t) * _N)));$/;"	t
+vN_hash	vector_types.h	/^typedef hash_t vN_hash __attribute__((vector_size (sizeof(hash_t) * _N)));$/;"	t
+vN_key	vector_types.h	/^typedef keys_t vN_key __attribute__((vector_size (sizeof(keys_t) * _N)));$/;"	t
+vN_u16	vector_types.h	/^typedef uint16_t vN_u16 __attribute__ ((vector_size (sizeof(uint16_t) * _N)));$/;"	t
+vN_u32	vector_types.h	/^typedef uint32_t vN_u32 __attribute__ ((vector_size (sizeof(uint32_t) * _N)));$/;"	t
+vN_u64	vector_types.h	/^typedef uint64_t vN_u64 __attribute__ ((vector_size(sizeof(uint64_t) * _N)));$/;"	t
+vN_u8	vector_types.h	/^typedef uint8_t vN_u8 __attribute__ ((vector_size (sizeof(uint8_t) * _N)));$/;"	t
+victim_	benchmarking/cuckoofilter/src/cuckoofilter.h	/^  VictimCache victim_;$/;"	m	class:cuckoofilter::CuckooFilter
+write_fingerprint	compressed_cuckoo_filter.h	/^  INLINE void write_fingerprint(block_t& block, uint64_t fsa_slot_id, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+write_fingerprint_left_displace	compressed_cuckoo_filter.h	/^  INLINE void write_fingerprint_left_displace(block_t& block, $/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+~CompressedCuckooFilter	compressed_cuckoo_filter.h	/^  ~CompressedCuckooFilter(){$/;"	f	struct:CompressedCuckoo::CompressedCuckooFilter
+~CuckooFilter	benchmarking/cuckoofilter/src/cuckoofilter.h	/^  ~CuckooFilter() { delete table_; }$/;"	f	class:cuckoofilter::CuckooFilter
+~PackedTable	benchmarking/cuckoofilter/src/packedtable.h	/^  ~PackedTable() { $/;"	f	class:cuckoofilter::PackedTable
+~PermEncoding	benchmarking/cuckoofilter/src/permencoding.h	/^  ~PermEncoding() {}$/;"	f	class:cuckoofilter::PermEncoding
+~SingleTable	benchmarking/cuckoofilter/src/singletable.h	/^  ~SingleTable() { $/;"	f	class:cuckoofilter::SingleTable

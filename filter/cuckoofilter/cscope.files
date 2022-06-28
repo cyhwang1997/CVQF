@@ -1,0 +1,17 @@
+./benchmarks/random.h
+./benchmarks/conext-table3.cc
+./benchmarks/bulk-insert-and-query.cc
+./benchmarks/timing.h
+./benchmarks/conext-figure5.cc
+./example/test.cc
+./src/singletable.h
+./src/printutil.h
+./src/hashutil.cc
+./src/permencoding.h
+./src/bitsutil.h
+./src/simd-block.h
+./src/hashutil.h
+./src/printutil.cc
+./src/packedtable.h
+./src/cuckoofilter.h
+./src/debug.h

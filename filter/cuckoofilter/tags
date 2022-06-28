@@ -1,0 +1,222 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALIB	Makefile	/^ALIB = libcuckoofilter.a$/;"	m
+AR	Makefile	/^AR = ar$/;"	m
+Add	benchmarks/bulk-insert-and-query.cc	/^  static void Add(uint64_t key, Table * table) {$/;"	f	struct:FilterAPI
+Add	benchmarks/bulk-insert-and-query.cc	/^  static void Add(uint64_t key, Table* table) {$/;"	f	struct:FilterAPI
+Add	src/cuckoofilter.h	/^Status CuckooFilter<ItemType, bits_per_item, TableType, HashFamily>::Add($/;"	f	class:cuckoofilter::CuckooFilter
+AddImpl	src/cuckoofilter.h	/^Status CuckooFilter<ItemType, bits_per_item, TableType, HashFamily>::AddImpl($/;"	f	class:cuckoofilter::CuckooFilter
+AltIndex	src/cuckoofilter.h	/^  inline size_t AltIndex(const size_t index, const uint32_t tag) const {$/;"	f	class:cuckoofilter::CuckooFilter
+BINS	benchmarks/Makefile	/^BINS = conext-table3.exe conext-figure5.exe bulk-insert-and-query.exe$/;"	m
+BitsPerItem	src/cuckoofilter.h	/^  double BitsPerItem() const { return 8.0 * table_->SizeInBytes() \/ Size(); }$/;"	f	class:cuckoofilter::CuckooFilter
+BobHash	src/hashutil.cc	/^uint32_t HashUtil::BobHash(const std::string &s, uint32_t seed) {$/;"	f	class:cuckoofilter::HashUtil
+BobHash	src/hashutil.cc	/^uint32_t HashUtil::BobHash(const void *buf, size_t length, uint32_t seed) {$/;"	f	class:cuckoofilter::HashUtil
+BobHash	src/hashutil.cc	/^void HashUtil::BobHash(const std::string &s, uint32_t *idx1, uint32_t *idx2) {$/;"	f	class:cuckoofilter::HashUtil
+BobHash	src/hashutil.cc	/^void HashUtil::BobHash(const void *buf, size_t length, uint32_t *idx1,$/;"	f	class:cuckoofilter::HashUtil
+Bucket	src/singletable.h	/^  struct Bucket {$/;"	s	class:cuckoofilter::SingleTable
+CC	Makefile	/^CC = g++$/;"	m
+CUCKOO_FILTER_BITS_H_	src/bitsutil.h	2;"	d
+CUCKOO_FILTER_CUCKOO_FILTER_H_	src/cuckoofilter.h	2;"	d
+CUCKOO_FILTER_DEBUG_H_	src/debug.h	2;"	d
+CUCKOO_FILTER_HASHUTIL_H_	src/hashutil.h	2;"	d
+CUCKOO_FILTER_PACKED_TABLE_H_	src/packedtable.h	2;"	d
+CUCKOO_FILTER_PERM_ENCODING_H_	src/permencoding.h	2;"	d
+CUCKOO_FILTER_PRINTUTIL_H_	src/printutil.h	2;"	d
+CUCKOO_FILTER_SINGLE_TABLE_H_	src/singletable.h	2;"	d
+ConstructFromAddCount	benchmarks/bulk-insert-and-query.cc	/^  static Table ConstructFromAddCount(size_t add_count) { return Table(add_count); }$/;"	f	struct:FilterAPI
+ConstructFromAddCount	benchmarks/bulk-insert-and-query.cc	/^  static Table ConstructFromAddCount(size_t add_count) {$/;"	f	struct:FilterAPI
+Contain	benchmarks/bulk-insert-and-query.cc	/^  static bool Contain(uint64_t key, const Table * table) {$/;"	f	struct:FilterAPI
+Contain	src/cuckoofilter.h	/^Status CuckooFilter<ItemType, bits_per_item, TableType, HashFamily>::Contain($/;"	f	class:cuckoofilter::CuckooFilter
+CuckooBenchmark	benchmarks/conext-figure5.cc	/^array<double, 5> CuckooBenchmark($/;"	f
+CuckooBenchmark	benchmarks/conext-table3.cc	/^Metrics CuckooBenchmark(size_t add_count, const vector<uint64_t>& input) {$/;"	f
+CuckooFilter	src/cuckoofilter.h	/^  explicit CuckooFilter(const size_t max_num_keys) : num_items_(0), victim_(), hasher_() {$/;"	f	class:cuckoofilter::CuckooFilter
+CuckooFilter	src/cuckoofilter.h	/^class CuckooFilter {$/;"	c	namespace:cuckoofilter
+DEBUG_ALL	src/debug.h	48;"	d
+DEBUG_CUCKOO	src/debug.h	44;"	d
+DEBUG_ENCODE	src/debug.h	46;"	d
+DEBUG_ERRS	src/debug.h	43;"	d
+DEBUG_NONE	src/debug.h	42;"	d
+DEBUG_PERROR	src/debug.h	25;"	d
+DEBUG_TABLE	src/debug.h	45;"	d
+DPRINTF	src/debug.h	21;"	d
+Delete	src/cuckoofilter.h	/^Status CuckooFilter<ItemType, bits_per_item, TableType, HashFamily>::Delete($/;"	f	class:cuckoofilter::CuckooFilter
+DeleteTagFromBucket	src/packedtable.h	/^  bool DeleteTagFromBucket(const size_t i, const uint32_t tag) {$/;"	f	class:cuckoofilter::PackedTable
+DeleteTagFromBucket	src/singletable.h	/^  inline bool DeleteTagFromBucket(const size_t i, const uint32_t tag) {$/;"	f	class:cuckoofilter::SingleTable
+EVP_MD_CTX_free	src/hashutil.cc	/^void EVP_MD_CTX_free(EVP_MD_CTX *ctx)$/;"	f	namespace:cuckoofilter
+EVP_MD_CTX_new	src/hashutil.cc	/^EVP_MD_CTX *EVP_MD_CTX_new(void)$/;"	f	namespace:cuckoofilter
+FPR_SAMPLE_SIZE	benchmarks/conext-table3.cc	/^const size_t FPR_SAMPLE_SIZE = 1000 * 1000;$/;"	v
+FilterAPI	benchmarks/bulk-insert-and-query.cc	/^struct FilterAPI {};$/;"	s	file:
+FilterAPI	benchmarks/bulk-insert-and-query.cc	/^struct FilterAPI<CuckooFilter<ItemType, bits_per_item, TableType>> {$/;"	s	file:
+FilterAPI	benchmarks/bulk-insert-and-query.cc	/^struct FilterAPI<SimdBlockFilter<>> {$/;"	s	file:
+FilterBenchmark	benchmarks/bulk-insert-and-query.cc	/^Statistics FilterBenchmark($/;"	f
+FindTagInBucket	src/packedtable.h	/^  bool FindTagInBucket(const size_t i, const uint32_t tag) const {$/;"	f	class:cuckoofilter::PackedTable
+FindTagInBucket	src/singletable.h	/^  inline bool FindTagInBucket(const size_t i, const uint32_t tag) const {$/;"	f	class:cuckoofilter::SingleTable
+FindTagInBuckets	src/packedtable.h	/^  bool FindTagInBuckets(const size_t i1, const size_t i2,$/;"	f	class:cuckoofilter::PackedTable
+FindTagInBuckets	src/singletable.h	/^  inline bool FindTagInBuckets(const size_t i1, const size_t i2,$/;"	f	class:cuckoofilter::SingleTable
+GenerateIndexTagHash	src/cuckoofilter.h	/^  inline void GenerateIndexTagHash(const ItemType& item, size_t* index,$/;"	f	class:cuckoofilter::CuckooFilter
+GenerateRandom64	benchmarks/random.h	/^::std::vector<::std::uint64_t> GenerateRandom64(::std::size_t count) {$/;"	f
+HASH_LITTLE_ENDIAN	src/hashutil.cc	26;"	d	file:
+HEADERS	Makefile	/^HEADERS = $(wildcard src\/*.h)$/;"	m
+HEADERS	benchmarks/Makefile	/^HEADERS = $(wildcard ..\/src\/*.h) *.h$/;"	m
+HashUtil	src/hashutil.h	/^class HashUtil {$/;"	c	namespace:cuckoofilter
+IndexHash	src/cuckoofilter.h	/^  inline size_t IndexHash(uint32_t hv) const {$/;"	f	class:cuckoofilter::CuckooFilter
+Info	src/cuckoofilter.h	/^std::string CuckooFilter<ItemType, bits_per_item, TableType, HashFamily>::Info() const {$/;"	f	class:cuckoofilter::CuckooFilter
+Info	src/packedtable.h	/^  std::string Info() const {$/;"	f	class:cuckoofilter::PackedTable
+Info	src/singletable.h	/^  std::string Info() const {$/;"	f	class:cuckoofilter::SingleTable
+InsertTagToBucket	src/packedtable.h	/^  bool InsertTagToBucket(const size_t i, const uint32_t tag, const bool kickout,$/;"	f	class:cuckoofilter::PackedTable
+InsertTagToBucket	src/singletable.h	/^  inline bool InsertTagToBucket(const size_t i, const uint32_t tag,$/;"	f	class:cuckoofilter::SingleTable
+LIBOBJECTS	Makefile	/^LIBOBJECTS = \\$/;"	m
+LOG_BUCKET_BYTE_SIZE	src/simd-block.h	/^  static constexpr int LOG_BUCKET_BYTE_SIZE = 5;$/;"	m	class:SimdBlockFilter
+LoadFactor	src/cuckoofilter.h	/^  double LoadFactor() const { return 1.0 * Size() \/ table_->SizeInTags(); }$/;"	f	class:cuckoofilter::CuckooFilter
+MD5Hash	src/hashutil.cc	/^std::string HashUtil::MD5Hash(const char *inbuf, size_t in_length) {$/;"	f	class:cuckoofilter::HashUtil
+Metrics	benchmarks/conext-table3.cc	/^struct Metrics {$/;"	s	file:
+MixIn	benchmarks/random.h	/^::std::vector<T> MixIn(const T* x_begin, const T* x_end, const T* y_begin, const T* y_end,$/;"	f
+MurmurHash	src/hashutil.cc	/^uint32_t HashUtil::MurmurHash(const std::string &s, uint32_t seed) {$/;"	f	class:cuckoofilter::HashUtil
+MurmurHash	src/hashutil.cc	/^uint32_t HashUtil::MurmurHash(const void *buf, size_t len, uint32_t seed) {$/;"	f	class:cuckoofilter::HashUtil
+N_ENTS	src/permencoding.h	/^  static const size_t N_ENTS = 3876;$/;"	m	class:cuckoofilter::PermEncoding
+NotEnoughSpace	src/cuckoofilter.h	/^  NotEnoughSpace = 2,$/;"	e	enum:cuckoofilter::Status
+NotFound	src/cuckoofilter.h	/^  NotFound = 1,$/;"	e	enum:cuckoofilter::Status
+NotSupported	src/cuckoofilter.h	/^  NotSupported = 3,$/;"	e	enum:cuckoofilter::Status
+NowNanos	benchmarks/timing.h	/^::std::uint64_t NowNanos() {$/;"	f
+NullHash	src/hashutil.cc	/^uint32_t HashUtil::NullHash(const void *buf, size_t length,$/;"	f	class:cuckoofilter::HashUtil
+NumBuckets	src/packedtable.h	/^  size_t NumBuckets() const {$/;"	f	class:cuckoofilter::PackedTable
+NumBuckets	src/singletable.h	/^  size_t NumBuckets() const {$/;"	f	class:cuckoofilter::SingleTable
+NumTagsInBucket	src/singletable.h	/^  inline size_t NumTagsInBucket(const size_t i) const {$/;"	f	class:cuckoofilter::SingleTable
+OPENSSL_zalloc	src/hashutil.cc	/^static void *OPENSSL_zalloc(size_t num)$/;"	f	namespace:cuckoofilter
+OPT	Makefile	/^OPT = -g -ggdb$/;"	m
+OPT	benchmarks/Makefile	/^OPT = -O3 -DNDEBUG$/;"	m
+Ok	src/cuckoofilter.h	/^  Ok = 0,$/;"	e	enum:cuckoofilter::Status
+PREFIX	Makefile	/^PREFIX=\/usr\/local$/;"	m
+PackedTable	src/packedtable.h	/^  explicit PackedTable(size_t num) : num_buckets_(num) {$/;"	f	class:cuckoofilter::PackedTable
+PackedTable	src/packedtable.h	/^class PackedTable {$/;"	c	namespace:cuckoofilter
+PermEncoding	src/permencoding.h	/^  PermEncoding() {$/;"	f	class:cuckoofilter::PermEncoding
+PermEncoding	src/permencoding.h	/^class PermEncoding {$/;"	c	namespace:cuckoofilter
+PrintBucket	src/packedtable.h	/^  void PrintBucket(const size_t i) const {$/;"	f	class:cuckoofilter::PackedTable
+PrintTags	src/packedtable.h	/^  void PrintTags(uint32_t tags[4]) const {$/;"	f	class:cuckoofilter::PackedTable
+PrintUtil	src/printutil.h	/^class PrintUtil {$/;"	c	namespace:cuckoofilter
+ReadBucket	src/packedtable.h	/^  inline void ReadBucket(const size_t i, uint32_t tags[4]) const {$/;"	f	class:cuckoofilter::PackedTable
+ReadTag	src/singletable.h	/^  inline uint32_t ReadTag(const size_t i, const size_t j) const {$/;"	f	class:cuckoofilter::SingleTable
+SAMPLE_SIZE	benchmarks/bulk-insert-and-query.cc	/^const size_t SAMPLE_SIZE = 1000 * 1000;$/;"	v
+SAMPLE_SIZE	benchmarks/conext-figure5.cc	/^const size_t SAMPLE_SIZE = 1000 * 1000;$/;"	v
+SHA1Hash	src/hashutil.cc	/^std::string HashUtil::SHA1Hash(const char *inbuf, size_t in_length) {$/;"	f	class:cuckoofilter::HashUtil
+SRC	benchmarks/Makefile	/^SRC = ..\/src\/hashutil.cc$/;"	m
+SimdBlockFilter	src/simd-block.h	/^  SimdBlockFilter(SimdBlockFilter&& that)$/;"	f	class:SimdBlockFilter
+SimdBlockFilter	src/simd-block.h	/^SimdBlockFilter<HashFamily>::SimdBlockFilter(const int log_heap_space)$/;"	f	class:SimdBlockFilter
+SimdBlockFilter	src/simd-block.h	/^class SimdBlockFilter {$/;"	c
+SimpleTabulation	src/hashutil.h	/^  SimpleTabulation() {$/;"	f	class:cuckoofilter::SimpleTabulation
+SimpleTabulation	src/hashutil.h	/^class SimpleTabulation {$/;"	c	namespace:cuckoofilter
+SingleTable	src/singletable.h	/^  explicit SingleTable(const size_t num) : num_buckets_(num) {$/;"	f	class:cuckoofilter::SingleTable
+SingleTable	src/singletable.h	/^class SingleTable {$/;"	c	namespace:cuckoofilter
+Size	src/cuckoofilter.h	/^  size_t Size() const { return num_items_; }$/;"	f	class:cuckoofilter::CuckooFilter
+SizeInBytes	src/cuckoofilter.h	/^  size_t SizeInBytes() const { return table_->SizeInBytes(); }$/;"	f	class:cuckoofilter::CuckooFilter
+SizeInBytes	src/packedtable.h	/^  size_t SizeInBytes() const { $/;"	f	class:cuckoofilter::PackedTable
+SizeInBytes	src/simd-block.h	/^  uint64_t SizeInBytes() const { return sizeof(Bucket) * (1ull << log_num_buckets_); }$/;"	f	class:SimdBlockFilter
+SizeInBytes	src/singletable.h	/^  size_t SizeInBytes() const { $/;"	f	class:cuckoofilter::SingleTable
+SizeInTags	src/packedtable.h	/^  size_t SizeInTags() const { $/;"	f	class:cuckoofilter::PackedTable
+SizeInTags	src/singletable.h	/^  size_t SizeInTags() const { $/;"	f	class:cuckoofilter::SingleTable
+SortPair	src/packedtable.h	/^  inline void SortPair(uint32_t &a, uint32_t &b) {$/;"	f	class:cuckoofilter::PackedTable
+SortTags	src/packedtable.h	/^  inline void SortTags(uint32_t *tags) {$/;"	f	class:cuckoofilter::PackedTable
+Statistics	benchmarks/bulk-insert-and-query.cc	/^struct Statistics {$/;"	s	file:
+StatisticsTableHeader	benchmarks/bulk-insert-and-query.cc	/^string StatisticsTableHeader(int type_width, int find_percent_count) {$/;"	f
+Status	src/cuckoofilter.h	/^enum Status {$/;"	g	namespace:cuckoofilter
+SuperFastHash	src/hashutil.cc	/^uint32_t HashUtil::SuperFastHash(const std::string &s) {$/;"	f	class:cuckoofilter::HashUtil
+SuperFastHash	src/hashutil.cc	/^uint32_t HashUtil::SuperFastHash(const void *buf, size_t len) {$/;"	f	class:cuckoofilter::HashUtil
+TEST	Makefile	/^TEST = test$/;"	m
+TagHash	src/cuckoofilter.h	/^  inline uint32_t TagHash(uint32_t hv) const {$/;"	f	class:cuckoofilter::CuckooFilter
+TwoIndependentMultiplyShift	src/hashutil.h	/^  TwoIndependentMultiplyShift() {$/;"	f	class:cuckoofilter::TwoIndependentMultiplyShift
+TwoIndependentMultiplyShift	src/hashutil.h	/^class TwoIndependentMultiplyShift {$/;"	c	namespace:cuckoofilter
+VictimCache	src/cuckoofilter.h	/^  } VictimCache;$/;"	t	class:cuckoofilter::CuckooFilter	typeref:struct:cuckoofilter::CuckooFilter::__anon1
+WriteBucket	src/packedtable.h	/^  inline void WriteBucket(const size_t i, uint32_t tags[4], bool sort = true) {$/;"	f	class:cuckoofilter::PackedTable
+WriteTag	src/singletable.h	/^  inline void WriteTag(const size_t i, const size_t j, const uint32_t t) {$/;"	f	class:cuckoofilter::SingleTable
+add_	src/hashutil.h	/^  unsigned __int128 multiply_, add_;$/;"	m	class:cuckoofilter::TwoIndependentMultiplyShift
+add_count	benchmarks/conext-table3.cc	/^  double add_count;  \/\/ # of items (million)$/;"	m	struct:Metrics	file:
+adds_per_nano	benchmarks/bulk-insert-and-query.cc	/^  double adds_per_nano;$/;"	m	struct:Statistics	file:
+bits_	src/singletable.h	/^    char bits_[kBytesPerBucket];$/;"	m	struct:cuckoofilter::SingleTable::Bucket
+bits_per_item	benchmarks/bulk-insert-and-query.cc	/^  double bits_per_item;$/;"	m	struct:Statistics	file:
+buckets_	src/packedtable.h	/^  char *buckets_;$/;"	m	class:cuckoofilter::PackedTable
+buckets_	src/singletable.h	/^  Bucket *buckets_;$/;"	m	class:cuckoofilter::SingleTable
+bytes_to_hex	src/printutil.cc	/^std::string PrintUtil::bytes_to_hex(const char *data, size_t len) {$/;"	f	class:cuckoofilter::PrintUtil
+bytes_to_hex	src/printutil.cc	/^std::string PrintUtil::bytes_to_hex(const std::string &s) {$/;"	f	class:cuckoofilter::PrintUtil
+bytes_to_hex	src/printutil.h	/^  static std::string bytes_to_hex(const char *data, size_t len) {$/;"	f	class:cuckoofilter::PrintUtil
+bytes_to_hex	src/printutil.h	/^  static std::string bytes_to_hex(const std::string &s) {$/;"	f	class:cuckoofilter::PrintUtil
+cuckoofilter	src/bitsutil.h	/^namespace cuckoofilter {$/;"	n
+cuckoofilter	src/cuckoofilter.h	/^namespace cuckoofilter {$/;"	n
+cuckoofilter	src/debug.h	/^namespace cuckoofilter {$/;"	n
+cuckoofilter	src/hashutil.cc	/^namespace cuckoofilter {$/;"	n	file:
+cuckoofilter	src/hashutil.h	/^namespace cuckoofilter {$/;"	n
+cuckoofilter	src/packedtable.h	/^namespace cuckoofilter {$/;"	n
+cuckoofilter	src/permencoding.h	/^namespace cuckoofilter {$/;"	n
+cuckoofilter	src/printutil.cc	/^namespace cuckoofilter {$/;"	n	file:
+cuckoofilter	src/printutil.h	/^namespace cuckoofilter {$/;"	n
+cuckoofilter	src/singletable.h	/^namespace cuckoofilter {$/;"	n
+debug_level	src/debug.h	12;"	d
+dec_table	src/permencoding.h	/^  uint16_t dec_table[N_ENTS];$/;"	m	class:cuckoofilter::PermEncoding
+decode	src/permencoding.h	/^  inline void decode(const uint16_t codeword, uint8_t lowbits[4]) const {$/;"	f	class:cuckoofilter::PermEncoding
+directory_	src/simd-block.h	/^  Bucket* directory_;$/;"	m	class:SimdBlockFilter
+directory_mask_	src/simd-block.h	/^  const uint32_t directory_mask_;$/;"	m	class:SimdBlockFilter
+enc_table	src/permencoding.h	/^  uint16_t enc_table[1 << 16];$/;"	m	class:cuckoofilter::PermEncoding
+encode	src/permencoding.h	/^  inline uint16_t encode(const uint8_t lowbits[4]) const {$/;"	f	class:cuckoofilter::PermEncoding
+false_positive_probabilty	benchmarks/bulk-insert-and-query.cc	/^  double false_positive_probabilty;$/;"	m	struct:Statistics	file:
+final	src/hashutil.cc	15;"	d	file:
+finds_per_nano	benchmarks/bulk-insert-and-query.cc	/^  map<int, double> finds_per_nano; \/\/ The key is the percent of queries that were expected$/;"	m	struct:Statistics	file:
+fpr	benchmarks/conext-table3.cc	/^  double fpr;        \/\/ false positive rate (%)$/;"	m	struct:Metrics	file:
+gen_tables	src/permencoding.h	/^  void gen_tables(int base, int k, uint8_t dst[4], uint16_t &idx) {$/;"	f	class:cuckoofilter::PermEncoding
+get16bits	src/hashutil.cc	28;"	d	file:
+hasher_	src/cuckoofilter.h	/^  HashFamily hasher_;$/;"	m	class:cuckoofilter::CuckooFilter
+hasher_	src/simd-block.h	/^  HashFamily hasher_;$/;"	m	class:SimdBlockFilter
+hasvalue12	src/bitsutil.h	15;"	d
+hasvalue16	src/bitsutil.h	19;"	d
+hasvalue4	src/bitsutil.h	9;"	d
+hasvalue8	src/bitsutil.h	12;"	d
+haszero12	src/bitsutil.h	14;"	d
+haszero16	src/bitsutil.h	17;"	d
+haszero4	src/bitsutil.h	8;"	d
+haszero8	src/bitsutil.h	11;"	d
+index	src/cuckoofilter.h	/^    size_t index;$/;"	m	struct:cuckoofilter::CuckooFilter::__anon1
+kBitsPerBucket	src/packedtable.h	/^  static const size_t kBitsPerBucket = (3 + kDirBitsPerTag) * 4;$/;"	m	class:cuckoofilter::PackedTable
+kBytesPerBucket	src/packedtable.h	/^  static const size_t kBytesPerBucket = (kBitsPerBucket + 7) >> 3;$/;"	m	class:cuckoofilter::PackedTable
+kBytesPerBucket	src/singletable.h	/^  static const size_t kBytesPerBucket =$/;"	m	class:cuckoofilter::SingleTable
+kDirBitsMask	src/packedtable.h	/^  static const uint32_t kDirBitsMask = ((1ULL << kDirBitsPerTag) - 1) << 4;$/;"	m	class:cuckoofilter::PackedTable
+kDirBitsPerTag	src/packedtable.h	/^  static const size_t kDirBitsPerTag = bits_per_tag - 4;$/;"	m	class:cuckoofilter::PackedTable
+kMaxCuckooCount	src/cuckoofilter.h	/^const size_t kMaxCuckooCount = 500;$/;"	m	namespace:cuckoofilter
+kPaddingBuckets	src/singletable.h	/^  static const size_t kPaddingBuckets =$/;"	m	class:cuckoofilter::SingleTable
+kTagMask	src/singletable.h	/^  static const uint32_t kTagMask = (1ULL << bits_per_tag) - 1;$/;"	m	class:cuckoofilter::SingleTable
+kTagsPerBucket	src/singletable.h	/^  static const size_t kTagsPerBucket = 4;$/;"	m	class:cuckoofilter::SingleTable
+len_	src/packedtable.h	/^  size_t len_;$/;"	m	class:cuckoofilter::PackedTable
+log_num_buckets_	src/simd-block.h	/^  const int log_num_buckets_;$/;"	m	class:SimdBlockFilter
+main	benchmarks/bulk-insert-and-query.cc	/^int main(int argc, char * argv[]) {$/;"	f
+main	benchmarks/conext-figure5.cc	/^int main() {$/;"	f
+main	benchmarks/conext-table3.cc	/^int main() {$/;"	f
+main	example/test.cc	/^int main(int argc, char **argv) {$/;"	f
+mix	src/hashutil.cc	5;"	d	file:
+multiply_	src/hashutil.h	/^  unsigned __int128 multiply_, add_;$/;"	m	class:cuckoofilter::TwoIndependentMultiplyShift
+noexcept	src/simd-block.h	/^  bool Find(const uint64_t key) const noexcept;$/;"	m	class:SimdBlockFilter
+noexcept	src/simd-block.h	/^  static __m256i MakeMask(const uint32_t hash) noexcept;$/;"	m	class:SimdBlockFilter
+noexcept	src/simd-block.h	/^  void Add(const uint64_t key) noexcept;$/;"	m	class:SimdBlockFilter
+noexcept	src/simd-block.h	/^  ~SimdBlockFilter() noexcept;$/;"	m	class:SimdBlockFilter
+num_buckets_	src/packedtable.h	/^  size_t num_buckets_;$/;"	m	class:cuckoofilter::PackedTable
+num_buckets_	src/singletable.h	/^  size_t num_buckets_;$/;"	m	class:cuckoofilter::SingleTable
+num_items_	src/cuckoofilter.h	/^  size_t num_items_;$/;"	m	class:cuckoofilter::CuckooFilter
+operator ()	src/hashutil.h	/^  uint64_t operator()(uint64_t key) const {$/;"	f	class:cuckoofilter::SimpleTabulation
+operator ()	src/hashutil.h	/^  uint64_t operator()(uint64_t key) const {$/;"	f	class:cuckoofilter::TwoIndependentMultiplyShift
+operator <<	benchmarks/bulk-insert-and-query.cc	/^basic_ostream<CharT, Traits>& operator<<($/;"	f
+pack	src/permencoding.h	/^  inline uint16_t pack(const uint8_t in[4]) const {$/;"	f	class:cuckoofilter::PermEncoding
+perm_	src/packedtable.h	/^  PermEncoding perm_;$/;"	m	class:cuckoofilter::PackedTable
+rot	src/hashutil.cc	4;"	d	file:
+space	benchmarks/conext-table3.cc	/^  double space;      \/\/ bits per item$/;"	m	struct:Metrics	file:
+speed	benchmarks/conext-table3.cc	/^  double speed;      \/\/ const. speed (million keys\/sec)$/;"	m	struct:Metrics	file:
+table_	src/cuckoofilter.h	/^  TableType<bits_per_item> *table_;$/;"	m	class:cuckoofilter::CuckooFilter
+tables_	src/hashutil.h	/^  uint64_t tables_[sizeof(uint64_t)][1 << CHAR_BIT];$/;"	m	class:cuckoofilter::SimpleTabulation
+tag	src/cuckoofilter.h	/^    uint32_t tag;$/;"	m	struct:cuckoofilter::CuckooFilter::__anon1
+unpack	src/permencoding.h	/^  inline void unpack(uint16_t in, uint8_t out[4]) const {$/;"	f	class:cuckoofilter::PermEncoding
+upperpower2	src/bitsutil.h	/^inline uint64_t upperpower2(uint64_t x) {$/;"	f	namespace:cuckoofilter
+used	src/cuckoofilter.h	/^    bool used;$/;"	m	struct:cuckoofilter::CuckooFilter::__anon1
+victim_	src/cuckoofilter.h	/^  VictimCache victim_;$/;"	m	class:cuckoofilter::CuckooFilter
+~CuckooFilter	src/cuckoofilter.h	/^  ~CuckooFilter() { delete table_; }$/;"	f	class:cuckoofilter::CuckooFilter
+~PackedTable	src/packedtable.h	/^  ~PackedTable() { $/;"	f	class:cuckoofilter::PackedTable
+~PermEncoding	src/permencoding.h	/^  ~PermEncoding() {}$/;"	f	class:cuckoofilter::PermEncoding
+~SingleTable	src/singletable.h	/^  ~SingleTable() { $/;"	f	class:cuckoofilter::SingleTable

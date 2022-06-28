@@ -1,0 +1,417 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARCH	Makefile	/^	ARCH=$/;"	m
+ARCH	Makefile	/^	ARCH=-msse4.2 -D__SSE4_2_$/;"	m
+BILLION	src/gqf.c	46;"	d	file:
+BITMASK	src/gqf.c	32;"	d	file:
+CC	Makefile	/^CC = gcc -std=gnu11$/;"	m
+CLUSTER_SIZE	src/gqf.c	35;"	d	file:
+CXX	Makefile	/^CXX = g++ -std=c++11$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -Wall $(DEBUG) $(PROFILE) $(OPT) $(ARCH) -m64 -I. -Iinclude$/;"	m
+DEBUG	Makefile	/^	DEBUG=$/;"	m
+DEBUG	Makefile	/^	DEBUG=-g$/;"	m
+DEBUG_CQF	src/gqf.c	54;"	d	file:
+DEBUG_DUMP	src/gqf.c	57;"	d	file:
+DEC_TO	src/test_partitioned_counter.c	27;"	d	file:
+DISTANCE_FROM_HOME_SLOT_CUTOFF	src/gqf.c	45;"	d	file:
+GET_KEY_HASH	src/gqf.c	43;"	d	file:
+GET_NO_LOCK	src/gqf.c	40;"	d	file:
+GET_TRY_ONCE_LOCK	src/gqf.c	41;"	d	file:
+GET_WAIT_FOR_LOCK	src/gqf.c	42;"	d	file:
+GQF_WRAPPER_H	include/gqf_wrapper.h	11;"	d
+H_Ns	src/zipf.c	/^    double H_Ns;                 \/\/ H_{N,s}.$/;"	m	struct:zipfian	file:
+INC_BY	src/test_partitioned_counter.c	28;"	d	file:
+INC_TO	src/test_partitioned_counter.c	26;"	d	file:
+LD	Makefile	/^LD= gcc -std=gnu11$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = $(DEBUG) $(PROFILE) $(OPT) -lpthread -lssl -lcrypto -lm$/;"	m
+LOC_INCLUDE	Makefile	/^LOC_INCLUDE=include$/;"	m
+LOC_SRC	Makefile	/^LOC_SRC=src$/;"	m
+LOC_TEST	Makefile	/^LOC_TEST=test$/;"	m
+MADVISE_GRANULARITY	src/gqf_file.c	351;"	d	file:
+MAGIC_NUMBER	include/gqf_int.h	23;"	d
+MAX_VALUE	src/gqf.c	31;"	d	file:
+METADATA_WORD	src/gqf.c	36;"	d	file:
+MurmurHash64A	src/hashutil.c	/^uint64_t MurmurHash64A ( const void * key, int len, unsigned int seed )$/;"	f
+MurmurHash64B	src/hashutil.c	/^uint64_t MurmurHash64B ( const void * key, int len, unsigned int seed )$/;"	f
+N	src/zipf.c	/^    long N;                      \/\/ N, the size of the universe.$/;"	m	struct:zipfian	file:
+NPAIRS	src/zipf.c	/^enum { NPAIRS = 1000000 };$/;"	e	enum:__anon1	file:
+NUM_RUNS	src/test_partitioned_counter.c	29;"	d	file:
+NUM_SLOTS_TO_LOCK	src/gqf.c	34;"	d	file:
+NUM_SLOTS_TO_LOCK	src/gqf_file.c	31;"	d	file:
+OBJDIR	Makefile	/^OBJDIR=obj$/;"	m
+OPT	Makefile	/^	OPT=$/;"	m
+OPT	Makefile	/^	OPT=-Ofast$/;"	m
+PC_ERROR	include/partitioned_counter.h	36;"	d
+PRINT_DEBUG	src/gqf.c	49;"	d	file:
+PRINT_DEBUG	src/gqf.c	51;"	d	file:
+PROFILE	Makefile	/^	PROFILE=-pg -no-pie # for bug in gprof.$/;"	m
+QF	include/gqf.h	/^	typedef quotient_filter QF;$/;"	t
+QF	include/gqf_int.h	/^	typedef quotient_filter QF;$/;"	t
+QFI_INVALID	include/gqf.h	249;"	d
+QF_BITS_PER_SLOT	include/gqf_int.h	30;"	d
+QF_BLOCK_OFFSET_BITS	include/gqf_int.h	33;"	d
+QF_COULDNT_LOCK	include/gqf.h	134;"	d
+QF_DOESNT_EXIST	include/gqf.h	135;"	d
+QF_HASH_DEFAULT	include/gqf.h	/^		QF_HASH_DEFAULT,$/;"	e	enum:qf_hashmode
+QF_HASH_INVERTIBLE	include/gqf.h	/^		QF_HASH_INVERTIBLE,$/;"	e	enum:qf_hashmode
+QF_HASH_NONE	include/gqf.h	/^		QF_HASH_NONE$/;"	e	enum:qf_hashmode
+QF_INVALID	include/gqf.h	248;"	d
+QF_KEY_IS_HASH	include/gqf.h	70;"	d
+QF_METADATA_WORDS_PER_BLOCK	include/gqf_int.h	36;"	d
+QF_NO_LOCK	include/gqf.h	64;"	d
+QF_NO_SPACE	include/gqf.h	133;"	d
+QF_SLOTS_PER_BLOCK	include/gqf_int.h	35;"	d
+QF_TRY_ONCE_LOCK	include/gqf.h	65;"	d
+QF_USEFILE_READ_ONLY	include/gqf_file.h	28;"	d
+QF_USEFILE_READ_WRITE	include/gqf_file.h	29;"	d
+QF_WAIT_FOR_LOCK	include/gqf.h	66;"	d
+QFi	include/gqf.h	/^	typedef quotient_filter_iterator QFi;$/;"	t
+REMAINDER_WORD	src/gqf.c	702;"	d	file:
+RFUN	src/bm.c	25;"	d	file:
+RFUN	src/bm.c	28;"	d	file:
+RFUN	src/zipf.c	12;"	d	file:
+RFUN	src/zipf.c	15;"	d	file:
+ROUND_TO_PAGE_GROUP	src/gqf_file.c	352;"	d	file:
+RSEED	src/bm.c	26;"	d	file:
+RSEED	src/bm.c	29;"	d	file:
+RSEED	src/zipf.c	13;"	d	file:
+RSEED	src/zipf.c	16;"	d	file:
+STATELEN	src/bm.c	/^	int STATELEN;$/;"	m	struct:uniform_online_state	file:
+TARGETS	Makefile	/^TARGETS=test test_threadsafe test_pc bm$/;"	m
+TOTAL_COUNT	src/test_partitioned_counter.c	/^uint64_t TOTAL_COUNT;$/;"	v
+ZIPFIAN	include/zipf.h	/^typedef struct zipfian const *ZIPFIAN;$/;"	t
+ZIPF_H	include/zipf.h	2;"	d
+_GNU_SOURCE	src/partitioned_counter.c	10;"	d	file:
+_GQF_FILE_H_	include/gqf_file.h	11;"	d
+_GQF_H_	include/gqf.h	11;"	d
+_GQF_INT_H_	include/gqf_int.h	11;"	d
+_HASHUTIL_H_	include/hashutil.h	11;"	d
+_PARTITIONED_COUNTER_H_	include/partitioned_counter.h	11;"	d
+_remove	src/gqf.c	/^inline static int _remove(QF *qf, __uint128_t hash, uint64_t count, uint8_t$/;"	f	file:
+_select64	src/gqf.c	/^static inline uint64_t _select64(uint64_t x, int k)$/;"	f	file:
+aes_hash2	src/bm.c	/^uint64_t aes_hash2(uint64_t x)$/;"	f
+app_file_read	src/bm.c	/^__uint128_t *app_file_read(char *ip_file, int num)$/;"	f
+app_params	src/bm.c	/^typedef struct app_params {$/;"	s	file:
+app_params	src/bm.c	/^} app_params;$/;"	t	typeref:struct:app_params	file:
+app_pregen	src/bm.c	/^rand_generator app_pregen = {$/;"	v
+app_pregen_duplicate	src/bm.c	/^void *app_pregen_duplicate(void *state)$/;"	f
+app_pregen_gen_rand	src/bm.c	/^int app_pregen_gen_rand(void *_state, uint64_t noutputs, __uint128_t *outputs)$/;"	f
+app_pregen_init	src/bm.c	/^void *app_pregen_init(uint64_t maxoutputs, __uint128_t maxvalue, void *params)$/;"	f
+app_pregen_state	src/bm.c	/^typedef struct app_pregen_state {$/;"	s	file:
+app_pregen_state	src/bm.c	/^} app_pregen_state;$/;"	t	typeref:struct:app_pregen_state	file:
+assert	src/gqf_file.c	14;"	d	file:
+auto_resize	include/gqf_int.h	/^		uint32_t auto_resize;$/;"	m	struct:quotient_filter_runtime_data
+bitrank	src/gqf.c	/^static inline int bitrank(uint64_t val, int pos) {$/;"	f	file:
+bits_per_slot	include/gqf_int.h	/^		uint64_t bits_per_slot;$/;"	m	struct:quotient_filter_metadata
+bitscanreverse	src/gqf.c	/^static inline int64_t bitscanreverse(uint64_t val)$/;"	f	file:
+bitselect	src/gqf.c	/^static inline uint64_t bitselect(uint64_t val, int rank) {$/;"	f	file:
+bitselectv	src/gqf.c	/^static inline uint64_t bitselectv(const uint64_t val, int ignore, int rank)$/;"	f	file:
+block_offset	src/gqf.c	/^static inline uint64_t block_offset(const QF *qf, uint64_t blockidx)$/;"	f	file:
+blocks	include/gqf_int.h	/^		qfblock *blocks;$/;"	m	struct:quotient_filter
+buf	src/bm.c	/^	char *buf;$/;"	m	struct:uniform_online_state	file:
+c_info	include/gqf_int.h	/^		cluster_data *c_info;$/;"	m	struct:quotient_filter_iterator
+cf	src/test_threadsafe.c	/^	QF *cf;$/;"	m	struct:insert_args	file:
+cluster_data	include/gqf_int.h	/^	} cluster_data;$/;"	t	typeref:struct:__anon3
+cmp_uint64_t	src/bm.c	/^int cmp_uint64_t(const void *a, const void *b)$/;"	f
+container_resize	include/gqf_int.h	/^		int64_t (*container_resize)(QF *qf, uint64_t nslots);$/;"	m	struct:quotient_filter_runtime_data
+counter	include/partitioned_counter.h	/^	int64_t counter;$/;"	m	struct:local_counter
+create_zipfian	src/zipf.c	/^ZIPFIAN create_zipfian (double s, long N, long int (*randomfun)(void)) {$/;"	f
+cumulative	src/zipf.c	/^    double cumulative;           \/\/   The sum of the all the probabilities of all the elements represented by previous buckets.$/;"	m	struct:zpair	file:
+cur_length	include/gqf_int.h	/^		uint16_t cur_length;$/;"	m	struct:quotient_filter_iterator
+cur_start_index	include/gqf_int.h	/^		uint64_t cur_start_index;$/;"	m	struct:quotient_filter_iterator
+current	include/gqf_int.h	/^		uint64_t current;$/;"	m	struct:quotient_filter_iterator
+decode_counter	src/gqf.c	/^static inline uint64_t decode_counter(const QF *qf, uint64_t index, uint64_t$/;"	f	file:
+destroy	src/bm.c	/^	destroy_op destroy;$/;"	m	struct:filter	file:
+destroy_op	src/bm.c	/^typedef int (*destroy_op)();$/;"	t	file:
+destroy_zipfian	src/zipf.c	/^void destroy_zipfian (ZIPFIAN z) {$/;"	f
+dup	src/bm.c	/^	duplicate_rand dup;$/;"	m	struct:rand_generator	file:
+duplicate_rand	src/bm.c	/^typedef void * (*duplicate_rand)(void *state);$/;"	t	file:
+encode_counter	src/gqf.c	/^static inline uint64_t *encode_counter(QF *qf, uint64_t remainder, uint64_t$/;"	f	file:
+end	src/bm.c	/^	iterator_end_op end;$/;"	m	struct:filter	file:
+end	src/test_threadsafe.c	/^	uint64_t end;$/;"	m	struct:insert_args	file:
+exp	src/bm.c	/^	double exp;$/;"	m	struct:zipf_params	file:
+f_info	include/gqf_int.h	/^		file_info f_info;$/;"	m	struct:quotient_filter_runtime_data
+fd	include/gqf_int.h	/^		int fd;$/;"	m	struct:file_info
+file_info	include/gqf_int.h	/^	} file_info;$/;"	t	typeref:struct:file_info
+file_info	include/gqf_int.h	/^  typedef struct file_info {$/;"	s
+filepath	include/gqf_int.h	/^		char *filepath;$/;"	m	struct:file_info
+filter	src/bm.c	/^typedef struct filter {$/;"	s	file:
+filter	src/bm.c	/^} filter;$/;"	t	typeref:struct:filter	file:
+filter_multi_merge	src/bm.c	/^void filter_multi_merge(filter qf_arr[], int nqf, filter qfr)$/;"	f
+find_first_empty_slot	src/gqf.c	/^static inline uint64_t find_first_empty_slot(QF *qf, uint64_t from)$/;"	f	file:
+find_next_n_empty_slots	src/gqf.c	/^static inline void find_next_n_empty_slots(QF *qf, uint64_t from, uint64_t n,$/;"	f	file:
+freq	src/test_threadsafe.c	/^	int freq;$/;"	m	struct:insert_args	file:
+g_quotient_filter	include/gqf_wrapper.h	/^QF g_quotient_filter;$/;"	v
+g_quotient_filter_itr	include/gqf_wrapper.h	/^QFi g_quotient_filter_itr;$/;"	v
+gen	src/bm.c	/^	gen_rand gen;$/;"	m	struct:rand_generator	file:
+gen_rand	src/bm.c	/^typedef int (*gen_rand)(void *state, uint64_t noutputs, __uint128_t *outputs);$/;"	t	file:
+generate_random_keys	src/zipf.c	/^void generate_random_keys (uint64_t *elems, long N, long gencount, double s) {$/;"	f
+get	src/bm.c	/^	iterator_get_op get;$/;"	m	struct:filter	file:
+get_block	include/gqf_int.h	/^  static inline qfblock * get_block(const QF *qf, uint64_t block_index)$/;"	f
+get_range_op	src/bm.c	/^typedef __uint128_t (*get_range_op)();$/;"	t	file:
+get_slot	src/gqf.c	/^static inline uint64_t get_slot(const QF *qf, uint64_t index)$/;"	f	file:
+global_counter	include/partitioned_counter.h	/^	int64_t *global_counter;$/;"	m	struct:partitioned_counter
+gqf	src/bm.c	/^filter gqf = {$/;"	v
+gqf_destroy	include/gqf_wrapper.h	/^extern inline int gqf_destroy()$/;"	f
+gqf_end	include/gqf_wrapper.h	/^extern inline int gqf_end()$/;"	f
+gqf_get	include/gqf_wrapper.h	/^extern inline int gqf_get(uint64_t *key, uint64_t *value, uint64_t *count)$/;"	f
+gqf_init	include/gqf_wrapper.h	/^extern inline int gqf_init(uint64_t nbits, uint64_t num_hash_bits)$/;"	f
+gqf_insert	include/gqf_wrapper.h	/^extern inline int gqf_insert(__uint128_t val, uint64_t count)$/;"	f
+gqf_iterator	include/gqf_wrapper.h	/^extern inline int gqf_iterator(uint64_t pos)$/;"	f
+gqf_lookup	include/gqf_wrapper.h	/^extern inline int gqf_lookup(__uint128_t val)$/;"	f
+gqf_next	include/gqf_wrapper.h	/^extern inline int gqf_next()$/;"	f
+gqf_range	include/gqf_wrapper.h	/^extern inline __uint128_t gqf_range()$/;"	f
+hash_64	src/hashutil.c	/^uint64_t hash_64(uint64_t key, uint64_t mask)$/;"	f
+hash_64i	src/hashutil.c	/^uint64_t hash_64i(uint64_t key, uint64_t mask)$/;"	f
+hash_mode	include/gqf_int.h	/^		enum qf_hashmode hash_mode;$/;"	m	struct:quotient_filter_metadata	typeref:enum:quotient_filter_metadata::qf_hashmode
+init	src/bm.c	/^	init_op init;$/;"	m	struct:filter	file:
+init	src/bm.c	/^	rand_init init;$/;"	m	struct:rand_generator	file:
+init_op	src/bm.c	/^typedef int (*init_op)(uint64_t nvals, uint64_t hash);$/;"	t	file:
+insert	src/bm.c	/^	insert_op insert;$/;"	m	struct:filter	file:
+insert	src/gqf.c	/^static inline int insert(QF *qf, __uint128_t hash, uint64_t count, uint8_t$/;"	f	file:
+insert1	src/gqf.c	/^static inline int insert1(QF *qf, __uint128_t hash, uint8_t runtime_lock)$/;"	f	file:
+insert_args	src/test_threadsafe.c	/^typedef struct insert_args {$/;"	s	file:
+insert_args	src/test_threadsafe.c	/^} insert_args;$/;"	t	typeref:struct:insert_args	file:
+insert_bm	src/test_threadsafe.c	/^void *insert_bm(void *arg)$/;"	f
+insert_op	src/bm.c	/^typedef int (*insert_op)(__uint128_t val, uint64_t count);$/;"	t	file:
+insert_replace_slots_and_shift_remainders_and_runends_and_offsets	src/gqf.c	/^static inline bool insert_replace_slots_and_shift_remainders_and_runends_and_offsets(QF		*qf, $/;"	f	file:
+ip_file	src/bm.c	/^	char *ip_file;$/;"	m	struct:app_params	file:
+is_empty	src/gqf.c	/^static inline int is_empty(const QF *qf, uint64_t slot_index)$/;"	f	file:
+is_occupied	src/gqf.c	/^static inline int is_occupied(const QF *qf, uint64_t index)$/;"	f	file:
+is_runend	src/gqf.c	/^static inline int is_runend(const QF *qf, uint64_t index)$/;"	f	file:
+iterator	src/bm.c	/^	iterator_op iterator;$/;"	m	struct:filter	file:
+iterator_end_op	src/bm.c	/^typedef int (*iterator_end_op)();$/;"	t	file:
+iterator_get_op	src/bm.c	/^typedef int (*iterator_get_op)(uint64_t *key, uint64_t *value, uint64_t *count);$/;"	t	file:
+iterator_next_op	src/bm.c	/^typedef int (*iterator_next_op)();$/;"	t	file:
+iterator_op	src/bm.c	/^typedef int (*iterator_op)(uint64_t pos);$/;"	t	file:
+kSelectInByte	src/gqf.c	/^const uint8_t kSelectInByte[2048] = {$/;"	v
+key_bits	include/gqf_int.h	/^		uint64_t key_bits;$/;"	m	struct:quotient_filter_metadata
+key_remainder_bits	include/gqf_int.h	/^		uint64_t key_remainder_bits;$/;"	m	struct:quotient_filter_metadata
+lctr_t	include/partitioned_counter.h	/^typedef struct local_counter lctr_t;$/;"	t	typeref:struct:local_counter
+length	include/gqf_int.h	/^		uint16_t length;$/;"	m	struct:__anon3
+local_counter	include/partitioned_counter.h	/^typedef struct local_counter {$/;"	s
+local_counter	include/partitioned_counter.h	/^} local_counter;$/;"	t	typeref:struct:local_counter
+local_counters	include/partitioned_counter.h	/^	lctr_t *local_counters;$/;"	m	struct:partitioned_counter
+locks	include/gqf_int.h	/^		volatile int *locks;$/;"	m	struct:quotient_filter_runtime_data
+locks_acquired_single_attempt	include/gqf_int.h	/^		uint64_t locks_acquired_single_attempt;$/;"	m	struct:__anon2
+locks_taken	include/gqf_int.h	/^		uint64_t locks_taken;$/;"	m	struct:__anon2
+lookup	src/bm.c	/^	lookup_op lookup;$/;"	m	struct:filter	file:
+lookup_op	src/bm.c	/^typedef int (*lookup_op)(__uint128_t val);$/;"	t	file:
+low	src/zipf.c	/^    long low;                    \/\/   How many elements are represented by all the previous buckets.$/;"	m	struct:zpair	file:
+m_w	src/bm.c	/^static unsigned int m_w = 1;$/;"	v	file:
+m_w	src/zipf.c	/^static unsigned int m_w = 1;$/;"	v	file:
+m_z	src/bm.c	/^static unsigned int m_z = 1;$/;"	v	file:
+m_z	src/zipf.c	/^static unsigned int m_z = 1;$/;"	v	file:
+magic_endian_number	include/gqf_int.h	/^		uint64_t magic_endian_number;$/;"	m	struct:quotient_filter_metadata
+main	src/bm.c	/^int main(int argc, char **argv)$/;"	f
+main	src/test.c	/^int main(int argc, char **argv)$/;"	f
+main	src/test_partitioned_counter.c	/^int main (int argc, char *argv[])$/;"	f
+main	src/test_threadsafe.c	/^int main(int argc, char **argv)$/;"	f
+make_madvise_calls	src/gqf_file.c	/^static void make_madvise_calls(const QF *qf, uint64_t oldrun, uint64_t newrun)$/;"	f	file:
+maxoutputs	src/bm.c	/^	uint64_t maxoutputs;$/;"	m	struct:app_pregen_state	file:
+maxoutputs	src/bm.c	/^	uint64_t maxoutputs;$/;"	m	struct:uniform_online_state	file:
+maxoutputs	src/bm.c	/^	uint64_t maxoutputs;$/;"	m	struct:uniform_pregen_state	file:
+maxoutputs	src/bm.c	/^	uint64_t maxoutputs;$/;"	m	struct:zipfian_pregen_state	file:
+maxvalue	src/bm.c	/^	uint64_t maxvalue;$/;"	m	struct:uniform_online_state	file:
+metadata	include/gqf_int.h	/^		qfmetadata *metadata;$/;"	m	struct:quotient_filter
+metadata_lock	include/gqf_int.h	/^		volatile int metadata_lock;$/;"	m	struct:quotient_filter_runtime_data
+might_be_empty	src/gqf.c	/^static inline int might_be_empty(const QF *qf, uint64_t slot_index)$/;"	f	file:
+min	src/partitioned_counter.c	22;"	d	file:
+modify_metadata	src/gqf.c	/^static void modify_metadata(pc_t *metadata, int cnt)$/;"	f	file:
+multi_threaded_insertion	src/test_threadsafe.c	/^void multi_threaded_insertion(insert_args args[], int tcnt)$/;"	f
+myrandom	src/bm.c	/^static long myrandom()$/;"	f	file:
+myrandom	src/zipf.c	/^static long myrandom()$/;"	f	file:
+mysrandom	src/bm.c	/^static void mysrandom (unsigned int seed) {$/;"	f	file:
+mysrandom	src/zipf.c	/^static void mysrandom (unsigned int seed) {$/;"	f	file:
+nblocks	include/gqf_int.h	/^		uint64_t nblocks;$/;"	m	struct:quotient_filter_metadata
+ndistinct_elts	include/gqf_int.h	/^		uint64_t ndistinct_elts;$/;"	m	struct:quotient_filter_metadata
+nelts	include/gqf_int.h	/^		uint64_t nelts;$/;"	m	struct:quotient_filter_metadata
+next	src/bm.c	/^	iterator_next_op next;$/;"	m	struct:filter	file:
+next_slot	src/gqf.c	/^static inline uint64_t next_slot(QF *qf, uint64_t current) $/;"	f	file:
+nextoutput	src/bm.c	/^	uint64_t nextoutput;$/;"	m	struct:app_pregen_state	file:
+nextoutput	src/bm.c	/^	uint64_t nextoutput;$/;"	m	struct:uniform_pregen_state	file:
+nextoutput	src/bm.c	/^	uint64_t nextoutput;$/;"	m	struct:zipfian_pregen_state	file:
+noccupied_slots	include/gqf_int.h	/^		uint64_t noccupied_slots;$/;"	m	struct:quotient_filter_metadata
+nslots	include/gqf_int.h	/^		uint64_t nslots;$/;"	m	struct:quotient_filter_metadata
+num	src/bm.c	/^	int num;$/;"	m	struct:app_params	file:
+num	src/zipf.c	/^    long num;                    \/\/   How many elements are represented by this bucket$/;"	m	struct:zpair	file:
+num_clusters	include/gqf_int.h	/^		uint32_t num_clusters;$/;"	m	struct:quotient_filter_iterator
+num_counters	include/partitioned_counter.h	/^	uint32_t num_counters;$/;"	m	struct:partitioned_counter
+num_locks	include/gqf_int.h	/^		uint64_t num_locks;$/;"	m	struct:quotient_filter_runtime_data
+occupieds	include/gqf_int.h	/^		uint64_t occupieds[QF_METADATA_WORDS_PER_BLOCK];$/;"	m	struct:qfblock
+offset	include/gqf_int.h	/^		uint8_t offset; $/;"	m	struct:qfblock
+offset_lower_bound	src/gqf.c	/^static inline int offset_lower_bound(const QF *qf, uint64_t slot_index)$/;"	f	file:
+outputs	src/bm.c	/^	__uint128_t *outputs;$/;"	m	struct:app_pregen_state	file:
+outputs	src/bm.c	/^	__uint128_t *outputs;$/;"	m	struct:uniform_pregen_state	file:
+outputs	src/bm.c	/^	__uint128_t *outputs;$/;"	m	struct:zipfian_pregen_state	file:
+padding	include/partitioned_counter.h	/^	int64_t padding[7];$/;"	m	struct:local_counter
+pairs	src/zipf.c	/^    struct zpair pairs[NPAIRS]; $/;"	m	struct:zipfian	typeref:struct:zipfian::zpair	file:
+params	src/bm.c	/^	app_params *params;$/;"	m	struct:app_pregen_state	file:
+params	src/bm.c	/^	zipf_params *params;$/;"	m	struct:zipfian_pregen_state	file:
+partitioned_counter	include/partitioned_counter.h	/^typedef struct partitioned_counter {$/;"	s
+partitioned_counter	include/partitioned_counter.h	/^} partitioned_counter;$/;"	t	typeref:struct:partitioned_counter
+pc_add	src/partitioned_counter.c	/^void pc_add(pc_t *pc, int64_t count) {$/;"	f
+pc_destructor	src/partitioned_counter.c	/^void pc_destructor(pc_t *pc)$/;"	f
+pc_init	src/partitioned_counter.c	/^int pc_init(pc_t *pc, int64_t *global_counter, uint32_t num_counters,$/;"	f
+pc_ndistinct_elts	include/gqf_int.h	/^		pc_t pc_ndistinct_elts;$/;"	m	struct:quotient_filter_runtime_data
+pc_nelts	include/gqf_int.h	/^		pc_t pc_nelts;$/;"	m	struct:quotient_filter_runtime_data
+pc_noccupied_slots	include/gqf_int.h	/^		pc_t pc_noccupied_slots;$/;"	m	struct:quotient_filter_runtime_data
+pc_sync	src/partitioned_counter.c	/^void pc_sync(pc_t *pc) {$/;"	f
+pc_t	include/partitioned_counter.h	/^typedef struct partitioned_counter pc_t;$/;"	t	typeref:struct:partitioned_counter
+popcnt	src/gqf.c	/^static inline int popcnt(uint64_t val)$/;"	f	file:
+popcntv	src/gqf.c	/^static inline int popcntv(const uint64_t val, int ignore)$/;"	f	file:
+probably_is_empty	src/gqf.c	/^static inline int probably_is_empty(const QF *qf, uint64_t slot_index)$/;"	f	file:
+qf	include/gqf_int.h	/^		const QF *qf;$/;"	m	struct:quotient_filter_iterator
+qf_closefile	src/gqf_file.c	/^bool qf_closefile(QF* qf)$/;"	f
+qf_copy	src/gqf.c	/^void qf_copy(QF *dest, const QF *src)$/;"	f
+qf_count_key_value	src/gqf.c	/^uint64_t qf_count_key_value(const QF *qf, uint64_t key, uint64_t value,$/;"	f
+qf_delete_key_value	src/gqf.c	/^int qf_delete_key_value(QF *qf, uint64_t key, uint64_t value, uint8_t flags)$/;"	f
+qf_deletefile	src/gqf_file.c	/^bool qf_deletefile(QF* qf)$/;"	f
+qf_deserialize	src/gqf_file.c	/^uint64_t qf_deserialize(QF *qf, const char *filename)$/;"	f
+qf_destroy	src/gqf.c	/^void *qf_destroy(QF *qf)$/;"	f
+qf_dump	src/gqf.c	/^void qf_dump(const QF *qf)$/;"	f
+qf_dump_block	src/gqf.c	/^static inline void qf_dump_block(const QF *qf, uint64_t i)$/;"	f	file:
+qf_dump_metadata	src/gqf.c	/^void qf_dump_metadata(const QF *qf) {$/;"	f
+qf_free	src/gqf.c	/^bool qf_free(QF *qf)$/;"	f
+qf_get_bits_per_slot	src/gqf.c	/^uint64_t qf_get_bits_per_slot(const QF *qf) {$/;"	f
+qf_get_hash_range	src/gqf.c	/^__uint128_t qf_get_hash_range(const QF *qf) {$/;"	f
+qf_get_hash_seed	src/gqf.c	/^uint64_t qf_get_hash_seed(const QF *qf) {$/;"	f
+qf_get_hashmode	src/gqf.c	/^enum qf_hashmode qf_get_hashmode(const QF *qf) {$/;"	f
+qf_get_nslots	src/gqf.c	/^uint64_t qf_get_nslots(const QF *qf) {$/;"	f
+qf_get_num_distinct_key_value_pairs	src/gqf.c	/^uint64_t qf_get_num_distinct_key_value_pairs(const QF *qf) {$/;"	f
+qf_get_num_key_bits	src/gqf.c	/^uint64_t qf_get_num_key_bits(const QF *qf) {$/;"	f
+qf_get_num_key_remainder_bits	src/gqf.c	/^uint64_t qf_get_num_key_remainder_bits(const QF *qf) {$/;"	f
+qf_get_num_occupied_slots	src/gqf.c	/^uint64_t qf_get_num_occupied_slots(const QF *qf) {$/;"	f
+qf_get_num_value_bits	src/gqf.c	/^uint64_t qf_get_num_value_bits(const QF *qf) {$/;"	f
+qf_get_sum_of_counts	src/gqf.c	/^uint64_t qf_get_sum_of_counts(const QF *qf) {$/;"	f
+qf_get_total_size_in_bytes	src/gqf.c	/^uint64_t qf_get_total_size_in_bytes(const QF *qf) {$/;"	f
+qf_get_unique_index	src/gqf.c	/^int64_t qf_get_unique_index(const QF *qf, uint64_t key, uint64_t value,$/;"	f
+qf_hashmode	include/gqf.h	/^	enum qf_hashmode {$/;"	g
+qf_init	src/gqf.c	/^uint64_t qf_init(QF *qf, uint64_t nslots, uint64_t key_bits, uint64_t value_bits,$/;"	f
+qf_initfile	src/gqf_file.c	/^bool qf_initfile(QF *qf, uint64_t nslots, uint64_t key_bits, uint64_t$/;"	f
+qf_inner_product	src/gqf.c	/^uint64_t qf_inner_product(const QF *qfa, const QF *qfb)$/;"	f
+qf_insert	src/gqf.c	/^int qf_insert(QF *qf, uint64_t key, uint64_t value, uint64_t count, uint8_t$/;"	f
+qf_intersect	src/gqf.c	/^void qf_intersect(const QF *qfa, const QF *qfb, QF *qfr)$/;"	f
+qf_is_auto_resize_enabled	src/gqf.c	/^bool qf_is_auto_resize_enabled(const QF *qf) {$/;"	f
+qf_iterator_from_key_value	src/gqf.c	/^int64_t qf_iterator_from_key_value(const QF *qf, QFi *qfi, uint64_t key,$/;"	f
+qf_iterator_from_position	src/gqf.c	/^int64_t qf_iterator_from_position(const QF *qf, QFi *qfi, uint64_t position)$/;"	f
+qf_lock	src/gqf.c	/^static bool qf_lock(QF *qf, uint64_t hash_bucket_index, bool small, uint8_t$/;"	f	file:
+qf_magnitude	src/gqf.c	/^uint64_t qf_magnitude(const QF *qf)$/;"	f
+qf_malloc	src/gqf.c	/^bool qf_malloc(QF *qf, uint64_t nslots, uint64_t key_bits, uint64_t$/;"	f
+qf_merge	src/gqf.c	/^void qf_merge(const QF *qfa, const QF *qfb, QF *qfc)$/;"	f
+qf_multi_merge	src/gqf.c	/^void qf_multi_merge(const QF *qf_arr[], int nqf, QF *qfr)$/;"	f
+qf_query	src/gqf.c	/^uint64_t qf_query(const QF *qf, uint64_t key, uint64_t *value, uint8_t flags)$/;"	f
+qf_remove	src/gqf.c	/^int qf_remove(QF *qf, uint64_t key, uint64_t value, uint64_t count, uint8_t$/;"	f
+qf_reset	src/gqf.c	/^void qf_reset(QF *qf)$/;"	f
+qf_resize	src/gqf.c	/^uint64_t qf_resize(QF* qf, uint64_t nslots, void* buffer, uint64_t buffer_len)$/;"	f
+qf_resize_file	src/gqf_file.c	/^int64_t qf_resize_file(QF *qf, uint64_t nslots)$/;"	f
+qf_resize_malloc	src/gqf.c	/^int64_t qf_resize_malloc(QF *qf, uint64_t nslots)$/;"	f
+qf_serialize	src/gqf_file.c	/^uint64_t qf_serialize(const QF *qf, const char *filename)$/;"	f
+qf_set_auto_resize	src/gqf.c	/^void qf_set_auto_resize(QF* qf, bool enabled)$/;"	f
+qf_set_count	src/gqf.c	/^int qf_set_count(QF *qf, uint64_t key, uint64_t value, uint64_t count, uint8_t$/;"	f
+qf_spin_lock	src/gqf.c	/^static inline bool qf_spin_lock(QF *qf, volatile int *lock, uint64_t idx,$/;"	f	file:
+qf_spin_lock	src/gqf.c	/^static inline bool qf_spin_lock(volatile int *lock, uint8_t flag)$/;"	f	file:
+qf_spin_unlock	src/gqf.c	/^static inline void qf_spin_unlock(volatile int *lock)$/;"	f	file:
+qf_sync_counters	src/gqf.c	/^void qf_sync_counters(const QF *qf) {$/;"	f
+qf_unlock	src/gqf.c	/^static void qf_unlock(QF *qf, uint64_t hash_bucket_index, bool small)$/;"	f	file:
+qf_use	src/gqf.c	/^uint64_t qf_use(QF* qf, void* buffer, uint64_t buffer_len)$/;"	f
+qf_usefile	src/gqf_file.c	/^uint64_t qf_usefile(QF* qf, const char* filename, int flag)$/;"	f
+qfblock	include/gqf_int.h	/^	typedef struct __attribute__ ((__packed__)) qfblock {$/;"	s
+qfblock	include/gqf_int.h	/^	typedef struct qfblock qfblock;$/;"	t	typeref:struct:qfblock
+qfblock	include/gqf_int.h	/^	} qfblock;$/;"	t	typeref:struct:qfblock
+qfi_end	src/gqf.c	/^bool qfi_end(const QFi *qfi)$/;"	f
+qfi_get	src/gqf.c	/^static int qfi_get(const QFi *qfi, uint64_t *key, uint64_t *value, uint64_t$/;"	f	file:
+qfi_get_hash	src/gqf.c	/^int qfi_get_hash(const QFi *qfi, uint64_t *key, uint64_t *value, uint64_t$/;"	f
+qfi_get_key	src/gqf.c	/^int qfi_get_key(const QFi *qfi, uint64_t *key, uint64_t *value, uint64_t$/;"	f
+qfi_initial_madvise	src/gqf_file.c	/^int qfi_initial_madvise(QFi *qfi)$/;"	f
+qfi_next	src/gqf.c	/^int qfi_next(QFi *qfi)$/;"	f
+qfi_next_madvise	src/gqf_file.c	/^int qfi_next_madvise(QFi *qfi)$/;"	f
+qfmetadata	include/gqf_int.h	/^	typedef quotient_filter_metadata qfmetadata;$/;"	t
+qfruntime	include/gqf_int.h	/^	typedef quotient_filter_runtime_data qfruntime;$/;"	t
+quotient_filter	include/gqf.h	/^	typedef struct quotient_filter quotient_filter;$/;"	t	typeref:struct:quotient_filter
+quotient_filter	include/gqf_int.h	/^	typedef struct quotient_filter {$/;"	s
+quotient_filter	include/gqf_int.h	/^	} quotient_filter;$/;"	t	typeref:struct:quotient_filter
+quotient_filter_iterator	include/gqf.h	/^	typedef struct quotient_filter_iterator quotient_filter_iterator;$/;"	t	typeref:struct:quotient_filter_iterator
+quotient_filter_iterator	include/gqf_int.h	/^	typedef struct quotient_filter_iterator {$/;"	s
+quotient_filter_iterator	include/gqf_int.h	/^	} quotient_filter_iterator;$/;"	t	typeref:struct:quotient_filter_iterator
+quotient_filter_metadata	include/gqf_int.h	/^	typedef struct quotient_filter_metadata {$/;"	s
+quotient_filter_metadata	include/gqf_int.h	/^	} quotient_filter_metadata;$/;"	t	typeref:struct:quotient_filter_metadata
+quotient_filter_runtime_data	include/gqf_int.h	/^	typedef struct quotient_filter_runtime_data {$/;"	s
+quotient_filter_runtime_data	include/gqf_int.h	/^	} quotient_filter_runtime_data;$/;"	t	typeref:struct:quotient_filter_runtime_data
+rand_generator	src/bm.c	/^typedef struct rand_generator {$/;"	s	file:
+rand_generator	src/bm.c	/^} rand_generator;$/;"	t	typeref:struct:rand_generator	file:
+rand_init	src/bm.c	/^typedef void * (*rand_init)(uint64_t maxoutputs, __uint128_t maxvalue, void *params);$/;"	t	file:
+rand_state	src/bm.c	/^	struct random_data *rand_state;$/;"	m	struct:uniform_online_state	typeref:struct:uniform_online_state::random_data	file:
+randomfun	src/zipf.c	/^    long int (*randomfun)(void);$/;"	m	struct:zipfian	file:
+range	include/gqf_int.h	/^		__uint128_t range;$/;"	m	struct:quotient_filter_metadata
+range	src/bm.c	/^	get_range_op range;$/;"	m	struct:filter	file:
+rdtsc	src/gqf.c	/^static __inline__ unsigned long long rdtsc(void)$/;"	f	file:
+remove_replace_slots_and_shift_remainders_and_runends_and_offsets	src/gqf.c	/^static inline int remove_replace_slots_and_shift_remainders_and_runends_and_offsets(QF		        *qf,$/;"	f	file:
+reserved	include/gqf_int.h	/^		uint32_t reserved;$/;"	m	struct:quotient_filter_metadata
+run	include/gqf_int.h	/^		uint64_t run;$/;"	m	struct:quotient_filter_iterator
+run_end	src/gqf.c	/^static inline uint64_t run_end(const QF *qf, uint64_t hash_bucket_index)$/;"	f	file:
+runends	include/gqf_int.h	/^		uint64_t runends[QF_METADATA_WORDS_PER_BLOCK];$/;"	m	struct:qfblock
+runtimedata	include/gqf_int.h	/^		qfruntime *runtimedata;$/;"	m	struct:quotient_filter
+s	src/zipf.c	/^    double s;                    \/\/ s, the characteristic exponent.$/;"	m	struct:zipfian	file:
+sample	src/bm.c	/^	long sample;$/;"	m	struct:zipf_params	file:
+seed	include/gqf_int.h	/^		uint32_t seed;$/;"	m	struct:quotient_filter_metadata
+seed	src/bm.c	/^	unsigned int seed;$/;"	m	struct:uniform_online_state	file:
+set_slot	src/gqf.c	/^static inline void set_slot(const QF *qf, uint64_t index, uint64_t value)$/;"	f	file:
+shift_into_b	src/gqf.c	/^static inline uint64_t shift_into_b(const uint64_t a, const uint64_t b,$/;"	f	file:
+shift_remainders	src/gqf.c	/^static inline void shift_remainders(QF *qf, const uint64_t start_index, const$/;"	f	file:
+shift_remainders	src/gqf.c	/^static inline void shift_remainders(QF *qf, uint64_t start_index, uint64_t$/;"	f	file:
+shift_runends	src/gqf.c	/^static inline void shift_runends(QF *qf, int64_t first, uint64_t last,$/;"	f	file:
+shift_slots	src/gqf.c	/^static inline void shift_slots(QF *qf, int64_t first, uint64_t last, uint64_t$/;"	f	file:
+slots	include/gqf_int.h	/^		uint16_t  slots[QF_SLOTS_PER_BLOCK];$/;"	m	struct:qfblock
+slots	include/gqf_int.h	/^		uint32_t  slots[QF_SLOTS_PER_BLOCK];$/;"	m	struct:qfblock
+slots	include/gqf_int.h	/^		uint64_t  slots[QF_SLOTS_PER_BLOCK];$/;"	m	struct:qfblock
+slots	include/gqf_int.h	/^		uint8_t   slots[QF_SLOTS_PER_BLOCK * QF_BITS_PER_SLOT \/ 8];$/;"	m	struct:qfblock
+slots	include/gqf_int.h	/^		uint8_t   slots[];$/;"	m	struct:qfblock
+slots	include/gqf_int.h	/^		uint8_t  slots[QF_SLOTS_PER_BLOCK];$/;"	m	struct:qfblock
+start	src/test_threadsafe.c	/^	uint64_t start;$/;"	m	struct:insert_args	file:
+start_index	include/gqf_int.h	/^		uint64_t start_index;$/;"	m	struct:__anon3
+tdiff	src/bm.c	/^static float tdiff (struct timeval *start, struct timeval *end) {$/;"	f	file:
+thread_routine	src/test_partitioned_counter.c	/^void *thread_routine(void *arg) {$/;"	f
+threshold	include/partitioned_counter.h	/^	int32_t threshold;$/;"	m	struct:partitioned_counter
+total_size_in_bytes	include/gqf_int.h	/^		uint64_t total_size_in_bytes;$/;"	m	struct:quotient_filter_metadata
+total_time_single	include/gqf_int.h	/^		uint64_t total_time_single;$/;"	m	struct:__anon2
+total_time_spinning	include/gqf_int.h	/^		uint64_t total_time_spinning;$/;"	m	struct:__anon2
+tv2msec	src/bm.c	/^uint64_t tv2msec(struct timeval tv)$/;"	f
+tv2msec	src/test_partitioned_counter.c	/^uint64_t tv2msec(struct timeval tv)$/;"	f
+uniform_online	src/bm.c	/^rand_generator uniform_online = {$/;"	v
+uniform_online_duplicate	src/bm.c	/^void *uniform_online_duplicate(void *_state)$/;"	f
+uniform_online_gen_rand	src/bm.c	/^int uniform_online_gen_rand(void *_state, uint64_t noutputs, __uint128_t *outputs)$/;"	f
+uniform_online_init	src/bm.c	/^void *uniform_online_init(uint64_t maxoutputs, __uint128_t maxvalue, void *params)$/;"	f
+uniform_online_state	src/bm.c	/^typedef struct uniform_online_state {$/;"	s	file:
+uniform_online_state	src/bm.c	/^} uniform_online_state;$/;"	t	typeref:struct:uniform_online_state	file:
+uniform_pregen	src/bm.c	/^rand_generator uniform_pregen = {$/;"	v
+uniform_pregen_duplicate	src/bm.c	/^void *uniform_pregen_duplicate(void *state)$/;"	f
+uniform_pregen_gen_rand	src/bm.c	/^int uniform_pregen_gen_rand(void *_state, uint64_t noutputs, __uint128_t *outputs)$/;"	f
+uniform_pregen_init	src/bm.c	/^void *uniform_pregen_init(uint64_t maxoutputs, __uint128_t maxvalue, void *params)$/;"	f
+uniform_pregen_state	src/bm.c	/^typedef struct uniform_pregen_state {$/;"	s	file:
+uniform_pregen_state	src/bm.c	/^} uniform_pregen_state;$/;"	t	typeref:struct:uniform_pregen_state	file:
+universe	src/bm.c	/^	long universe;$/;"	m	struct:zipf_params	file:
+usage	src/bm.c	/^void usage(char *name)$/;"	f
+vals	src/test_threadsafe.c	/^	uint64_t *vals;$/;"	m	struct:insert_args	file:
+value_bits	include/gqf_int.h	/^		uint64_t value_bits;$/;"	m	struct:quotient_filter_metadata
+wait_time_data	include/gqf_int.h	/^	} wait_time_data;$/;"	t	typeref:struct:__anon2
+wait_times	include/gqf_int.h	/^		wait_time_data *wait_times;$/;"	m	struct:quotient_filter_runtime_data
+xnslots	include/gqf_int.h	/^		uint64_t xnslots;$/;"	m	struct:quotient_filter_metadata
+z_search	src/zipf.c	/^static long z_search (ZIPFIAN s, double C, long low, long pcount) $/;"	f	file:
+zipf_gen	src/bm.c	/^static __uint128_t* zipf_gen(long N, long gencount, double s) {$/;"	f	file:
+zipf_params	src/bm.c	/^typedef struct zipf_params {$/;"	s	file:
+zipf_params	src/bm.c	/^} zipf_params;$/;"	t	typeref:struct:zipf_params	file:
+zipfian	src/zipf.c	/^struct zipfian {$/;"	s	file:
+zipfian_gen	src/zipf.c	/^long zipfian_gen (ZIPFIAN z) {$/;"	f
+zipfian_pregen	src/bm.c	/^rand_generator zipfian_pregen = {$/;"	v
+zipfian_pregen_duplicate	src/bm.c	/^void *zipfian_pregen_duplicate(void *state)$/;"	f
+zipfian_pregen_gen_rand	src/bm.c	/^int zipfian_pregen_gen_rand(void *_state, uint64_t noutputs, __uint128_t *outputs)$/;"	f
+zipfian_pregen_init	src/bm.c	/^void *zipfian_pregen_init(uint64_t maxoutputs, __uint128_t maxvalue, void *params)$/;"	f
+zipfian_pregen_state	src/bm.c	/^typedef struct zipfian_pregen_state {$/;"	s	file:
+zipfian_pregen_state	src/bm.c	/^} zipfian_pregen_state;$/;"	t	typeref:struct:zipfian_pregen_state	file:
+zpair	src/zipf.c	/^struct zpair {                   \/\/ For the ith element of the array:$/;"	s	file:
+zprint	src/zipf.c	/^static void zprint (ZIPFIAN z) {$/;"	f	file:

@@ -1,0 +1,469 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARCH	Makefile	/^ARCH=-msse4.2$/;"	m
+CC	Makefile	/^CC = gcc -std=gnu11 -fgnu-tm -frename-registers  -march=native$/;"	m
+CXX	Makefile	/^CXX = g++ -std=c++11 -fgnu-tm -frename-registers  -march=native$/;"	m
+HAVE_AVX512	Makefile	/^HAVE_AVX512=$(filter-out 0,$(shell lscpu | grep avx512bw | wc -l))$/;"	m
+ITR	src/main_id.cc	25;"	d	file:
+K	include/vqf_precompute.h	/^const __m256i K[] = {K0, K1};$/;"	v
+K0	include/vqf_precompute.h	/^const __m256i K0 = _mm256_setr_epi8( $/;"	v
+K1	include/vqf_precompute.h	/^const __m256i K1 = _mm256_setr_epi8( $/;"	v
+LD	Makefile	/^LD= g++ -std=c++11$/;"	m
+LM	src/shuffle_matrix_256.c	/^__m256i LM [] = {LM0, LM1, LM2, LM3, LM4, LM5, LM6, LM7, LM8, LM9, LM10, LM11, LM12, LM13, LM14, LM15, LM16, LM17, LM18, LM19, LM20, LM21, LM22, LM23, LM24, LM25, LM26, LM27, LM28, LM29, LM30, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31, LM31};$/;"	v
+LM0	src/shuffle_matrix_256.c	/^const __m256i LM0 = _mm256_setr_epi8($/;"	v
+LM1	src/shuffle_matrix_256.c	/^const __m256i LM1 = _mm256_setr_epi8($/;"	v
+LM10	src/shuffle_matrix_256.c	/^const __m256i LM10 = _mm256_setr_epi8($/;"	v
+LM11	src/shuffle_matrix_256.c	/^const __m256i LM11 = _mm256_setr_epi8($/;"	v
+LM12	src/shuffle_matrix_256.c	/^const __m256i LM12 = _mm256_setr_epi8($/;"	v
+LM13	src/shuffle_matrix_256.c	/^const __m256i LM13 = _mm256_setr_epi8($/;"	v
+LM14	src/shuffle_matrix_256.c	/^const __m256i LM14 = _mm256_setr_epi8($/;"	v
+LM15	src/shuffle_matrix_256.c	/^const __m256i LM15 = _mm256_setr_epi8($/;"	v
+LM16	src/shuffle_matrix_256.c	/^const __m256i LM16 = _mm256_setr_epi8($/;"	v
+LM17	src/shuffle_matrix_256.c	/^const __m256i LM17 = _mm256_setr_epi8($/;"	v
+LM18	src/shuffle_matrix_256.c	/^const __m256i LM18 = _mm256_setr_epi8($/;"	v
+LM19	src/shuffle_matrix_256.c	/^const __m256i LM19 = _mm256_setr_epi8($/;"	v
+LM2	src/shuffle_matrix_256.c	/^const __m256i LM2 = _mm256_setr_epi8($/;"	v
+LM20	src/shuffle_matrix_256.c	/^const __m256i LM20 = _mm256_setr_epi8($/;"	v
+LM21	src/shuffle_matrix_256.c	/^const __m256i LM21 = _mm256_setr_epi8($/;"	v
+LM22	src/shuffle_matrix_256.c	/^const __m256i LM22 = _mm256_setr_epi8($/;"	v
+LM23	src/shuffle_matrix_256.c	/^const __m256i LM23 = _mm256_setr_epi8($/;"	v
+LM24	src/shuffle_matrix_256.c	/^const __m256i LM24 = _mm256_setr_epi8($/;"	v
+LM25	src/shuffle_matrix_256.c	/^const __m256i LM25 = _mm256_setr_epi8($/;"	v
+LM26	src/shuffle_matrix_256.c	/^const __m256i LM26 = _mm256_setr_epi8($/;"	v
+LM27	src/shuffle_matrix_256.c	/^const __m256i LM27 = _mm256_setr_epi8($/;"	v
+LM28	src/shuffle_matrix_256.c	/^const __m256i LM28 = _mm256_setr_epi8($/;"	v
+LM29	src/shuffle_matrix_256.c	/^const __m256i LM29 = _mm256_setr_epi8($/;"	v
+LM3	src/shuffle_matrix_256.c	/^const __m256i LM3 = _mm256_setr_epi8($/;"	v
+LM30	src/shuffle_matrix_256.c	/^const __m256i LM30 = _mm256_setr_epi8($/;"	v
+LM31	src/shuffle_matrix_256.c	/^const __m256i LM31 = _mm256_setr_epi8($/;"	v
+LM4	src/shuffle_matrix_256.c	/^const __m256i LM4 = _mm256_setr_epi8($/;"	v
+LM5	src/shuffle_matrix_256.c	/^const __m256i LM5 = _mm256_setr_epi8($/;"	v
+LM6	src/shuffle_matrix_256.c	/^const __m256i LM6 = _mm256_setr_epi8($/;"	v
+LM7	src/shuffle_matrix_256.c	/^const __m256i LM7 = _mm256_setr_epi8($/;"	v
+LM8	src/shuffle_matrix_256.c	/^const __m256i LM8 = _mm256_setr_epi8($/;"	v
+LM9	src/shuffle_matrix_256.c	/^const __m256i LM9 = _mm256_setr_epi8($/;"	v
+LOCK_MASK	src/vqf_filter.c	60;"	d	file:
+LOC_INCLUDE	Makefile	/^LOC_INCLUDE=include$/;"	m
+LOC_SRC	Makefile	/^LOC_SRC=src$/;"	m
+OBJDIR	Makefile	/^OBJDIR=obj$/;"	m
+OPT	Makefile	/^   OPT=-g -no-pie$/;"	m
+OPT	Makefile	/^OPT=-Ofast -g$/;"	m
+QUQU_BUCKETS_PER_BLOCK	src/vqf_filter.c	28;"	d	file:
+QUQU_BUCKETS_PER_BLOCK	src/vqf_filter.c	38;"	d	file:
+QUQU_BUCKETS_PER_BLOCK	src/vqf_filter.c	44;"	d	file:
+QUQU_CHECK_ALT	src/vqf_filter.c	29;"	d	file:
+QUQU_CHECK_ALT	src/vqf_filter.c	39;"	d	file:
+QUQU_CHECK_ALT	src/vqf_filter.c	45;"	d	file:
+QUQU_MAX	src/vqf_filter.c	32;"	d	file:
+QUQU_MAX	src/vqf_filter.c	48;"	d	file:
+QUQU_PRESLOT	src/vqf_filter.c	33;"	d	file:
+QUQU_PRESLOT	src/vqf_filter.c	49;"	d	file:
+QUQU_SLOTS_PER_BLOCK	src/vqf_filter.c	27;"	d	file:
+QUQU_SLOTS_PER_BLOCK	src/vqf_filter.c	37;"	d	file:
+QUQU_SLOTS_PER_BLOCK	src/vqf_filter.c	43;"	d	file:
+R0	src/shuffle_matrix_512.c	/^const __m512i R0 = _mm512_set_epi8($/;"	v
+R1	src/shuffle_matrix_512.c	/^const __m512i R1 = _mm512_set_epi8($/;"	v
+R10	src/shuffle_matrix_512.c	/^const __m512i R10 = _mm512_set_epi8($/;"	v
+R11	src/shuffle_matrix_512.c	/^const __m512i R11 = _mm512_set_epi8($/;"	v
+R12	src/shuffle_matrix_512.c	/^const __m512i R12 = _mm512_set_epi8($/;"	v
+R13	src/shuffle_matrix_512.c	/^const __m512i R13 = _mm512_set_epi8($/;"	v
+R14	src/shuffle_matrix_512.c	/^const __m512i R14 = _mm512_set_epi8($/;"	v
+R15	src/shuffle_matrix_512.c	/^const __m512i R15 = _mm512_set_epi8($/;"	v
+R16	src/shuffle_matrix_512.c	/^const __m512i R16 = _mm512_set_epi8($/;"	v
+R16_0	src/shuffle_matrix_512_16.c	/^const __m512i R16_0 = _mm512_set_epi16($/;"	v
+R16_1	src/shuffle_matrix_512_16.c	/^const __m512i R16_1 = _mm512_set_epi16($/;"	v
+R16_10	src/shuffle_matrix_512_16.c	/^const __m512i R16_10 = _mm512_set_epi16($/;"	v
+R16_11	src/shuffle_matrix_512_16.c	/^const __m512i R16_11 = _mm512_set_epi16($/;"	v
+R16_12	src/shuffle_matrix_512_16.c	/^const __m512i R16_12 = _mm512_set_epi16($/;"	v
+R16_13	src/shuffle_matrix_512_16.c	/^const __m512i R16_13 = _mm512_set_epi16($/;"	v
+R16_14	src/shuffle_matrix_512_16.c	/^const __m512i R16_14 = _mm512_set_epi16($/;"	v
+R16_15	src/shuffle_matrix_512_16.c	/^const __m512i R16_15 = _mm512_set_epi16($/;"	v
+R16_16	src/shuffle_matrix_512_16.c	/^const __m512i R16_16 = _mm512_set_epi16($/;"	v
+R16_17	src/shuffle_matrix_512_16.c	/^const __m512i R16_17 = _mm512_set_epi16($/;"	v
+R16_18	src/shuffle_matrix_512_16.c	/^const __m512i R16_18 = _mm512_set_epi16($/;"	v
+R16_19	src/shuffle_matrix_512_16.c	/^const __m512i R16_19 = _mm512_set_epi16($/;"	v
+R16_2	src/shuffle_matrix_512_16.c	/^const __m512i R16_2 = _mm512_set_epi16($/;"	v
+R16_20	src/shuffle_matrix_512_16.c	/^const __m512i R16_20 = _mm512_set_epi16($/;"	v
+R16_21	src/shuffle_matrix_512_16.c	/^const __m512i R16_21 = _mm512_set_epi16($/;"	v
+R16_22	src/shuffle_matrix_512_16.c	/^const __m512i R16_22 = _mm512_set_epi16($/;"	v
+R16_23	src/shuffle_matrix_512_16.c	/^const __m512i R16_23 = _mm512_set_epi16($/;"	v
+R16_24	src/shuffle_matrix_512_16.c	/^const __m512i R16_24 = _mm512_set_epi16($/;"	v
+R16_25	src/shuffle_matrix_512_16.c	/^const __m512i R16_25 = _mm512_set_epi16($/;"	v
+R16_26	src/shuffle_matrix_512_16.c	/^const __m512i R16_26 = _mm512_set_epi16($/;"	v
+R16_27	src/shuffle_matrix_512_16.c	/^const __m512i R16_27 = _mm512_set_epi16($/;"	v
+R16_28	src/shuffle_matrix_512_16.c	/^const __m512i R16_28 = _mm512_set_epi16($/;"	v
+R16_29	src/shuffle_matrix_512_16.c	/^const __m512i R16_29 = _mm512_set_epi16($/;"	v
+R16_3	src/shuffle_matrix_512_16.c	/^const __m512i R16_3 = _mm512_set_epi16($/;"	v
+R16_30	src/shuffle_matrix_512_16.c	/^const __m512i R16_30 = _mm512_set_epi16($/;"	v
+R16_31	src/shuffle_matrix_512_16.c	/^const __m512i R16_31 = _mm512_set_epi16($/;"	v
+R16_4	src/shuffle_matrix_512_16.c	/^const __m512i R16_4 = _mm512_set_epi16($/;"	v
+R16_5	src/shuffle_matrix_512_16.c	/^const __m512i R16_5 = _mm512_set_epi16($/;"	v
+R16_6	src/shuffle_matrix_512_16.c	/^const __m512i R16_6 = _mm512_set_epi16($/;"	v
+R16_7	src/shuffle_matrix_512_16.c	/^const __m512i R16_7 = _mm512_set_epi16($/;"	v
+R16_8	src/shuffle_matrix_512_16.c	/^const __m512i R16_8 = _mm512_set_epi16($/;"	v
+R16_9	src/shuffle_matrix_512_16.c	/^const __m512i R16_9 = _mm512_set_epi16($/;"	v
+R17	src/shuffle_matrix_512.c	/^const __m512i R17 = _mm512_set_epi8($/;"	v
+R18	src/shuffle_matrix_512.c	/^const __m512i R18 = _mm512_set_epi8($/;"	v
+R19	src/shuffle_matrix_512.c	/^const __m512i R19 = _mm512_set_epi8($/;"	v
+R2	src/shuffle_matrix_512.c	/^const __m512i R2 = _mm512_set_epi8($/;"	v
+R20	src/shuffle_matrix_512.c	/^const __m512i R20 = _mm512_set_epi8($/;"	v
+R21	src/shuffle_matrix_512.c	/^const __m512i R21 = _mm512_set_epi8($/;"	v
+R22	src/shuffle_matrix_512.c	/^const __m512i R22 = _mm512_set_epi8($/;"	v
+R23	src/shuffle_matrix_512.c	/^const __m512i R23 = _mm512_set_epi8($/;"	v
+R24	src/shuffle_matrix_512.c	/^const __m512i R24 = _mm512_set_epi8($/;"	v
+R25	src/shuffle_matrix_512.c	/^const __m512i R25 = _mm512_set_epi8($/;"	v
+R26	src/shuffle_matrix_512.c	/^const __m512i R26 = _mm512_set_epi8($/;"	v
+R27	src/shuffle_matrix_512.c	/^const __m512i R27 = _mm512_set_epi8($/;"	v
+R28	src/shuffle_matrix_512.c	/^const __m512i R28 = _mm512_set_epi8($/;"	v
+R29	src/shuffle_matrix_512.c	/^const __m512i R29 = _mm512_set_epi8($/;"	v
+R3	src/shuffle_matrix_512.c	/^const __m512i R3 = _mm512_set_epi8($/;"	v
+R30	src/shuffle_matrix_512.c	/^const __m512i R30 = _mm512_set_epi8($/;"	v
+R31	src/shuffle_matrix_512.c	/^const __m512i R31 = _mm512_set_epi8($/;"	v
+R32	src/shuffle_matrix_512.c	/^const __m512i R32 = _mm512_set_epi8($/;"	v
+R33	src/shuffle_matrix_512.c	/^const __m512i R33 = _mm512_set_epi8($/;"	v
+R34	src/shuffle_matrix_512.c	/^const __m512i R34 = _mm512_set_epi8($/;"	v
+R35	src/shuffle_matrix_512.c	/^const __m512i R35 = _mm512_set_epi8($/;"	v
+R36	src/shuffle_matrix_512.c	/^const __m512i R36 = _mm512_set_epi8($/;"	v
+R37	src/shuffle_matrix_512.c	/^const __m512i R37 = _mm512_set_epi8($/;"	v
+R38	src/shuffle_matrix_512.c	/^const __m512i R38 = _mm512_set_epi8($/;"	v
+R39	src/shuffle_matrix_512.c	/^const __m512i R39 = _mm512_set_epi8($/;"	v
+R4	src/shuffle_matrix_512.c	/^const __m512i R4 = _mm512_set_epi8($/;"	v
+R40	src/shuffle_matrix_512.c	/^const __m512i R40 = _mm512_set_epi8($/;"	v
+R41	src/shuffle_matrix_512.c	/^const __m512i R41 = _mm512_set_epi8($/;"	v
+R42	src/shuffle_matrix_512.c	/^const __m512i R42 = _mm512_set_epi8($/;"	v
+R43	src/shuffle_matrix_512.c	/^const __m512i R43 = _mm512_set_epi8($/;"	v
+R44	src/shuffle_matrix_512.c	/^const __m512i R44 = _mm512_set_epi8($/;"	v
+R45	src/shuffle_matrix_512.c	/^const __m512i R45 = _mm512_set_epi8($/;"	v
+R46	src/shuffle_matrix_512.c	/^const __m512i R46 = _mm512_set_epi8($/;"	v
+R47	src/shuffle_matrix_512.c	/^const __m512i R47 = _mm512_set_epi8($/;"	v
+R48	src/shuffle_matrix_512.c	/^const __m512i R48 = _mm512_set_epi8($/;"	v
+R49	src/shuffle_matrix_512.c	/^const __m512i R49 = _mm512_set_epi8($/;"	v
+R5	src/shuffle_matrix_512.c	/^const __m512i R5 = _mm512_set_epi8($/;"	v
+R50	src/shuffle_matrix_512.c	/^const __m512i R50 = _mm512_set_epi8($/;"	v
+R51	src/shuffle_matrix_512.c	/^const __m512i R51 = _mm512_set_epi8($/;"	v
+R52	src/shuffle_matrix_512.c	/^const __m512i R52 = _mm512_set_epi8($/;"	v
+R53	src/shuffle_matrix_512.c	/^const __m512i R53 = _mm512_set_epi8($/;"	v
+R54	src/shuffle_matrix_512.c	/^const __m512i R54 = _mm512_set_epi8($/;"	v
+R55	src/shuffle_matrix_512.c	/^const __m512i R55 = _mm512_set_epi8($/;"	v
+R56	src/shuffle_matrix_512.c	/^const __m512i R56 = _mm512_set_epi8($/;"	v
+R57	src/shuffle_matrix_512.c	/^const __m512i R57 = _mm512_set_epi8($/;"	v
+R58	src/shuffle_matrix_512.c	/^const __m512i R58 = _mm512_set_epi8($/;"	v
+R59	src/shuffle_matrix_512.c	/^const __m512i R59 = _mm512_set_epi8($/;"	v
+R6	src/shuffle_matrix_512.c	/^const __m512i R6 = _mm512_set_epi8($/;"	v
+R60	src/shuffle_matrix_512.c	/^const __m512i R60 = _mm512_set_epi8($/;"	v
+R61	src/shuffle_matrix_512.c	/^const __m512i R61 = _mm512_set_epi8($/;"	v
+R62	src/shuffle_matrix_512.c	/^const __m512i R62 = _mm512_set_epi8($/;"	v
+R63	src/shuffle_matrix_512.c	/^const __m512i R63 = _mm512_set_epi8($/;"	v
+R7	src/shuffle_matrix_512.c	/^const __m512i R7 = _mm512_set_epi8($/;"	v
+R8	src/shuffle_matrix_512.c	/^const __m512i R8 = _mm512_set_epi8($/;"	v
+R9	src/shuffle_matrix_512.c	/^const __m512i R9 = _mm512_set_epi8($/;"	v
+RM	src/shuffle_matrix_256.c	/^__m256i RM [] = {RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM0, RM1, RM2, RM3, RM4, RM5, RM6, RM7, RM8, RM9, RM10, RM11, RM12, RM13, RM14, RM15, RM16, RM17, RM18, RM19, RM20, RM21, RM22, RM23, RM24, RM25, RM26, RM27, RM28, RM29, RM30, RM31};$/;"	v
+RM0	src/shuffle_matrix_256.c	/^const __m256i RM0 = _mm256_setr_epi8($/;"	v
+RM1	src/shuffle_matrix_256.c	/^const __m256i RM1 = _mm256_setr_epi8($/;"	v
+RM10	src/shuffle_matrix_256.c	/^const __m256i RM10 = _mm256_setr_epi8($/;"	v
+RM11	src/shuffle_matrix_256.c	/^const __m256i RM11 = _mm256_setr_epi8($/;"	v
+RM12	src/shuffle_matrix_256.c	/^const __m256i RM12 = _mm256_setr_epi8($/;"	v
+RM13	src/shuffle_matrix_256.c	/^const __m256i RM13 = _mm256_setr_epi8($/;"	v
+RM14	src/shuffle_matrix_256.c	/^const __m256i RM14 = _mm256_setr_epi8($/;"	v
+RM15	src/shuffle_matrix_256.c	/^const __m256i RM15 = _mm256_setr_epi8($/;"	v
+RM16	src/shuffle_matrix_256.c	/^const __m256i RM16 = _mm256_setr_epi8($/;"	v
+RM17	src/shuffle_matrix_256.c	/^const __m256i RM17 = _mm256_setr_epi8($/;"	v
+RM18	src/shuffle_matrix_256.c	/^const __m256i RM18 = _mm256_setr_epi8($/;"	v
+RM19	src/shuffle_matrix_256.c	/^const __m256i RM19 = _mm256_setr_epi8($/;"	v
+RM2	src/shuffle_matrix_256.c	/^const __m256i RM2 = _mm256_setr_epi8($/;"	v
+RM20	src/shuffle_matrix_256.c	/^const __m256i RM20 = _mm256_setr_epi8($/;"	v
+RM21	src/shuffle_matrix_256.c	/^const __m256i RM21 = _mm256_setr_epi8($/;"	v
+RM22	src/shuffle_matrix_256.c	/^const __m256i RM22 = _mm256_setr_epi8($/;"	v
+RM23	src/shuffle_matrix_256.c	/^const __m256i RM23 = _mm256_setr_epi8($/;"	v
+RM24	src/shuffle_matrix_256.c	/^const __m256i RM24 = _mm256_setr_epi8($/;"	v
+RM25	src/shuffle_matrix_256.c	/^const __m256i RM25 = _mm256_setr_epi8($/;"	v
+RM26	src/shuffle_matrix_256.c	/^const __m256i RM26 = _mm256_setr_epi8($/;"	v
+RM27	src/shuffle_matrix_256.c	/^const __m256i RM27 = _mm256_setr_epi8($/;"	v
+RM28	src/shuffle_matrix_256.c	/^const __m256i RM28 = _mm256_setr_epi8($/;"	v
+RM29	src/shuffle_matrix_256.c	/^const __m256i RM29 = _mm256_setr_epi8($/;"	v
+RM3	src/shuffle_matrix_256.c	/^const __m256i RM3 = _mm256_setr_epi8($/;"	v
+RM30	src/shuffle_matrix_256.c	/^const __m256i RM30 = _mm256_setr_epi8($/;"	v
+RM31	src/shuffle_matrix_256.c	/^const __m256i RM31 = _mm256_setr_epi8($/;"	v
+RM4	src/shuffle_matrix_256.c	/^const __m256i RM4 = _mm256_setr_epi8($/;"	v
+RM5	src/shuffle_matrix_256.c	/^const __m256i RM5 = _mm256_setr_epi8($/;"	v
+RM6	src/shuffle_matrix_256.c	/^const __m256i RM6 = _mm256_setr_epi8($/;"	v
+RM7	src/shuffle_matrix_256.c	/^const __m256i RM7 = _mm256_setr_epi8($/;"	v
+RM8	src/shuffle_matrix_256.c	/^const __m256i RM8 = _mm256_setr_epi8($/;"	v
+RM9	src/shuffle_matrix_256.c	/^const __m256i RM9 = _mm256_setr_epi8($/;"	v
+S0	src/shuffle_matrix_512.c	/^const __m512i S0 = _mm512_set_epi8($/;"	v
+S1	src/shuffle_matrix_512.c	/^const __m512i S1 = _mm512_set_epi8($/;"	v
+S10	src/shuffle_matrix_512.c	/^const __m512i S10 = _mm512_set_epi8($/;"	v
+S11	src/shuffle_matrix_512.c	/^const __m512i S11 = _mm512_set_epi8($/;"	v
+S12	src/shuffle_matrix_512.c	/^const __m512i S12 = _mm512_set_epi8($/;"	v
+S13	src/shuffle_matrix_512.c	/^const __m512i S13 = _mm512_set_epi8($/;"	v
+S14	src/shuffle_matrix_512.c	/^const __m512i S14 = _mm512_set_epi8($/;"	v
+S15	src/shuffle_matrix_512.c	/^const __m512i S15 = _mm512_set_epi8($/;"	v
+S16	src/shuffle_matrix_512.c	/^const __m512i S16 = _mm512_set_epi8($/;"	v
+S16_0	src/shuffle_matrix_512_16.c	/^const __m512i S16_0 = _mm512_set_epi16($/;"	v
+S16_1	src/shuffle_matrix_512_16.c	/^const __m512i S16_1 = _mm512_set_epi16($/;"	v
+S16_10	src/shuffle_matrix_512_16.c	/^const __m512i S16_10 = _mm512_set_epi16($/;"	v
+S16_11	src/shuffle_matrix_512_16.c	/^const __m512i S16_11 = _mm512_set_epi16($/;"	v
+S16_12	src/shuffle_matrix_512_16.c	/^const __m512i S16_12 = _mm512_set_epi16($/;"	v
+S16_13	src/shuffle_matrix_512_16.c	/^const __m512i S16_13 = _mm512_set_epi16($/;"	v
+S16_14	src/shuffle_matrix_512_16.c	/^const __m512i S16_14 = _mm512_set_epi16($/;"	v
+S16_15	src/shuffle_matrix_512_16.c	/^const __m512i S16_15 = _mm512_set_epi16($/;"	v
+S16_16	src/shuffle_matrix_512_16.c	/^const __m512i S16_16 = _mm512_set_epi16($/;"	v
+S16_17	src/shuffle_matrix_512_16.c	/^const __m512i S16_17 = _mm512_set_epi16($/;"	v
+S16_18	src/shuffle_matrix_512_16.c	/^const __m512i S16_18 = _mm512_set_epi16($/;"	v
+S16_19	src/shuffle_matrix_512_16.c	/^const __m512i S16_19 = _mm512_set_epi16($/;"	v
+S16_2	src/shuffle_matrix_512_16.c	/^const __m512i S16_2 = _mm512_set_epi16($/;"	v
+S16_20	src/shuffle_matrix_512_16.c	/^const __m512i S16_20 = _mm512_set_epi16($/;"	v
+S16_21	src/shuffle_matrix_512_16.c	/^const __m512i S16_21 = _mm512_set_epi16($/;"	v
+S16_22	src/shuffle_matrix_512_16.c	/^const __m512i S16_22 = _mm512_set_epi16($/;"	v
+S16_23	src/shuffle_matrix_512_16.c	/^const __m512i S16_23 = _mm512_set_epi16($/;"	v
+S16_24	src/shuffle_matrix_512_16.c	/^const __m512i S16_24 = _mm512_set_epi16($/;"	v
+S16_25	src/shuffle_matrix_512_16.c	/^const __m512i S16_25 = _mm512_set_epi16($/;"	v
+S16_26	src/shuffle_matrix_512_16.c	/^const __m512i S16_26 = _mm512_set_epi16($/;"	v
+S16_27	src/shuffle_matrix_512_16.c	/^const __m512i S16_27 = _mm512_set_epi16($/;"	v
+S16_28	src/shuffle_matrix_512_16.c	/^const __m512i S16_28 = _mm512_set_epi16($/;"	v
+S16_29	src/shuffle_matrix_512_16.c	/^const __m512i S16_29 = _mm512_set_epi16($/;"	v
+S16_3	src/shuffle_matrix_512_16.c	/^const __m512i S16_3 = _mm512_set_epi16($/;"	v
+S16_30	src/shuffle_matrix_512_16.c	/^const __m512i S16_30 = _mm512_set_epi16($/;"	v
+S16_31	src/shuffle_matrix_512_16.c	/^const __m512i S16_31 = _mm512_set_epi16($/;"	v
+S16_4	src/shuffle_matrix_512_16.c	/^const __m512i S16_4 = _mm512_set_epi16($/;"	v
+S16_5	src/shuffle_matrix_512_16.c	/^const __m512i S16_5 = _mm512_set_epi16($/;"	v
+S16_6	src/shuffle_matrix_512_16.c	/^const __m512i S16_6 = _mm512_set_epi16($/;"	v
+S16_7	src/shuffle_matrix_512_16.c	/^const __m512i S16_7 = _mm512_set_epi16($/;"	v
+S16_8	src/shuffle_matrix_512_16.c	/^const __m512i S16_8 = _mm512_set_epi16($/;"	v
+S16_9	src/shuffle_matrix_512_16.c	/^const __m512i S16_9 = _mm512_set_epi16($/;"	v
+S17	src/shuffle_matrix_512.c	/^const __m512i S17 = _mm512_set_epi8($/;"	v
+S18	src/shuffle_matrix_512.c	/^const __m512i S18 = _mm512_set_epi8($/;"	v
+S19	src/shuffle_matrix_512.c	/^const __m512i S19 = _mm512_set_epi8($/;"	v
+S2	src/shuffle_matrix_512.c	/^const __m512i S2 = _mm512_set_epi8($/;"	v
+S20	src/shuffle_matrix_512.c	/^const __m512i S20 = _mm512_set_epi8($/;"	v
+S21	src/shuffle_matrix_512.c	/^const __m512i S21 = _mm512_set_epi8($/;"	v
+S22	src/shuffle_matrix_512.c	/^const __m512i S22 = _mm512_set_epi8($/;"	v
+S23	src/shuffle_matrix_512.c	/^const __m512i S23 = _mm512_set_epi8($/;"	v
+S24	src/shuffle_matrix_512.c	/^const __m512i S24 = _mm512_set_epi8($/;"	v
+S25	src/shuffle_matrix_512.c	/^const __m512i S25 = _mm512_set_epi8($/;"	v
+S26	src/shuffle_matrix_512.c	/^const __m512i S26 = _mm512_set_epi8($/;"	v
+S27	src/shuffle_matrix_512.c	/^const __m512i S27 = _mm512_set_epi8($/;"	v
+S28	src/shuffle_matrix_512.c	/^const __m512i S28 = _mm512_set_epi8($/;"	v
+S29	src/shuffle_matrix_512.c	/^const __m512i S29 = _mm512_set_epi8($/;"	v
+S3	src/shuffle_matrix_512.c	/^const __m512i S3 = _mm512_set_epi8($/;"	v
+S30	src/shuffle_matrix_512.c	/^const __m512i S30 = _mm512_set_epi8($/;"	v
+S31	src/shuffle_matrix_512.c	/^const __m512i S31 = _mm512_set_epi8($/;"	v
+S32	src/shuffle_matrix_512.c	/^const __m512i S32 = _mm512_set_epi8($/;"	v
+S33	src/shuffle_matrix_512.c	/^const __m512i S33 = _mm512_set_epi8($/;"	v
+S34	src/shuffle_matrix_512.c	/^const __m512i S34 = _mm512_set_epi8($/;"	v
+S35	src/shuffle_matrix_512.c	/^const __m512i S35 = _mm512_set_epi8($/;"	v
+S36	src/shuffle_matrix_512.c	/^const __m512i S36 = _mm512_set_epi8($/;"	v
+S37	src/shuffle_matrix_512.c	/^const __m512i S37 = _mm512_set_epi8($/;"	v
+S38	src/shuffle_matrix_512.c	/^const __m512i S38 = _mm512_set_epi8($/;"	v
+S39	src/shuffle_matrix_512.c	/^const __m512i S39 = _mm512_set_epi8($/;"	v
+S4	src/shuffle_matrix_512.c	/^const __m512i S4 = _mm512_set_epi8($/;"	v
+S40	src/shuffle_matrix_512.c	/^const __m512i S40 = _mm512_set_epi8($/;"	v
+S41	src/shuffle_matrix_512.c	/^const __m512i S41 = _mm512_set_epi8($/;"	v
+S42	src/shuffle_matrix_512.c	/^const __m512i S42 = _mm512_set_epi8($/;"	v
+S43	src/shuffle_matrix_512.c	/^const __m512i S43 = _mm512_set_epi8($/;"	v
+S44	src/shuffle_matrix_512.c	/^const __m512i S44 = _mm512_set_epi8($/;"	v
+S45	src/shuffle_matrix_512.c	/^const __m512i S45 = _mm512_set_epi8($/;"	v
+S46	src/shuffle_matrix_512.c	/^const __m512i S46 = _mm512_set_epi8($/;"	v
+S47	src/shuffle_matrix_512.c	/^const __m512i S47 = _mm512_set_epi8($/;"	v
+S48	src/shuffle_matrix_512.c	/^const __m512i S48 = _mm512_set_epi8($/;"	v
+S49	src/shuffle_matrix_512.c	/^const __m512i S49 = _mm512_set_epi8($/;"	v
+S5	src/shuffle_matrix_512.c	/^const __m512i S5 = _mm512_set_epi8($/;"	v
+S50	src/shuffle_matrix_512.c	/^const __m512i S50 = _mm512_set_epi8($/;"	v
+S51	src/shuffle_matrix_512.c	/^const __m512i S51 = _mm512_set_epi8($/;"	v
+S52	src/shuffle_matrix_512.c	/^const __m512i S52 = _mm512_set_epi8($/;"	v
+S53	src/shuffle_matrix_512.c	/^const __m512i S53 = _mm512_set_epi8($/;"	v
+S54	src/shuffle_matrix_512.c	/^const __m512i S54 = _mm512_set_epi8($/;"	v
+S55	src/shuffle_matrix_512.c	/^const __m512i S55 = _mm512_set_epi8($/;"	v
+S56	src/shuffle_matrix_512.c	/^const __m512i S56 = _mm512_set_epi8($/;"	v
+S57	src/shuffle_matrix_512.c	/^const __m512i S57 = _mm512_set_epi8($/;"	v
+S58	src/shuffle_matrix_512.c	/^const __m512i S58 = _mm512_set_epi8($/;"	v
+S59	src/shuffle_matrix_512.c	/^const __m512i S59 = _mm512_set_epi8($/;"	v
+S6	src/shuffle_matrix_512.c	/^const __m512i S6 = _mm512_set_epi8($/;"	v
+S60	src/shuffle_matrix_512.c	/^const __m512i S60 = _mm512_set_epi8($/;"	v
+S61	src/shuffle_matrix_512.c	/^const __m512i S61 = _mm512_set_epi8($/;"	v
+S62	src/shuffle_matrix_512.c	/^const __m512i S62 = _mm512_set_epi8($/;"	v
+S63	src/shuffle_matrix_512.c	/^const __m512i S63 = _mm512_set_epi8($/;"	v
+S7	src/shuffle_matrix_512.c	/^const __m512i S7 = _mm512_set_epi8($/;"	v
+S8	src/shuffle_matrix_512.c	/^const __m512i S8 = _mm512_set_epi8($/;"	v
+S9	src/shuffle_matrix_512.c	/^const __m512i S9 = _mm512_set_epi8($/;"	v
+SHUFFLE	src/shuffle_matrix_512.c	/^__m512i SHUFFLE [] = {S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16, S17, S18, S19, S20, S21, S22, S23, S24, S25, S26, S27, S28, S29, S30, S31, S32, S33, S34, S35, S36, S37, S38, S39, S40, S41, S42, S43, S44, S45, S46, S47, S48, S49, S50, S51, S52, S53, S54, S55, S56, S57, S58, S59, S60, S61, S62, S63};$/;"	v
+SHUFFLE16	src/shuffle_matrix_512_16.c	/^__m512i SHUFFLE16 [] = {S16_0, S16_1, S16_2, S16_3, S16_4, S16_5, S16_6, S16_7, S16_8, S16_9, S16_10, S16_11, S16_12, S16_13, S16_14, S16_15, S16_16, S16_17, S16_18, S16_19, S16_20, S16_21, S16_22, S16_23, S16_24, S16_25, S16_26, S16_27, S16_28, S16_29, S16_30, S16_31};$/;"	v
+SHUFFLE_REMOVE	src/shuffle_matrix_512.c	/^__m512i SHUFFLE_REMOVE [] = {R0, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16, R17, R18, R19, R20, R21, R22, R23, R24, R25, R26, R27, R28, R29, R30, R31, R32, R33, R34, R35, R36, R37, R38, R39, R40, R41, R42, R43, R44, R45, R46, R47, R48, R49, R50, R51, R52, R53, R54, R55, R56, R57, R58, R59, R60, R61, R62, R63};$/;"	v
+SHUFFLE_REMOVE16	src/shuffle_matrix_512_16.c	/^__m512i SHUFFLE_REMOVE16 [] = {R16_0, R16_1, R16_2, R16_3, R16_4, R16_5, R16_6, R16_7, R16_8, R16_9, R16_10, R16_11, R16_12, R16_13, R16_14, R16_15, R16_16, R16_17, R16_18, R16_19, R16_20, R16_21, R16_22, R16_23, R16_24, R16_25, R16_26, R16_27, R16_28, R16_29, R16_30, R16_31};$/;"	v
+SHUFFLE_SIZE	src/generate_shuffle_matrix.cc	140;"	d	file:
+SHUFFLE_SIZE	src/generate_shuffle_matrix.cc	84;"	d	file:
+STATELEN	src/bm.cc	/^  int STATELEN;$/;"	m	struct:uniform_online_state	file:
+TAG_BITS	include/vqf_filter.h	24;"	d
+TAG_MASK	src/vqf_filter.c	26;"	d	file:
+TAG_MASK	src/vqf_filter.c	36;"	d	file:
+TAG_MASK	src/vqf_filter.c	42;"	d	file:
+TARGETS	Makefile	/^TARGETS= main main_tx main_id bm$/;"	m
+TEST_NUM	src/main.cc	35;"	d	file:
+UNLOCK_MASK	src/vqf_filter.c	61;"	d	file:
+VQF_WRAPPER_H	include/vqf_wrapper.h	13;"	d
+_M_a	src/zipfian_int_distribution.h	/^    _IntType _M_a;$/;"	m	struct:zipfian_int_distribution::param_type
+_M_b	src/zipfian_int_distribution.h	/^    _IntType _M_b;$/;"	m	struct:zipfian_int_distribution::param_type
+_M_param	src/zipfian_int_distribution.h	/^  param_type _M_param;$/;"	m	class:zipfian_int_distribution
+_M_theta	src/zipfian_int_distribution.h	/^    double _M_theta;$/;"	m	struct:zipfian_int_distribution::param_type
+_M_zeta	src/zipfian_int_distribution.h	/^    double _M_zeta;$/;"	m	struct:zipfian_int_distribution::param_type
+_M_zeta2theta	src/zipfian_int_distribution.h	/^    double _M_zeta2theta;$/;"	m	struct:zipfian_int_distribution::param_type
+_VQF_FILTER_H_	include/vqf_filter.h	13;"	d
+a	src/zipfian_int_distribution.h	/^    result_type	a() const { return _M_a; }$/;"	f	struct:zipfian_int_distribution::param_type
+a	src/zipfian_int_distribution.h	/^  result_type a() const { return _M_param.a(); }$/;"	f	class:zipfian_int_distribution
+args	src/main_tx.cc	/^typedef struct args {$/;"	s	file:
+args	src/main_tx.cc	/^} args;$/;"	t	typeref:struct:args	file:
+b	src/zipfian_int_distribution.h	/^    result_type	b() const { return _M_b; }$/;"	f	struct:zipfian_int_distribution::param_type
+b	src/zipfian_int_distribution.h	/^  result_type b() const { return _M_param.b(); }$/;"	f	class:zipfian_int_distribution
+blocks	include/vqf_filter.h	/^		vqf_block blocks[];$/;"	m	struct:vqf_filter
+buf	src/bm.cc	/^  char *buf;$/;"	m	struct:uniform_online_state	file:
+cf	src/bm.cc	/^filter cf = {q_init, q_insert, q_lookup, q_remove, q_range, q_destroy};$/;"	v
+cf	src/main_tx.cc	/^   vqf_filter *cf;$/;"	m	struct:args	file:
+check_tags	src/vqf_filter.c	/^static inline bool check_tags(vqf_filter * restrict filter, uint64_t tag,$/;"	f	file:
+cmp_uint64_t	src/bm.cc	/^int cmp_uint64_t(const void *a, const void *b) {$/;"	f
+destroy	src/bm.cc	/^  destroy_op destroy;$/;"	m	struct:filter	file:
+destroy_op	src/bm.cc	/^typedef int (*destroy_op)();$/;"	t	file:
+distribution_type	src/zipfian_int_distribution.h	/^    typedef zipfian_int_distribution<_IntType> distribution_type;$/;"	t	struct:zipfian_int_distribution::param_type
+dup	src/bm.cc	/^  duplicate_rand dup;$/;"	m	struct:rand_generator	file:
+duplicate_rand	src/bm.cc	/^typedef void *(*duplicate_rand)(void *state);$/;"	t	file:
+end	src/main_tx.cc	/^   uint64_t end;$/;"	m	struct:args	file:
+filter	src/bm.cc	/^typedef struct filter {$/;"	s	file:
+filter	src/bm.cc	/^} filter;$/;"	t	typeref:struct:filter	file:
+gen	src/bm.cc	/^  gen_rand gen;$/;"	m	struct:rand_generator	file:
+gen_rand	src/bm.cc	/^typedef int (*gen_rand)(void *state, uint64_t noutputs, __uint128_t *outputs);$/;"	t	file:
+generate_shuffle_512	src/generate_shuffle_matrix.cc	/^void generate_shuffle_512(void) {$/;"	f
+generate_shuffle_512_16	src/generate_shuffle_matrix.cc	/^void generate_shuffle_512_16(void) {$/;"	f
+get_block_free_space	src/vqf_filter.c	/^static inline uint64_t get_block_free_space(uint64_t *vector) {$/;"	f	file:
+get_block_free_space	src/vqf_filter.c	/^static inline uint64_t get_block_free_space(uint64_t vector) {$/;"	f	file:
+get_range_op	src/bm.cc	/^typedef __uint128_t (*get_range_op)();$/;"	t	file:
+init	src/bm.cc	/^  init_op init;$/;"	m	struct:filter	file:
+init	src/bm.cc	/^  rand_init init;$/;"	m	struct:rand_generator	file:
+init_op	src/bm.cc	/^typedef int (*init_op)(uint64_t nvals);$/;"	t	file:
+insert	src/bm.cc	/^  insert_op insert;$/;"	m	struct:filter	file:
+insert_bm	src/main_tx.cc	/^void *insert_bm(void *arg)$/;"	f
+insert_op	src/bm.cc	/^typedef int (*insert_op)(__uint128_t val);$/;"	t	file:
+key_remainder_bits	include/vqf_filter.h	/^		uint64_t key_remainder_bits;$/;"	m	struct:vqf_metadata
+lock	src/vqf_filter.c	/^static inline void lock(vqf_block& block)$/;"	f	file:
+lock_blocks	src/vqf_filter.c	/^static inline void lock_blocks(vqf_filter * restrict filter, uint64_t index1, uint64_t index2)  {$/;"	f	file:
+lookup	src/bm.cc	/^  lookup_op lookup;$/;"	m	struct:filter	file:
+lookup_128	src/vqf_filter.c	/^static inline uint64_t lookup_128(uint64_t *vector, uint64_t rank) {$/;"	f	file:
+lookup_64	src/vqf_filter.c	/^static inline uint64_t lookup_64(uint64_t vector, uint64_t rank) {$/;"	f	file:
+lookup_op	src/bm.cc	/^typedef int (*lookup_op)(__uint128_t val);$/;"	t	file:
+main	src/bm.cc	/^int main(int argc, char **argv) {$/;"	f
+main	src/generate_shuffle_matrix.cc	/^main ( int argc, char *argv[] )$/;"	f
+main	src/main.cc	/^int main(int argc, char **argv)$/;"	f
+main	src/main_id.cc	/^int main(int argc, char **argv)$/;"	f
+main	src/main_tx.cc	/^int main(int argc, char **argv)$/;"	f
+max	src/zipfian_int_distribution.h	/^  result_type max() const { return this->b(); }$/;"	f	class:zipfian_int_distribution
+maxoutputs	src/bm.cc	/^  uint64_t maxoutputs;$/;"	m	struct:uniform_online_state	file:
+maxoutputs	src/bm.cc	/^  uint64_t maxoutputs;$/;"	m	struct:uniform_pregen_state	file:
+maxvalue	src/bm.cc	/^  __uint128_t maxvalue;$/;"	m	struct:uniform_online_state	file:
+md	include/vqf_filter.h	/^		uint64_t md;$/;"	m	struct:vqf_block
+md	include/vqf_filter.h	/^		uint64_t md[2];$/;"	m	struct:vqf_block
+metadata	include/vqf_filter.h	/^		vqf_metadata metadata;$/;"	m	struct:vqf_filter
+min	src/zipfian_int_distribution.h	/^  result_type min() const { return this->a(); }$/;"	f	class:zipfian_int_distribution
+multi_threaded_insertion	src/main_tx.cc	/^void multi_threaded_insertion(args args[], int tcnt)$/;"	f
+nblocks	include/vqf_filter.h	/^		uint64_t nblocks;$/;"	m	struct:vqf_metadata
+nelts	include/vqf_filter.h	/^		uint64_t nelts;$/;"	m	struct:vqf_metadata
+nextoutput	src/bm.cc	/^  uint64_t nextoutput;$/;"	m	struct:uniform_pregen_state	file:
+nslots	include/vqf_filter.h	/^		uint64_t nslots;$/;"	m	struct:vqf_metadata
+one	include/vqf_precompute.h	/^static uint64_t *one = pre_one + 64;$/;"	v
+operator ()	src/zipfian_int_distribution.h	/^  result_type operator()(_UniformRandomNumberGenerator& __urng)$/;"	f	class:zipfian_int_distribution
+operator ()	src/zipfian_int_distribution.h	/^  result_type operator()(_UniformRandomNumberGenerator& __urng, const param_type& __p)$/;"	f	class:zipfian_int_distribution
+operator ==	src/zipfian_int_distribution.h	/^    friend bool	operator==(const param_type& __p1, const param_type& __p2)$/;"	f	struct:zipfian_int_distribution::param_type
+operator ==	src/zipfian_int_distribution.h	/^  friend bool operator==(const zipfian_int_distribution& __d1, const zipfian_int_distribution& __d2)$/;"	f	class:zipfian_int_distribution
+outputs	src/bm.cc	/^  __uint128_t *outputs;$/;"	m	struct:uniform_pregen_state	file:
+param	src/zipfian_int_distribution.h	/^  param_type param() const { return _M_param; }$/;"	f	class:zipfian_int_distribution
+param	src/zipfian_int_distribution.h	/^  void param(const param_type& __param) { _M_param = __param; }$/;"	f	class:zipfian_int_distribution
+param_type	src/zipfian_int_distribution.h	/^    explicit param_type(_IntType __a = 0, _IntType __b = std::numeric_limits<_IntType>::max(), double __theta = 0.99)$/;"	f	struct:zipfian_int_distribution::param_type
+param_type	src/zipfian_int_distribution.h	/^    explicit param_type(_IntType __a, _IntType __b, double __theta, double __zeta)$/;"	f	struct:zipfian_int_distribution::param_type
+param_type	src/zipfian_int_distribution.h	/^  struct param_type$/;"	s	class:zipfian_int_distribution
+pre_one	include/vqf_precompute.h	/^static uint64_t pre_one[64 + 128] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,$/;"	v
+print_bits	src/vqf_filter.c	/^void print_bits(__uint128_t num, int numbits)$/;"	f
+print_bits	src/vqf_filter.c	/^void print_bits(uint64_t num, int numbits)$/;"	f
+print_block	src/vqf_filter.c	/^void print_block(vqf_filter *filter, uint64_t block_index) {$/;"	f
+print_block_special	src/vqf_filter.c	/^void print_block_special(vqf_filter *filter, uint64_t block_index, uint64_t slot_index) {$/;"	f
+print_tags	src/vqf_filter.c	/^void print_tags(uint16_t *tags, uint32_t size) {$/;"	f
+print_tags	src/vqf_filter.c	/^void print_tags(uint8_t *tags, uint32_t size) {$/;"	f
+print_tags_special	src/vqf_filter.c	/^void print_tags_special(uint8_t *tags, uint32_t size, uint64_t slot_index) {$/;"	f
+print_time_elapsed	src/main.cc	/^void print_time_elapsed(const char* desc, struct timeval* start, struct$/;"	f
+print_time_elapsed	src/main_id.cc	/^void print_time_elapsed(const char* desc, struct timeval* start, struct$/;"	f
+print_time_elapsed	src/main_tx.cc	/^void print_time_elapsed(const char* desc, struct timeval* start, struct$/;"	f
+q_destroy	include/vqf_wrapper.h	/^inline int q_destroy()$/;"	f
+q_filter	include/vqf_wrapper.h	/^vqf_filter *q_filter;$/;"	v
+q_init	include/vqf_wrapper.h	/^inline int q_init(uint64_t nbits)$/;"	f
+q_insert	include/vqf_wrapper.h	/^inline int q_insert(__uint128_t val)$/;"	f
+q_lookup	include/vqf_wrapper.h	/^inline int q_lookup(__uint128_t val)$/;"	f
+q_range	include/vqf_wrapper.h	/^inline __uint128_t q_range()$/;"	f
+q_remove	include/vqf_wrapper.h	/^inline int q_remove(__uint128_t val)$/;"	f
+query_bm	src/main_tx.cc	/^void *query_bm(void *arg)$/;"	f
+rand_generator	src/bm.cc	/^typedef struct rand_generator {$/;"	s	file:
+rand_generator	src/bm.cc	/^} rand_generator;$/;"	t	typeref:struct:rand_generator	file:
+rand_init	src/bm.cc	/^typedef void *(*rand_init)(uint64_t maxoutputs, __uint128_t maxvalue,$/;"	t	file:
+rand_state	src/bm.cc	/^  struct random_data *rand_state;$/;"	m	struct:uniform_online_state	typeref:struct:uniform_online_state::random_data	file:
+range	include/vqf_filter.h	/^		uint64_t range;$/;"	m	struct:vqf_metadata
+range	src/bm.cc	/^  get_range_op range;$/;"	m	struct:filter	file:
+remove	src/bm.cc	/^	remove_op remove;$/;"	m	struct:filter	file:
+remove_md	src/vqf_filter.c	/^static inline void remove_md(uint64_t *md, uint8_t index) {$/;"	f	file:
+remove_op	src/bm.cc	/^typedef int (*remove_op)(__uint128_t val);$/;"	t	file:
+remove_tags	src/vqf_filter.c	/^static inline bool remove_tags(vqf_filter * restrict filter, uint64_t tag,$/;"	f	file:
+remove_tags_512	src/vqf_filter.c	/^static inline void remove_tags_512(vqf_block * restrict block, uint8_t index) {$/;"	f	file:
+reset	src/zipfian_int_distribution.h	/^  void reset() { }$/;"	f	class:zipfian_int_distribution
+restrict	include/vqf_filter.h	19;"	d
+result_type	src/zipfian_int_distribution.h	/^  typedef _IntType result_type;$/;"	t	class:zipfian_int_distribution
+seed	src/bm.cc	/^  unsigned int seed;$/;"	m	struct:uniform_online_state	file:
+select_128	src/vqf_filter.c	/^static inline int64_t select_128(uint64_t *vector, uint64_t rank) {$/;"	f	file:
+select_128_old	src/vqf_filter.c	/^static inline int64_t select_128_old(__uint128_t vector, uint64_t rank) {$/;"	f	file:
+select_64	src/vqf_filter.c	/^static inline int64_t select_64(uint64_t vector, uint64_t rank) {$/;"	f	file:
+start	src/main_tx.cc	/^   uint64_t start;$/;"	m	struct:args	file:
+tags	include/vqf_filter.h	/^		uint16_t tags[28];$/;"	m	struct:vqf_block
+tags	include/vqf_filter.h	/^		uint8_t tags[32]; \/\/ 32 12-bit tags$/;"	m	struct:vqf_block
+tags	include/vqf_filter.h	/^		uint8_t tags[48];$/;"	m	struct:vqf_block
+theta	src/zipfian_int_distribution.h	/^    double theta() const { return _M_theta; }$/;"	f	struct:zipfian_int_distribution::param_type
+theta	src/zipfian_int_distribution.h	/^  double theta() const { return _M_param.theta(); }$/;"	f	class:zipfian_int_distribution
+total_size_in_bytes	include/vqf_filter.h	/^		uint64_t total_size_in_bytes;$/;"	m	struct:vqf_metadata
+tv2msec	src/bm.cc	/^uint64_t tv2msec(struct timeval tv) {$/;"	f
+tv2usec	src/bm.cc	/^uint64_t tv2usec(struct timeval tv) {$/;"	f
+tv2usec	src/main.cc	/^uint64_t tv2usec(struct timeval *tv) {$/;"	f
+tv2usec	src/main_id.cc	/^uint64_t tv2usec(struct timeval *tv) {$/;"	f
+tv2usec	src/main_tx.cc	/^uint64_t tv2usec(struct timeval *tv) {$/;"	f
+uniform_online	src/bm.cc	/^rand_generator uniform_online = {uniform_online_init, uniform_online_gen_rand,$/;"	v
+uniform_online_duplicate	src/bm.cc	/^void *uniform_online_duplicate(void *_state) {$/;"	f
+uniform_online_gen_rand	src/bm.cc	/^int uniform_online_gen_rand(void *_state, uint64_t noutputs,$/;"	f
+uniform_online_init	src/bm.cc	/^void *uniform_online_init(uint64_t maxoutputs, __uint128_t maxvalue,$/;"	f
+uniform_online_state	src/bm.cc	/^typedef struct uniform_online_state {$/;"	s	file:
+uniform_online_state	src/bm.cc	/^} uniform_online_state;$/;"	t	typeref:struct:uniform_online_state	file:
+uniform_pregen	src/bm.cc	/^rand_generator uniform_pregen = {uniform_pregen_init, uniform_pregen_gen_rand,$/;"	v
+uniform_pregen_duplicate	src/bm.cc	/^void *uniform_pregen_duplicate(void *state) {$/;"	f
+uniform_pregen_gen_rand	src/bm.cc	/^int uniform_pregen_gen_rand(void *_state, uint64_t noutputs,$/;"	f
+uniform_pregen_init	src/bm.cc	/^void *uniform_pregen_init(uint64_t maxoutputs, __uint128_t maxvalue,$/;"	f
+uniform_pregen_state	src/bm.cc	/^typedef struct uniform_pregen_state {$/;"	s	file:
+uniform_pregen_state	src/bm.cc	/^} uniform_pregen_state;$/;"	t	typeref:struct:uniform_pregen_state	file:
+unlock	src/vqf_filter.c	/^static inline void unlock(vqf_block& block)$/;"	f	file:
+unlock_blocks	src/vqf_filter.c	/^static inline void unlock_blocks(vqf_filter * restrict filter, uint64_t index1, uint64_t index2)  {$/;"	f	file:
+update_md	src/vqf_filter.c	/^static inline void update_md(uint64_t *md, uint8_t index) {$/;"	f	file:
+update_tags_512	src/vqf_filter.c	/^static inline void update_tags_512(vqf_block * restrict block, uint8_t index, uint16_t tag) {$/;"	f	file:
+update_tags_512	src/vqf_filter.c	/^static inline void update_tags_512(vqf_block * restrict block, uint8_t index, uint8_t tag) {$/;"	f	file:
+usage	src/bm.cc	/^void usage(char *name) {$/;"	f
+vals	src/main_tx.cc	/^   uint64_t *vals;$/;"	m	struct:args	file:
+vqf_block	include/vqf_filter.h	/^	typedef struct __attribute__ ((__packed__)) vqf_block {$/;"	s
+vqf_block	include/vqf_filter.h	/^	} vqf_block;$/;"	t	typeref:struct:vqf_block
+vqf_filter	include/vqf_filter.h	/^	typedef struct vqf_filter {$/;"	s
+vqf_filter	include/vqf_filter.h	/^	} vqf_filter;$/;"	t	typeref:struct:vqf_filter
+vqf_init	src/vqf_filter.c	/^vqf_filter * vqf_init(uint64_t nslots) {$/;"	f
+vqf_insert	src/vqf_filter.c	/^int vqf_insert(vqf_filter * restrict filter, uint64_t hash) { \/\/ bool$/;"	f
+vqf_is_present	src/vqf_filter.c	/^bool vqf_is_present(vqf_filter * restrict filter, uint64_t hash) {$/;"	f
+vqf_metadata	include/vqf_filter.h	/^	typedef struct vqf_metadata {$/;"	s
+vqf_metadata	include/vqf_filter.h	/^	} vqf_metadata;$/;"	t	typeref:struct:vqf_metadata
+vqf_remove	src/vqf_filter.c	/^bool vqf_remove(vqf_filter * restrict filter, uint64_t hash) {$/;"	f
+word_rank	src/vqf_filter.c	/^static inline int word_rank(uint64_t val) {$/;"	f	file:
+word_select	src/vqf_filter.c	/^static inline uint64_t word_select(uint64_t val, int rank) {$/;"	f	file:
+zeta	src/zipfian_int_distribution.h	/^    double zeta() const { return _M_zeta; }$/;"	f	struct:zipfian_int_distribution::param_type
+zeta	src/zipfian_int_distribution.h	/^    double zeta(unsigned long __n, double __theta)$/;"	f	struct:zipfian_int_distribution::param_type
+zeta2theta	src/zipfian_int_distribution.h	/^    double zeta2theta() const { return _M_zeta2theta; }$/;"	f	struct:zipfian_int_distribution::param_type
+zipfian_int_distribution	src/zipfian_int_distribution.h	/^  explicit zipfian_int_distribution(_IntType __a = _IntType(0), _IntType __b = _IntType(1), double __theta = 0.99)$/;"	f	class:zipfian_int_distribution
+zipfian_int_distribution	src/zipfian_int_distribution.h	/^  explicit zipfian_int_distribution(const param_type& __p) : _M_param(__p)$/;"	f	class:zipfian_int_distribution
+zipfian_int_distribution	src/zipfian_int_distribution.h	/^class zipfian_int_distribution$/;"	c
