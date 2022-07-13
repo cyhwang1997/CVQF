@@ -76,6 +76,8 @@ extern "C" {
 
 	bool vqf_is_present(vqf_filter * restrict filter, uint64_t hash);
 
+	int get_count(vqf_filter * restrict filter, uint64_t hash);
+
 #ifdef __cplusplus
 }
 #endif
