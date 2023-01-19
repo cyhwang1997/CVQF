@@ -15,7 +15,7 @@ ifeq ($(THREAD),1)
 endif
 
 CXX = g++ -std=c++11 -fgnu-tm -frename-registers  -march=native
-CC = gcc -std=gnu11 -fgnu-tm -frename-registers  -march=native
+CC = gcc -std=gnu11 -fgnu-tm -frename-registers  -march=native -fsanitize=address
 LD= g++ -std=c++11
 
 LOC_INCLUDE=include
@@ -36,11 +36,13 @@ all: $(TARGETS)
 
 # dependencies between programs and .o files
 ifeq ($(HAVE_AVX512),1)
+$(info AVX512)
 main:							$(OBJDIR)/main.o $(OBJDIR)/vqf_filter.o $(OBJDIR)/shuffle_matrix_512.o $(OBJDIR)/shuffle_matrix_512_16.o 
 main_id:						$(OBJDIR)/main_id.o $(OBJDIR)/vqf_filter.o $(OBJDIR)/shuffle_matrix_512.o $(OBJDIR)/shuffle_matrix_512_16.o 
 main_tx:						$(OBJDIR)/main_tx.o $(OBJDIR)/vqf_filter.o $(OBJDIR)/shuffle_matrix_512.o $(OBJDIR)/shuffle_matrix_512_16.o 
 bm:							$(OBJDIR)/bm.o $(OBJDIR)/vqf_filter.o $(OBJDIR)/shuffle_matrix_512.o $(OBJDIR)/shuffle_matrix_512_16.o 
 else
+$(info AVX2)
 main:							$(OBJDIR)/main.o $(OBJDIR)/vqf_filter.o 
 main_id:						$(OBJDIR)/main_id.o $(OBJDIR)/vqf_filter.o
 main_tx:						$(OBJDIR)/main_tx.o $(OBJDIR)/vqf_filter.o

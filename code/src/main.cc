@@ -61,17 +61,15 @@ void print_time_elapsed(const char* desc, struct timeval* start, struct
 }
 
 int main(int argc, char **argv) {
-  /*if (argc < 2) {
-      fprintf(stderr, "Please specify the log of the number of slots in the CQF.\n");
-      exit(1);
-  }*/
-  if (argc < 3) {
+  if (argc < 5) {
     fprintf(stderr, "Please specify three arguments: \n \
                      1. Log2 of the number of slots in the CQF.\n \
                      2. Load factor (0 - 95).\n \
-                     3. Skewness (0 - 99).\n");
+                     3. Skewness (0 - 99).\n \
+                     4. ");
     exit(1);
   }
+
   uint64_t qbits = atoi(argv[1]);
   uint64_t nslots = (1ULL << qbits);
   uint64_t load_factor = atoi(argv[2]);
@@ -99,6 +97,7 @@ int main(int argc, char **argv) {
    printf("filter->metadata.range = %ld, nvals = %ld, nslots = %ld\n", filterMetadataRange, nvals, nslots);
 */
 
+  /* Repeat the test for TEST_NUM times. */
   for (int test_num = 0; test_num < TEST_NUM; test_num++) {
     vqf_filter *filter;	
 
@@ -194,7 +193,7 @@ int main(int argc, char **argv) {
     elapsed_usecs = tv2usec(&end) - tv2usec(&start);
     positive_throughput += 1.0 * nvals / elapsed_usecs;
       
-    //print_time_elapsed("Lookup time", &start, &end, nvals, "successful lookup");
+    print_time_elapsed("Lookup time", &start, &end, nvals, "successful lookup");
       
       
     gettimeofday(&start, &tzp);
@@ -209,7 +208,7 @@ int main(int argc, char **argv) {
     elapsed_usecs = tv2usec(&end) - tv2usec(&start);
     negative_throughput += 1.0 * nvals / elapsed_usecs;
       
-    //print_time_elapsed("Random lookup:", &start, &end, nvals, "random lookup");
+    print_time_elapsed("Random lookup:", &start, &end, nvals, "random lookup");
     printf("%lu/%lu positives\nFP rate: 1/%f\n", nfps, nvals, 1.0 * nvals / nfps);
 
       
@@ -229,7 +228,7 @@ int main(int argc, char **argv) {
     remove_throughput += 1.0 * nvals / elapsed_usecs;
       
       
-    //print_time_elapsed("Remove time", &start, &end, nvals, "remove");
+    print_time_elapsed("Remove time", &start, &end, nvals, "remove");
 
     free(filter);
   }

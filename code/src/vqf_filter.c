@@ -442,6 +442,8 @@ int vqf_insert(vqf_filter * restrict filter, uint64_t hash) { // bool
       __builtin_prefetch(&blocks[alt_block_index/QUQU_BUCKETS_PER_BLOCK]);
    //}
 
+   printf("[CYDBG] block_free: %lu\n", block_free);
+
    if (block_free < QUQU_CHECK_ALT && block_index/QUQU_BUCKETS_PER_BLOCK != alt_block_index/QUQU_BUCKETS_PER_BLOCK) {
       //printf("yes\n");
       unlock(blocks[block_index/QUQU_BUCKETS_PER_BLOCK]);
@@ -470,15 +472,15 @@ int vqf_insert(vqf_filter * restrict filter, uint64_t hash) { // bool
          unlock(blocks[block_index/QUQU_BUCKETS_PER_BLOCK]);
          block_index = alt_block_index;
          block_md = alt_block_md;
-	 block_free = alt_block_free;
+         block_free = alt_block_free;
       } else if (block_free == QUQU_BUCKETS_PER_BLOCK) {
          print_block(filter, block_index / QUQU_BUCKETS_PER_BLOCK);
-	 print_block(filter, alt_block_index / QUQU_BUCKETS_PER_BLOCK);
-	 unlock_blocks(filter, block_index, alt_block_index);
+         print_block(filter, alt_block_index / QUQU_BUCKETS_PER_BLOCK);
+         unlock_blocks(filter, block_index, alt_block_index);
          fprintf(stderr, "vqf filter is full.\n");
          //return false;
          return -1;
-	 //exit(EXIT_FAILURE);
+         //exit(EXIT_FAILURE);
       } else {
          unlock(blocks[alt_block_index/QUQU_BUCKETS_PER_BLOCK]);
       }
@@ -500,12 +502,15 @@ int vqf_insert(vqf_filter * restrict filter, uint64_t hash) { // bool
 #if TAG_BITS == 8
    uint64_t slot_index = select_128(block_md, offset);
    uint64_t select_index = slot_index + offset - sizeof(__uint128_t);
+
+   /*CVQF*/
    uint64_t preslot_index; // yongjin
    if (offset != 0) {
      preslot_index = select_128(block_md, offset - 1);
    } else {
      preslot_index = QUQU_PRESLOT;
    }
+   /*CVQF*/
 #elif TAG_BITS == 16
    uint64_t slot_index = select_64(*block_md, offset);
    uint64_t select_index = slot_index + offset - (sizeof(uint64_t)/2);
@@ -569,49 +574,47 @@ int vqf_insert(vqf_filter * restrict filter, uint64_t hash) { // bool
        // candidate
        if (blocks[index].tags[i - QUQU_PRESLOT] >= tag) {
 
-	 // the first tag, no need to think
-	 if (i == preslot_index) {
-	   target_index = i;
-	   break;
-	 }
+         // the first tag, no need to think
+         if (i == preslot_index) {
+           target_index = i;
+           break;
+         }
 
-	 // could be counter
-	 else if (blocks[index].tags[i - 1 - QUQU_PRESLOT] == 0) {
+         // could be counter
+         else if (blocks[index].tags[i - 1 - QUQU_PRESLOT] == 0) {
+           // corner case, [0, counter], found
+           if (i == preslot_index + 1) {
+             target_index = i;
+             break;
+           }
 
-	   // corner case, [0, counter], found
-	   if (i == preslot_index + 1) {
-	     target_index = i;
-	     break;
-	   }
+           // other cases
+           else {
+             temp_tag = blocks[index].tags[i - 2 - QUQU_PRESLOT];
 
-	   // other cases
-	   else {
-	     temp_tag = blocks[index].tags[i - 2 - QUQU_PRESLOT];
+             // corner case, [0, 0, 255], found
+             if (temp_tag == 0) {
+               target_index = i;
+               break;
+             }
 
-	     // corner case, [0, 0, 255], found
-	     if (temp_tag == 0) {
-	       target_index = i;
-	       break;
-	     }
+             // counter (TAG_BIT = 8)
+             else {
+               while(blocks[index].tags[i - QUQU_PRESLOT] == QUQU_MAX) i++;
+                 if (blocks[index].tags[i - QUQU_PRESLOT] != temp_tag) i++;
+                 continue;
+             }
+           }
+         }
 
-	     // counter (TAG_BIT = 8)
-	     else {
-	       while(blocks[index].tags[i - QUQU_PRESLOT] == QUQU_MAX) i++;
-	       if (blocks[index].tags[i - QUQU_PRESLOT] != temp_tag) i++;
-	       continue;
-	     }
-	   }
-	 }
-
-	 // found
-	 else {
-	   target_index = i;
-	   break;
-	 }
+         // found
+         else {
+           target_index = i;
+           break;
+         }
        }
      }
-
-     // sorting //////////////////
+   // sorting //////////////////
    }
 
    ////////////////////////////////////////////////////////////////////////
@@ -628,17 +631,17 @@ int vqf_insert(vqf_filter * restrict filter, uint64_t hash) { // bool
        while (end_target_index < slot_index) {
 
 	 // (if end_target_index == slot_index, there is no match)
-	 if (blocks[index].tags[end_target_index - QUQU_PRESLOT] == tag) break;
-	 end_target_index++;
-       }
+         if (blocks[index].tags[end_target_index - QUQU_PRESLOT] == tag) break;
+           end_target_index++;
+         }
 
        // no extra match, just put it
-       if (end_target_index == slot_index) {
-	 update_tags_512(&blocks[index], target_index, tag);
-	 update_md(block_md, select_index);
-	 unlock(blocks[index]);
-	 //return true;
-	 return 1;
+         if (end_target_index == slot_index) {
+           update_tags_512(&blocks[index], target_index, tag);
+           update_md(block_md, select_index);
+           unlock(blocks[index]);
+           //return true;
+           return 1;
        }
 
        // counter //////////////////
@@ -646,242 +649,237 @@ int vqf_insert(vqf_filter * restrict filter, uint64_t hash) { // bool
        // extra match, tag is 0
        else if (tag == 0) {
 
-	 // [0, 0, ...]
-	 if (end_target_index == target_index + 1) {
+         // [0, 0, ...]
+         if (end_target_index == target_index + 1) {
 
-	   // check if [0, 0, 0, ...]
-	   if (end_target_index < slot_index - 1) {
-	     if (blocks[index].tags[end_target_index + 1 - QUQU_PRESLOT] == tag) {
-	       update_tags_512(&blocks[index], end_target_index, 1);
-	       update_md(block_md, select_index);
-	       unlock(blocks[index]);
-	       //return true;
-	       return 1;
-	     }
+           // check if [0, 0, 0, ...]
+           if (end_target_index < slot_index - 1) {
+             if (blocks[index].tags[end_target_index + 1 - QUQU_PRESLOT] == tag) {
+               update_tags_512(&blocks[index], end_target_index, 1);
+               update_md(block_md, select_index);
+               unlock(blocks[index]);
+               //return true;
+               return 1;
+             }
 
-	     else {
-	       update_tags_512(&blocks[index], end_target_index, tag);
-	       update_md(block_md, select_index);
-	       unlock(blocks[index]);
-	       //return true;
-	       return 1;
-	     }
-	   }
+             else {
+               update_tags_512(&blocks[index], end_target_index, tag);
+               update_md(block_md, select_index);
+               unlock(blocks[index]);
+               //return true;
+               return 1;
+             }
+	         }
 
-	   // [0, 0]
-	   else {
-	     update_tags_512(&blocks[index], target_index, tag);
-	     update_md(block_md, select_index);
-	     unlock(blocks[index]);
-	     //return true;
-	     return 1;
-	   }
-	 }
+           // [0, 0]
+           else {
+             update_tags_512(&blocks[index], target_index, tag);
+             update_md(block_md, select_index);
+             unlock(blocks[index]);
+             //return true;
+             return 1;
+	         }
+         }
 
-	 // check if counter, [0, ... 0, 0, ...]
-	 else if (end_target_index < slot_index - 1) {
-	   if (blocks[index].tags[end_target_index + 1 - QUQU_PRESLOT] == tag) {
+         // check if counter, [0, ... 0, 0, ...]
+         else if (end_target_index < slot_index - 1) {
+           if (blocks[index].tags[end_target_index + 1 - QUQU_PRESLOT] == tag) {
 
-	     // full counter
-	     if (blocks[index].tags[end_target_index - 1 - QUQU_PRESLOT] == QUQU_MAX) {
-	       update_tags_512(&blocks[index], end_target_index, 1);
-	       update_md(block_md, select_index);
-	       unlock(blocks[index]);
-	       //return true;
-	       return 1;
-	     }
+             // full counter
+             if (blocks[index].tags[end_target_index - 1 - QUQU_PRESLOT] == QUQU_MAX) {
+               update_tags_512(&blocks[index], end_target_index, 1);
+               update_md(block_md, select_index);
+               unlock(blocks[index]);
+               //return true;
+               return 1;
+             }
 
-	     // increment counter
-	     else {
-	       blocks[index].tags[end_target_index - 1 - QUQU_PRESLOT]++;
-	       unlock(blocks[index]);
-	       //return true;
-	       return 0;
-	     }
-	   }
+             // increment counter
+             else {
+               blocks[index].tags[end_target_index - 1 - QUQU_PRESLOT]++;
+               unlock(blocks[index]);
+               //return true;
+               return 0;
+             }
+           }
 
-	   else {
-	     // wrong zero fetched
-	     update_tags_512(&blocks[index], target_index, tag);
-	     update_md(block_md, select_index);
-	     unlock(blocks[index]);
-	     //return true;
-	     return 1;
-	   }
-	 }
+           else {
+             // wrong zero fetched
+             update_tags_512(&blocks[index], target_index, tag);
+             update_md(block_md, select_index);
+             unlock(blocks[index]);
+             //return true;
+             return 1;
+           }
+         }
 
-	 // wrong extra 0 fetched
-	 else {
-	   // [0 ... 0] ?
-	   printf("ERROR\n");
-	   //update_tags_512(&blocks[index], target_index, tag);
-	   //update_md(block_md, select_index);
-	   unlock(blocks[index]);
-	   //return false;
-	   return -1;
-	 }
-
+         // wrong extra 0 fetched
+         else {
+           // [0 ... 0] ?
+           printf("ERROR\n");
+           //update_tags_512(&blocks[index], target_index, tag);
+           //update_md(block_md, select_index);
+           unlock(blocks[index]);
+           //return false;
+           return -1;
+         }
        }
 
        // extra match, tag is 1
        else if (tag == 1) {
 
-	 // [1, 1], need to insert two tags
-	 if (end_target_index == target_index + 1) {
+         // [1, 1], need to insert two tags
+         if (end_target_index == target_index + 1) {
 
-	   // cannot insert two tags
-	   if (block_free == QUQU_BUCKETS_PER_BLOCK + 1) {
-	     unlock(blocks[index]);
-	     //return false;
-	     return -1;
-	   }
+           // cannot insert two tags
+           if (block_free == QUQU_BUCKETS_PER_BLOCK + 1) {
+             unlock(blocks[index]);
+             //return false;
+             return -1;
+           }
 
-	   // can insert two tags
-	   else {
-	     update_tags_512(&blocks[index], end_target_index, 0);
-	     update_md(block_md, select_index);
-	     update_tags_512(&blocks[index], end_target_index + 1, 2);
-	     update_md(block_md, select_index);
-	     unlock(blocks[index]);
-	     //return true;
-	     return 2;
-	   }
-	 }
+           // can insert two tags
+           else {
+             update_tags_512(&blocks[index], end_target_index, 0);
+             update_md(block_md, select_index);
+             update_tags_512(&blocks[index], end_target_index + 1, 2);
+             update_md(block_md, select_index);
+             unlock(blocks[index]);
+             //return true;
+             return 2;
+           }
+         }
 
-	 // counter
-	 else if (blocks[index].tags[target_index + 1 - QUQU_PRESLOT] < tag) {
+         // counter
+         else if (blocks[index].tags[target_index + 1 - QUQU_PRESLOT] < tag) {
 
-	   // add new counter
-	   if (blocks[index].tags[end_target_index - 1  - QUQU_PRESLOT] == QUQU_MAX) {
-	     update_tags_512(&blocks[index], end_target_index, 2);
-	     update_md(block_md, select_index);
-	     unlock(blocks[index]);
-	     //return true;
-	     return 1;
-	   }
+           // add new counter
+           if (blocks[index].tags[end_target_index - 1  - QUQU_PRESLOT] == QUQU_MAX) {
+             update_tags_512(&blocks[index], end_target_index, 2);
+             update_md(block_md, select_index);
+             unlock(blocks[index]);
+             //return true;
+             return 1;
+           }
 
-	   // increment counter
-	   else {
-	     blocks[index].tags[end_target_index - 1 - QUQU_PRESLOT]++;
-	     unlock(blocks[index]);
-	     //return true;
-	     return 0;
-	   }
-	 }
+           // increment counter
+           else {
+             blocks[index].tags[end_target_index - 1 - QUQU_PRESLOT]++;
+             unlock(blocks[index]);
+             //return true;
+             return 0;
+           }
+         }
 
-	 // wrong extra 1 fetched
-	 else {
-	   update_tags_512(&blocks[index], target_index, tag);
-	   update_md(block_md, select_index);
-	   unlock(blocks[index]);
-	   //unlock(blocks[block_index/QUQU_BUCKETS_PER_BLOCK]);
-	   //return true;
-	   return 1;
-	 }
+         // wrong extra 1 fetched
+         else {
+           update_tags_512(&blocks[index], target_index, tag);
+           update_md(block_md, select_index);
+           unlock(blocks[index]);
+           //unlock(blocks[block_index/QUQU_BUCKETS_PER_BLOCK]);
+           //return true;
+           return 1;
+         }
        }
 
        // extra match, tag is 255
        else if (tag == QUQU_MAX) {
 
-	 // [255, 255]
-	 if (end_target_index == target_index + 1) {
-	   update_tags_512(&blocks[index], end_target_index, 1);
-	   update_md(block_md, select_index);
-	   unlock(blocks[index]);
-	   //return true;
-	   return 1;
-	 }
+         // [255, 255]
+         if (end_target_index == target_index + 1) {
+           update_tags_512(&blocks[index], end_target_index, 1);
+           update_md(block_md, select_index);
+           unlock(blocks[index]);
+           //return true;
+           return 1;
+         }
 
-	 // [255, ... , 255]
-	 else {
+         // [255, ... , 255]
+         else {
 
-	   // add new counter
-	   if (blocks[index].tags[end_target_index - 1 - QUQU_PRESLOT] == QUQU_MAX - 1) {
-	     update_tags_512(&blocks[index], end_target_index, 1);
-	     update_md(block_md, select_index);
-	     unlock(blocks[index]);
-	     //return true;
-	     return 1;
-	   }
+           // add new counter
+           if (blocks[index].tags[end_target_index - 1 - QUQU_PRESLOT] == QUQU_MAX - 1) {
+             update_tags_512(&blocks[index], end_target_index, 1);
+             update_md(block_md, select_index);
+             unlock(blocks[index]);
+             //return true;
+             return 1;
+           }
 
-	   // increment counter
-	   else {
-	     blocks[index].tags[end_target_index - 1 - QUQU_PRESLOT]++;
-	     unlock(blocks[index]);
-	     //return true;
-	     return 0;
-	   }
-	 }
+           // increment counter
+           else {
+             blocks[index].tags[end_target_index - 1 - QUQU_PRESLOT]++;
+             unlock(blocks[index]);
+             //return true;
+             return 0;
+           }
+         }
        }
 
        // extra match, other tags
        else {
+         // [tag, tag]
+         if (end_target_index == target_index + 1) {
+           update_tags_512(&blocks[index], end_target_index, 1);
+           update_md(block_md, select_index);
+           unlock(blocks[index]);
+           //return true;
+           return 1;
+         }
 
-	 // [tag, tag]
-	 if (end_target_index == target_index + 1) {
-	   update_tags_512(&blocks[index], end_target_index, 1);
-	   update_md(block_md, select_index);
-	   unlock(blocks[index]);
-	   //return true;
-	   return 1;
-	 }
+         // counter
+         else if (blocks[index].tags[target_index + 1 - QUQU_PRESLOT] < tag) {
+           // add new counter
+           if (blocks[index].tags[end_target_index - 1 - QUQU_PRESLOT] == QUQU_MAX) {
+             update_tags_512(&blocks[index], end_target_index, 1);
+             update_md(block_md, select_index);
+             unlock(blocks[index]);
+             //return true;
+             return 1;
+           }
 
-	 // counter
-	 else if (blocks[index].tags[target_index + 1 - QUQU_PRESLOT] < tag) {
+           // increment counter
+           else {
+             temp_tag = blocks[index].tags[end_target_index - 1 - QUQU_PRESLOT] + 1;
+             if (temp_tag == tag) {
+               temp_tag++;
 
-	   // add new counter
-	   if (blocks[index].tags[end_target_index - 1 - QUQU_PRESLOT] == QUQU_MAX) {
-	     update_tags_512(&blocks[index], end_target_index, 1);
-	     update_md(block_md, select_index);
-	     unlock(blocks[index]);
-	     //return true;
-	     return 1;
-	   }
+               // need to put 0
+               if (blocks[index].tags[target_index + 1 - QUQU_PRESLOT] != 0) {
+                 blocks[index].tags[end_target_index - 1 - QUQU_PRESLOT] = temp_tag;
+                 update_tags_512(&blocks[index], target_index + 1, 0);
+                 update_md(block_md, select_index);
+                 unlock(blocks[index]);
+                 //return true;
+                 return 1;
+               }
 
-	   // increment counter
-	   else {
-	     temp_tag = blocks[index].tags[end_target_index - 1 - QUQU_PRESLOT] + 1;
-	     if (temp_tag == tag) {
-	       temp_tag++;
+               // no need to put 0
+               else {
+                 blocks[index].tags[end_target_index - 1 - QUQU_PRESLOT] = temp_tag;
+                 unlock(blocks[index]);
+                 //return true;
+                 return 0;
+               }
+             } else {
+               blocks[index].tags[end_target_index - 1 - QUQU_PRESLOT] = temp_tag;
+               unlock(blocks[index]);
+               //return true;
+               return 0;
+             }
+           }
+         }
 
-	       // need to put 0
-	       if (blocks[index].tags[target_index + 1 - QUQU_PRESLOT] != 0) {
-		 blocks[index].tags[end_target_index - 1 - QUQU_PRESLOT] = temp_tag;
-		 update_tags_512(&blocks[index], target_index + 1, 0);
-		 update_md(block_md, select_index);
-		 unlock(blocks[index]);
-		 //return true;
-		 return 1;
-	       }
-
-	       // no need to put 0
-	       else {
-		 blocks[index].tags[end_target_index - 1 - QUQU_PRESLOT] = temp_tag;
-		 unlock(blocks[index]);
-		 //return true;
-		 return 0;
-	       }
-	     } else {
-	       blocks[index].tags[end_target_index - 1 - QUQU_PRESLOT] = temp_tag;
-	       unlock(blocks[index]);
-	       //return true;
-	       return 0;
-	     }
-	   }
-	 }
-
-	 // wrong fetch
-	 else {
-	   update_tags_512(&blocks[index], target_index, tag);
-	   update_md(block_md, select_index);
-	   unlock(blocks[index]);
-	   //return true;
-	   return 1;
-	 }
+         // wrong fetch
+         else {
+           update_tags_512(&blocks[index], target_index, tag);
+           update_md(block_md, select_index);
+           unlock(blocks[index]);
+           //return true;
+           return 1;
+         }
        }
-
        // counter //////////////////
-
      }
 
      // no need counter
@@ -893,7 +891,6 @@ int vqf_insert(vqf_filter * restrict filter, uint64_t hash) { // bool
        //return true;
        return 1;
      }
-
    }
 
    // if not found in [preslot_index ---------- slot_index)
@@ -2150,7 +2147,7 @@ return true;
 			      // only one 0
 			      if (slot_temp == slot_start + 1) {
 				 int sum = 0;
-				 for (int i = slot_temp + 1; i < slot_check; i++) {
+				 for (uint64_t i = slot_temp + 1; i < slot_check; i++) {
 				    sum += blocks[index].tags[i - QUQU_PRESLOT];
 				 }
 				 return 2 + sum;
@@ -2167,7 +2164,7 @@ return true;
 				 // decrease counter
 				 else {
 				    int sum = 0;
-				    for (int i = slot_temp + 1; i < slot_check; i++) {
+				    for (uint64_t i = slot_temp + 1; i < slot_check; i++) {
 				       sum += blocks[index].tags[i - QUQU_PRESLOT];
 				    }
 				    return 2 + sum;
@@ -2178,7 +2175,7 @@ return true;
 			   // counter embedded for sure
 			   else {
 			      int sum = 0;
-			      for (int i = slot_temp + 1; i < slot_check; i++) {
+			      for (uint64_t i = slot_temp + 1; i < slot_check; i++) {
 				 sum += blocks[index].tags[i - QUQU_PRESLOT];
 			      }
 			      return 2 + sum;
@@ -2196,7 +2193,7 @@ return true;
 		     // a big counter, consuming all bucket space
 		     if (blocks[index].tags[slot_temp - QUQU_PRESLOT] == QUQU_MAX) {
 			int sum = 0;
-			for (int i = slot_temp + 1; i < slot_check; i++) {
+			for (uint64_t i = slot_temp + 1; i < slot_check; i++) {
 			   sum += blocks[index].tags[i - QUQU_PRESLOT];
 			}
 			return 2 + sum;
@@ -2264,7 +2261,7 @@ return true;
 			else {
 			   if (blocks[index].tags[slot_temp + 1 - QUQU_PRESLOT] == 0) {
 			      int sum = 0;
-			      for (int i = slot_check + 1; i < slot_temp; i++) {
+			      for (uint64_t i = slot_check + 1; i < slot_temp; i++) {
 				 sum += blocks[index].tags[i - QUQU_PRESLOT];
 			      }
 			      return 3 + sum;
@@ -2282,7 +2279,7 @@ return true;
 			   if (  (blocks[index].tags[slot_temp + 1 - QUQU_PRESLOT] == 0)
 				 && (blocks[index].tags[slot_temp + 2 - QUQU_PRESLOT] == 0)) {
 			      int sum = 0;
-			      for (int i = slot_check + 1; i <= slot_temp; i++) {
+			      for (uint64_t i = slot_check + 1; i <= slot_temp; i++) {
 				 sum += blocks[index].tags[i - QUQU_PRESLOT];
 			      }
 			      return 3 + sum;
